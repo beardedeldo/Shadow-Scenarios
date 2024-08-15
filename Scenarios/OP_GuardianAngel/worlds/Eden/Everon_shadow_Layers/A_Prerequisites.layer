@@ -22,12 +22,10 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
    }
   }
   SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
-   m_fWeaponFiredReactionDistance 300
    m_fPerceptionSafe 0.8
    m_fPerceptionVigilant 2.6
    m_fAimAccuracyErrorModifier 0.75
    m_fAttackReactionDelayModifier 0.1
-   m_eForceFlashlightState ON
   }
  }
  coords 7114.537 75.004 6402
@@ -272,6 +270,45 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   }
   SCR_TimeAndWeatherHandlerComponent "{61F91EF183DCEA13}" {
    m_iStartingHours 20
+  }
+  SCR_WelcomeScreenComponent "{620902B2F03BA4C3}" {
+   m_sHeaderTitle "Beards Scenarios "
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{620902B3D5438052}" {
+    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{620902B38E4F9815}" {
+     m_sTitleText "### Welcome to Beard's Arma Reforger Scenarios! "
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{620902B38D9E75C2}" {
+       m_sContentImage "{206C31EED0343B40}images/Beard_discord.edds"
+       m_sContentDescriptionText "Embark on an immersive journey through custom, story-driven scenarios. Throughout each story line, you will have the opportunity to jump and play between two elite units: (1) US Marines Special Operations Company (M.S.O.C.), or RUS Spetsial'nyye Operatsii Naval'nogo Desanta (S.O.N.D.) . Each scenario is part of a larger narrative, organized into \"chapters\", and comes complete with OPORDS, FRAGOS, logistics, story twists, and much more. "\
+       ""\
+       "Want to stay in touch, be part of the journey? Join Beard's Scenario Discord to learn more! Scan the green barcode above."
+      }
+     }
+    }
+    m_MiddleColumn SCR_WelcomeScreenMissionObjectivesContent "{620902B300423522}" {
+     m_sTitleText "### How To Play"
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{620902B30E40D734}" {
+       m_sDescription "1. Pick an MOS at initial load in (you can customize it further and save it). "
+      }
+      SCR_WelcomeScreenMissionObjectives "{620902B30A615A14}" {
+       m_sDescription "2. Follow the in-game tasks and complete the tasks to progress. "
+      }
+      SCR_WelcomeScreenMissionObjectives "{620902B3136EE7C7}" {
+       m_sDescription "3. Exfil will reset the server, and start the scenario over (Try it again! You'll have a different experience). "
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenIntroductionContent "{620902B08C574F54}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{620902B093366BDA}" {
+       m_sContentImage "{9E885ECF26ABAD77}images/Beard_kofi.edds"
+       m_sContentTitleText "### Support Future Work"
+       m_sContentDescriptionText "If you enjoyed this scenario and want to support future work as well as Beard’s growing family, or want to buy him a coffee, scan the  barcode above to send some donations his way. Thank you for your support! "
+      }
+     }
+    }
+   }
   }
   RplComponent "{56B2B4793BF2E1B4}" {
    "Rpl State Override" None

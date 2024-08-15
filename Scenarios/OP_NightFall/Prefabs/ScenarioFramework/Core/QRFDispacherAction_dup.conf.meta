@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{448750EDA98A2274}Prefabs/ScenarioFramework/Core/QRFDispacherAction_dup.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,86 @@
+GenericEntity X_AIGroups : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_fRepeatedSpawnTimer 1
+   m_aActivationActions {
+    SCR_ScenarioFrameworkActionQRFDispacher "{621936CAD096BCDF}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
+     m_sQRFLayerName "QRFSpawnpointsLayer1"
+     m_iThreshold 2
+     m_fQRFSpawnDelay 5
+     m_fQRFNextWaveDelay 15
+    }
+   }
+   m_bDynamicDespawn 1
+   m_iDynamicDespawnRange 250
+   m_bShowDebugShapesInWorkbench 1
+  }
+ }
+ coords 1429.286 38 2950.562
+ {
+  GenericEntity AI_Opfor : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   coords 3.082 -0.078 7.185
+   {
+    $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+     SlotAI1 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{AB9726163EC1BD81}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+       }
+      }
+      coords 12.675 0.063 4.303
+     }
+     SlotAI3 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{AB9726163EC1BD81}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+       }
+      }
+      coords 6.814 0.017 8.176
+     }
+     SlotAI4 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{AB9726163EC1BD81}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+       }
+      }
+      coords 9.872 0.083 23.285
+     }
+     SlotAI5 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{AB9726163EC1BD81}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+       }
+      }
+      coords -9.396 0.018 21.155
+     }
+    }
+   }
+  }
+  GenericEntity QRFSpawnpointsLayer1 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
+   coords -31.896 0.213 -10.208
+   {
+    GenericEntity QRFSpawnpoint1 {
+     ID "6054EE897FB6C21B"
+     components {
+      SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
+       m_iGroupType INFANTRY
+       m_aSCR_QRFSpawnSafeZone {
+        SCR_QRFSpawnSafeZone "{621940DAABF5C5AE}" {
+         m_iMinDistanceToClosestObserver 200
+        }
+       }
+      }
+     }
+    }
+    $grp GenericEntity : "{FCE82B7F21949782}Prefabs/ScenarioFramework/Compositions/QRFSpawnpoint.et" {
+     QRFSpawnpoint4 {
+      coords -109.527 0.229 -157.167
+     }
+     QRFSpawnpoint2 {
+      coords -132.62 -7.661 132.968
+     }
+    }
+   }
+  }
+ }
+}

@@ -19,3 +19,5 @@ You can play it solo or with as many as 22 friends. AI's have been modified to p
 
 If you enjoyed this scenario and want to support future work as well as Beard’s growing family, or want to buy him a coffee, scan the  barcode above to send some donations his way. Thank you for your support! 
 
+### MUSSALO ConspiracyCampaign
+620AEC6CCD25EF3C

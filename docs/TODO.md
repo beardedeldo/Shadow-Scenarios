@@ -15,7 +15,7 @@
     [ ] Change AI slots to randomization (see video https://www.youtube.com/watch?v=DGN3Ywc74k0&list=PLACt0Y23f-92UjVNKiODHzA9pnnGl-Lpj&index=13 minute = 13:50+)
     [ ] Add randomization to AI groups (see video https://www.youtube.com/watch?v=K9csubqv954&list=PLACt0Y23f-92UjVNKiODHzA9pnnGl-Lpj&index=14 minute = 6:50+)
     [ ] Under Waypoints use AIWaypoint_Wait.et for security to prevent AI from moving unless attacked
-    [ ] Duplicate AIWaypoint_defend_small.et, change radius to 7.0 to keep them in buildings 
+    [ ] Duplicate AIWaypoint_defend_small.et, change radius to 7.0 to keep them in buildings; turn on fast init 
 
  [ ] Polish up Silent Depths 
     [ ] Add sub and make it a destructible component 

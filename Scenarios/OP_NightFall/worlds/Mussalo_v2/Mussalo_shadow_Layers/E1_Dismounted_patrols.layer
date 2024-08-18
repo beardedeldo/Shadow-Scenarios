@@ -3,7 +3,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
    m_fAreaRadius 5
    m_bDynamicDespawn 1
-   m_iDynamicDespawnRange 800
+   m_iDynamicDespawnRange 450
    m_bShowDebugShapesInWorkbench 1
   }
  }
@@ -21,16 +21,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords 139.255 -1.021 -108.116
-      }
-      SlotWaypoint5 {
-       components {
-        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
-         }
-        }
-       }
-       coords 187.939 0.009 164.727
+       coords 558.352 -1.021 99.87
       }
       SlotWaypoint6 {
        components {
@@ -48,7 +39,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords 107.384 -2.234 -217.607
+       coords -52.957 0.185 29.592
       }
       SlotWaypoint8 {
        components {
@@ -57,7 +48,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords 515.009 -0.843 70.379
+       coords 65.642 -0.088 -151.725
       }
       SlotWaypoint9 {
        components {
@@ -66,13 +57,12 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords -138.953 0.624 -285.332
+       coords -44.748 0.107 -251.688
       }
       A_Patrol_WP_Cycle {
        components {
         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
          m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{62152A4CA472391F}" {
-          m_fCompletionRadius 50
           m_aLayersWithWaypointsToCycle {
            "Patrol_waypoints"
           }
@@ -80,12 +70,17 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords 38.923 -0.001 1.29
+       coords 0 0 0
       }
      }
     }
    }
    patrol13 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_SpawnChildren RANDOM_BASED_ON_PLAYERS_COUNT
+     }
+    }
     coords -102.471 -0.764 -125.959
     {
      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -117,7 +112,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          m_fPerceptionFactor 0.8
         }
        }
-       coords 195.693 -0.078 33.909
+       coords 190.572 0.305 33.909
       }
      }
     }

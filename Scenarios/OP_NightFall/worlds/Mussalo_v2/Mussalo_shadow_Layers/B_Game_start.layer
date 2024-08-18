@@ -1406,28 +1406,28 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        UH60_armed {
         components {
          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-          m_sObjectToSpawn "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et"
+          m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
          }
         }
-        coords -9.133 -0.606 -0.712
+        coords -9.133 -0.686 -0.712
         angleY -146.746
        }
        UH60_armed2 {
         components {
          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-          m_sObjectToSpawn "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et"
+          m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
          }
         }
-        coords -61.687 -0.076 25.493
+        coords -61.687 -0.175 25.493
         angleY -159.679
        }
        UH60_armed3 {
         components {
          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-          m_sObjectToSpawn "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et"
+          m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
          }
         }
-        coords 85.199 1.049 -36.803
+        coords 85.199 0.911 -36.803
         angleY -146.746
        }
       }
@@ -1581,6 +1581,33 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
+ SH_MOB_wrecks {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
+   }
+  }
+  coords 2935.297 7.399 2115.857
+  {
+   GenericEntity : "{520CC573CA9FBC4F}Prefabs/Structures/Wreck/uh60.et" {
+    coords 62.152 -8.652 179.926
+    angleY -23.027
+   }
+   GenericEntity : "{54425F7795658997}Prefabs/Structures/Wreck/ch47.et" {
+    coords -41.039 -7.785 281.602
+    angleY 0
+   }
+   GenericEntity : "{623390265AA7DA97}Prefabs/Structures/Wreck/mq9.et" {
+    coords 9.461 -7.322 -340.772
+    angleY 0
+    angleZ 10.226
+   }
+   SCR_DestructibleBuildingEntity : "{8D35B3D72731D649}Prefabs/Structures/Wreck/c130.et" {
+    coords 137.724 -12.384 465.117
+    angleY -144.736
+   }
+  }
+ }
  Smoke_pit {
   coords 3340.458 11.289 539.557
   {
@@ -1634,35 +1661,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- USSR_spawn_point {
-  coords 918.25 3.066 6351.58
+ C130_infil {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
+   }
+  }
+  coords 3220.047 0 -97.481
   {
-   GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
-    components {
-     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-      m_eSupportedArsenalItemTypes 492542
-      m_eSupportedArsenalItemModes 254
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-     SCR_FactionAffiliationComponent "{5A50E7655452A21D}" {
-      "faction affiliation" "RHS_RF_MSV"
-     }
-    }
-    coords -2.723 -0.001 -1.946
-    angleY -23.19
-   }
-   SCR_SpawnPoint : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
-    coords -0.31 -0.001 -1.412
-   }
-   GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
-    components {
-     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-      m_eSupportedArsenalItemTypes 1033214
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-    }
-    coords 3.18 -0.001 0.361
-    angleY 86.643
+   SCR_DestructibleBuildingEntity : "{8D35B3D72731D649}Prefabs/Structures/Wreck/c130.et" {
+    coords -93.186 204.893 354.787
+    angleY 75.109
+    angleZ -9.278
    }
   }
  }

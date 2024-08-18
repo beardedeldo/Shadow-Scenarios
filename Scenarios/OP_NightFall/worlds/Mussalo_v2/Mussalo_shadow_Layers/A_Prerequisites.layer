@@ -26,7 +26,6 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
    m_fPerceptionVigilant 2.6
    m_fAimAccuracyErrorModifier 0.75
    m_fAttackReactionDelayModifier 0.1
-   m_eForceFlashlightState ON
   }
  }
  coords 4222.679 1.69 2667.403
@@ -79,7 +78,6 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
    m_iFactionRadioFrequency 51000
   }
   SCR_Faction "{56DEAC40D3C2E623}" {
-   m_bIsPlayable 1
    m_aPredefinedGroups {
     SCR_GroupPreset "{61EA43E42AA6852B}" {
      m_sGroupName "Training Instructors"
@@ -93,6 +91,7 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
    UIInfo SCR_FactionUIInfo "{5570936866E0AD08}" {
     Name "CIA Shadows"
    }
+   m_bIsPlayable 1
   }
  }
 }
@@ -156,7 +155,7 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   SCR_SaveLoadComponent "{6214DD4E582FF65E}" {
   }
   SCR_TimeAndWeatherHandlerComponent "{62110A0B384511AB}" {
-   m_iStartingHours 2
+   m_iStartingHours 23
    m_iStartingMinutes 30
    m_bRandomStartingDaytime 1
    m_bRandomStartingDaytimeRange 1
@@ -164,42 +163,6 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
    m_fNightTimeAcceleration 3
    m_bRandomStartingWeather 1
    m_bRandomWeatherChanges 1
-  }
-  SCR_WelcomeScreenComponent "{621AF9C6FDB811B6}" {
-   m_sHeaderTitle "Beards Scenarios "
-   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{621AF9C68A00DD9A}" {
-    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{621AF9C691708C02}" {
-     m_sTitleText "### Welcome to Beard's Arma Reforger Scenarios! "
-     m_aIntroduction {
-      SCR_WelcomeScreenIntroduction "{621AF9C6B5A3CBF6}" {
-       m_sContentImage "{206C31EED0343B40}images/Beard_discord.edds"
-      }
-     }
-    }
-    m_MiddleColumn SCR_WelcomeScreenMissionObjectivesContent "{621AF9C7ECA634D8}" {
-     m_sTitleText "### How To Play"
-     m_aMissionObjectives {
-      SCR_WelcomeScreenMissionObjectives "{621AF9C78650FE02}" {
-       m_sDescription "1. Pick an MOS at initial load in (you can customize it further and save it). "
-      }
-      SCR_WelcomeScreenMissionObjectives "{621AF9C797E61B68}" {
-       m_sDescription "2. Follow the in-game tasks and complete the tasks to progress. "
-      }
-      SCR_WelcomeScreenMissionObjectives "{621AF9C794282E9D}" {
-       m_sDescription "3. Exfil will reset the server, and start the scenario over (Try it again! You'll have a different experience). "
-      }
-     }
-    }
-    m_RightColumn SCR_WelcomeScreenIntroductionContent "{621AF9C7B887426A}" {
-     m_aIntroduction {
-      SCR_WelcomeScreenIntroduction "{621AF9C74673E390}" {
-       m_sContentImage "{9E885ECF26ABAD77}images/Beard_kofi.edds"
-       m_sContentTitleText "### Support Future Work"
-       m_sContentDescriptionText "If you enjoyed this scenario and want to support future work as well as Beard’s growing family, or want to buy him a coffee, scan the  barcode above to send some donations his way. Thank you for your support! "
-      }
-     }
-    }
-   }
   }
  }
  coords 5937.66 -9.938 3354.929
@@ -233,6 +196,11 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
    m_sLoadoutResource "{3967948B72443B25}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_BaseLoadout.et"
    m_sLoadoutImage "{B7FE87E35079BB18}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_US_USMC/Character_RHS_USAF_USMC_AAR.edds"
    m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{62032AAE46A6A9F6}" {
+   m_sLoadoutName "Shadow Paratrooper"
+   m_sLoadoutResource "{BAAAAD523E667C33}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_PARA_shadow.et"
+   m_sLoadoutImage "{B7FE87E35079BB18}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_US_USMC/Character_RHS_USAF_USMC_AAR.edds"
   }
   SCR_FactionPlayerLoadout "{61DB347B6FEA2904}" {
    m_sLoadoutName "Shadow 0311 RFLM"
@@ -268,6 +236,24 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
    m_sLoadoutResource "{D5640BB562716235}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Blk/Character_RHS_RF_SOBR_Marksman.et"
    m_sLoadoutImage "{FC58EAAEACDF0597}UI/Textures/EditorPreviews/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Blk/Character_RHS_RF_SOBR_Marksman.edds"
    m_sAffiliatedFaction "USSR"
+  }
+  SCR_FactionPlayerLoadout "{620E17D03E8F2C2D}" {
+   m_sLoadoutName "CIA Shadow Assaultman"
+   m_sLoadoutResource "{5C0DC0BE7F1A7347}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AC_Demo_shadow.et"
+   m_sLoadoutImage "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
+   m_sAffiliatedFaction "FIA"
+  }
+  SCR_FactionPlayerLoadout "{620F0AF082D08600}" {
+   m_sLoadoutName "CIA Shadow Medic"
+   m_sLoadoutResource "{CBBFAA36E044F3E2}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AC_Medic_shadow.et"
+   m_sLoadoutImage "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
+   m_sAffiliatedFaction "FIA"
+  }
+  SCR_FactionPlayerLoadout "{620F0AF080C91F3C}" {
+   m_sLoadoutName "CIA Shadow Sniper"
+   m_sLoadoutResource "{B4977616CD19191B}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AC_Scout_shadow.et"
+   m_sLoadoutImage "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
+   m_sAffiliatedFaction "FIA"
   }
  }
 }

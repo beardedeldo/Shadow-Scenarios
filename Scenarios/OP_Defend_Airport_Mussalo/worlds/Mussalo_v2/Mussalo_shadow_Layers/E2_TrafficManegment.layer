@@ -1,0 +1,366 @@
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ Civ_traffic {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_bDynamicDespawn 1
+    m_iDynamicDespawnRange 150
+   }
+  }
+  coords 1295.704 0.997 6333.613
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    Car {
+     coords 152.025 2.208 -34.608
+     angleY -28.897
+     {
+      GenericEntity SlotAI59 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{6F5A71376479B353}Prefabs/Characters/Factions/CIV/ConstructionWorker/Character_CIV_ConstructionWorker_1.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType CHARACTER
+         m_aIncludedEditableEntityLabels {
+          2
+         }
+         m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F3241E4B2B9E16}" {
+          m_aLayerName {
+           "SlotWaypoint12a" "A_Civ_WP_Cycle"
+          }
+         }
+         m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -78.898 0.456 -147.89
+      }
+      GenericEntity Slot3 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionToggleLights "{62152A43FB2F5A41}" {
+           m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{62152A4384D5B2EE}" {
+            m_sLayerName "Slot3"
+           }
+          }
+         }
+         m_sObjectToSpawn "{54C3CC22DEBD57BE}Prefabs/Vehicles/Wheeled/S105/S105_beige.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType VEHICLE
+         m_aIncludedEditableEntityLabels {
+          54 50
+         }
+         m_aExcludedEditableEntityLabels {
+         }
+        }
+       }
+       coords -78.034 0.287 -140.82
+       angleY 19.21
+      }
+      GenericEntity SlotWaypoint12a : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61F3241E1B77A05A}" {
+         }
+        }
+       }
+       coords -80.971 0.422 -147.891
+      }
+     }
+    }
+    Waypoints_1 {
+     coords 146.976 2.156 -9.413
+     angleY -28.897
+     {
+      $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       A_Civ_WP_Cycle {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61F3241E2B29F2F9}" {
+           m_aLayersWithWaypointsToCycle {
+            "Waypoints_1"
+           }
+           m_iRerunCounter 3
+           m_bUseRandomOrder 1
+          }
+         }
+        }
+        coords -83.952 0.395 -165.694
+       }
+       SlotWaypoint13 {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F3241911D4FAA1}" {
+          }
+         }
+        }
+        coords -229.139 -1.672 182.647
+        angleY 57.794
+       }
+       SlotWaypoint1 {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F3241927A98228}" {
+          }
+         }
+        }
+        coords 14.55 5.255 -324.469
+        angleY 86.691
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ QRF_BTR1 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_bDynamicDespawn 1
+    m_iDynamicDespawnRange 250
+    m_bShowDebugShapesInWorkbench 1
+   }
+  }
+  coords 1564.513 2.797 6450.066
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    BTR1 {
+     coords 25.473 -1.579 9.563
+     angleY -129.421
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI131 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           44 40 41 42 43 45 46 47 48
+          }
+          m_aExcludedEditableEntityLabels {
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEAD95DCAB1D}" {
+           m_aLayerName {
+            "SlotWaypoint14" "BTR1_WP_cycle"
+           }
+          }
+          m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          m_fPerceptionFactor 0.5
+         }
+        }
+        coords -9.519 0.74 24.095
+        angleY -101.158
+       }
+       SlotAI130 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           44 40 41 42 43 45 46 47 48
+          }
+          m_aExcludedEditableEntityLabels {
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEBFF3F0A894}" {
+           m_aLayerName {
+            "SlotWaypoint14" "BTR1_WP_cycle"
+           }
+          }
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+         }
+        }
+        coords -8.754 0.63 21.118
+        angleY 129.421
+       }
+      }
+      GenericEntity SlotWaypoint14 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61F3241E1B77A05A}" {
+         }
+        }
+       }
+       coords -12.651 0.541 21.191
+      }
+     }
+    }
+    BTR_WP1 {
+     coords 1.625 1.197 -0.003
+     angleY -129.421
+     {
+      $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       BTR1_WP_cycle {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61F3241E2B29F2F9}" {
+           m_aLayersWithWaypointsToCycle {
+            "BTR_WP1"
+           }
+           m_iRerunCounter 4
+           m_bUseRandomOrder 1
+          }
+         }
+        }
+        coords -21.721 -2.118 0.391
+       }
+       SlotWaypoint8 {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F3241911D4FAA1}" {
+          }
+         }
+        }
+        coords 73.627 -2.758 182.81
+        angleY 57.794
+       }
+       SlotWaypoint9 {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F3241927A98228}" {
+          }
+         }
+        }
+        coords -21.731 -0.83 160.905
+        angleY 86.691
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ QRF_BTR2 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_bDynamicDespawn 1
+    m_iDynamicDespawnRange 250
+    m_bShowDebugShapesInWorkbench 1
+   }
+  }
+  coords 1446.033 -109.205 6427.114
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    BTR2 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_aActivationActions {
+        SCR_ScenarioFrameworkActionWaitAndExecute "{622345E62FD19E5F}" {
+         m_iDelayInSeconds 5
+         m_iDelayInSecondsMax 15
+         m_bLooped 1
+        }
+       }
+      }
+     }
+     coords 28.855 115.558 20.086
+     angleY -164.188
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI139 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           44 40 41 42 43 45 46 47 48
+          }
+          m_aExcludedEditableEntityLabels {
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEAD95DCAB1D}" {
+           m_aLayerName {
+            "SlotWaypoint20" "BTR2_WP_cycle"
+           }
+          }
+          m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          m_fPerceptionFactor 0.5
+         }
+        }
+        coords -62.441 -3.028 -12.514
+        angleY 129.421
+       }
+       SlotAI140 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           44 40 41 42 43 45 46 47 48
+          }
+          m_aExcludedEditableEntityLabels {
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEAD95DCAB1D}" {
+           m_aLayerName {
+            "SlotWaypoint20" "BTR2_WP_cycle"
+           }
+          }
+          m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          m_fPerceptionFactor 0.5
+         }
+        }
+        coords -56.967 -2.508 -15.43
+        angleY -101.158
+       }
+      }
+      GenericEntity SlotWaypoint20 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61F3241E1B77A05A}" {
+         }
+        }
+       }
+       coords -59.827 -2.744 -16.74
+      }
+     }
+    }
+    BTR2_WPs {
+     coords 14.718 113.47 -1.372
+     angleY -164.188
+     {
+      $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       BTR2_WP_cycle {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61F3241E2B29F2F9}" {
+           m_aLayersWithWaypointsToCycle {
+            "BTR2_WPs"
+           }
+           m_iRerunCounter 4
+           m_bUseRandomOrder 1
+          }
+         }
+        }
+        coords -66.818 -0.631 -38.795
+       }
+       SlotWaypoint17 {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F3241911D4FAA1}" {
+          }
+         }
+        }
+        coords 189.345 -1.383 -48.031
+        angleY 57.794
+       }
+       SlotWaypoint18 {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F3241927A98228}" {
+          }
+         }
+        }
+        coords 313.752 -1.359 7.707
+        angleY 86.691
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

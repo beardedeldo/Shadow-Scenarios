@@ -1,0 +1,22 @@
+GameProject {
+ ID "CIA_Shadows"
+ GUID "6274F5CA50CCC4C9"
+ TITLE "CIA_Shadows"
+ Dependencies {
+  "58D0FB3206B6F859" "595F2BF2F44836FB" "61EAF5D776D87D38" "59CF333B3A309D6E"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

@@ -1,0 +1,763 @@
+SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{6168B8E5D2DFAF11}" {
+     NavmeshFile "{AD5F99CD7C59D5E0}worlds/GameMaster/Navmeshes/GM_Eden.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60CA9BE5536BF701}" {
+     NavmeshFile "{C35ECF3276824654}worlds/GameMaster/Navmeshes/GM_Eden_vehicles.nmn"
+    }
+    UsePathSmoothing 1
+    UseNavmeshStreaming 1
+    "Path stream area" 5
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{5E19E60F26327356}worlds/MP/Navmeshes/LowResEden.nmn"
+    }
+   }
+  }
+ }
+ coords 6500 161.874 6500
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "SCR_AIWorld: "\
+   "Configure navigation mesh"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 6500 161.874 6500
+ LineOfSightLayer 49280
+}
+SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ coords 6500 161.874 6500
+ Factions {
+  SCR_Faction "{56DEAC40D2DBC8B1}" {
+   "Identity of soldiers" FactionIdentity "{570D128F4022EF5A}" {
+    VisualIdentityArray {
+     VisualIdentity "{570CE64C790A3C7D}" {
+      Head "{EAF055495BA85CA1}Prefabs/Characters/Heads/Head_White_02.et"
+      Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+     }
+     VisualIdentity "{570EDB838B8AC563}" {
+      Head "{0F6C19B0574DCBCA}Prefabs/Characters/Heads/Head_White_03.et"
+      Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+     }
+    }
+   }
+   m_bIsPlayable 1
+   m_CallsignInfo SCR_FactionCallsignInfo "{5DA0F2A6677ADA9E}" {
+    m_bIsAssignedRandomly 1
+    m_aCompanyNames {
+     SCR_CallsignInfo "{55CCB792CD021D5C}" {
+      m_sCallsign "ALPHA"
+     }
+     SCR_CallsignInfo "{55CCB792CCD598D3}" {
+      m_sCallsign "BRAVO"
+     }
+     SCR_CallsignInfo "{55CCB792CC9C7AD6}" {
+      m_sCallsign "CHARLIE"
+     }
+     SCR_CallsignInfo "{55CCB792CCB4D441}" {
+      m_sCallsign "DELTA"
+     }
+     SCR_CallsignInfo "{55CCB792CC5F08F3}" {
+      m_sCallsign "ECHO"
+     }
+     SCR_CallsignInfo "{55CCB792CC49B7DB}" {
+      m_sCallsign "FOXTROT"
+     }
+     SCR_CallsignInfo "{55CCB792CC711A37}" {
+      m_sCallsign "GOLF"
+     }
+     SCR_CallsignInfo "{55CCB792CC33211C}" {
+      m_sCallsign "HOTEL"
+     }
+     SCR_CallsignInfo "{627C161FBA923588}" {
+      m_sCallsign "INDIA"
+     }
+     SCR_CallsignInfo "{627C161FBA0B1D7C}" {
+      m_sCallsign "JULIET"
+     }
+     SCR_CallsignInfo "{627C161FB5E709E9}" {
+      m_sCallsign "KILO"
+     }
+     SCR_CallsignInfo "{627C161FB5C6566F}" {
+      m_sCallsign "LIMA"
+     }
+     SCR_CallsignInfo "{627C161FB5A3A6DA}" {
+      m_sCallsign "MIKE"
+     }
+     SCR_CallsignInfo "{627C161FB58278C7}" {
+      m_sCallsign "NOVEMBER"
+     }
+     SCR_CallsignInfo "{627C161FB5504B00}" {
+      m_sCallsign "OSCAR"
+     }
+     SCR_CallsignInfo "{627C161FB5208D7C}" {
+      m_sCallsign "QUEBEC"
+     }
+     SCR_CallsignInfo "{627C161FB4991865}" {
+      m_sCallsign "PAPA"
+     }
+     SCR_CallsignInfo "{627C161FB471C282}" {
+      m_sCallsign "ROMEO"
+     }
+     SCR_CallsignInfo "{627C161FB448AF40}" {
+      m_sCallsign "SIERRA"
+     }
+     SCR_CallsignInfo "{627C161FB41D6B4E}" {
+      m_sCallsign "TANGO"
+     }
+     SCR_CallsignInfo "{627C161FB7EAB832}" {
+      m_sCallsign "UNIFORM"
+     }
+     SCR_CallsignInfo "{627C161FB79C89DF}" {
+      m_sCallsign "VICTOR"
+     }
+     SCR_CallsignInfo "{627C161FB76345B2}" {
+      m_sCallsign "WHISKEY"
+     }
+     SCR_CallsignInfo "{627C161FB7229CF2}" {
+      m_sCallsign "X-RAY"
+     }
+     SCR_CallsignInfo "{627C161FB6B13199}" {
+      m_sCallsign "YANKEE"
+     }
+     SCR_CallsignInfo "{627C161FB661662E}" {
+      m_sCallsign "ZULU"
+     }
+    }
+    m_iCompanyOverflowIndex 26
+    m_aPlatoonNames {
+     SCR_CallsignInfo "{55CCB792CE6E998D}" {
+      m_sCallsign "1"
+     }
+     SCR_CallsignInfo "{55CCB792CE18FB44}" {
+      m_sCallsign "2"
+     }
+     SCR_CallsignInfo "{55CCB792CE02ECFA}" {
+      m_sCallsign "3"
+     }
+     SCR_CallsignInfo "{55CCB792CE2A44BD}" {
+      m_sCallsign "4"
+     }
+     SCR_CallsignInfo "{61691AE3C0C13030}" {
+      m_sCallsign "5"
+     }
+     SCR_CallsignInfo "{61691AE3C06508F7}" {
+      m_sCallsign "6"
+     }
+     SCR_CallsignInfo "{627C161F2FB35D4C}" {
+      m_sCallsign "7"
+     }
+     SCR_CallsignInfo "{61691AE3C32F8AE1}" {
+      m_sCallsign "8"
+     }
+     SCR_CallsignInfo "{61691AE3C2DD45EF}" {
+      m_sCallsign "9"
+     }
+    }
+    m_aSquadNames {
+     SCR_CallsignInfo "{61691AE3D23494CA}" {
+      m_sCallsign "5"
+     }
+     SCR_CallsignInfo "{61691AE32D24D8C9}" {
+      m_sCallsign "6"
+     }
+     SCR_CallsignInfo "{61691AE32CD53A2D}" {
+      m_sCallsign "7"
+     }
+     SCR_CallsignInfo "{61691AE32C81604F}" {
+      m_sCallsign "8"
+     }
+     SCR_CallsignInfo "{61691AE32FE04087}" {
+      m_sCallsign "9"
+     }
+    }
+   }
+   m_aEntityCatalogs {
+    SCR_EntityCatalogMultiList "{5C68A0EE815FA292}" : "{B56E8B4D4B195559}Configs/EntityCatalog/US/Characters_EntityCatalog_US.conf" {
+    }
+    SCR_EntityCatalogMultiList "{5C9E82F29B327997}" {
+     m_aMultiLists {
+      SCR_EntityCatalogMultiListEntry "{60569780DE4EE17A}" {
+       m_aEntities {
+        SCR_EntityCatalogEntry "{605098A5BB9816E3}" {
+         m_bEnabled 0
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10588CBB27}" {
+           m_bEnabled 0
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D2348262D0503DF}" {
+         m_bEnabled 0
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB105275A42B}" {
+           m_bEnabled 0
+           m_eValidEditorModes EDIT
+          }
+          SCR_EntityCatalogSpawnerData "{5D24733149FB87D0}" {
+           m_bEnabled 0
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A5CD78830A}" {
+         m_bEnabled 0
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB1023178C31}" {
+           m_bEnabled 0
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826CBF8D6F7}" {
+         m_bEnabled 0
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB102AE08168}" {
+           m_bEnabled 0
+          }
+          SCR_EntityCatalogSpawnerData "{5D24732167BCE446}" {
+           m_bEnabled 0
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{60569780561141EC}" {
+         m_sEntityPrefab "{5674FAEB9AB7BDD0}Prefabs/Vehicles/Wheeled/M998/M998.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6056978059BDD0CC}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{6056978054CDBCDD}" {
+         m_sEntityPrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{60569780241590E8}" {
+           m_eValidEditorModes 33
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A5E34E23E1}" {
+         m_sEntityPrefab "{B55C6990A6A9411B}Prefabs/Vehicles/Wheeled/M998/M998_covered.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB103C4C8F1E}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826CAEE99CC}" {
+         m_sEntityPrefab "{AF0578D66D51946B}Prefabs/Vehicles/Wheeled/M998/M998_covered_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10385CEA01}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D24733150F3076E}" {
+           m_eSlotTypes 24
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A5FC332A75}" {
+         m_sEntityPrefab "{9B1BF9644E0378D6}Prefabs/Vehicles/Wheeled/M998/M998_covered_long.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB100012DBD2}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826C9B9A827}" {
+         m_sEntityPrefab "{751AFEEA19DDFB04}Prefabs/Vehicles/Wheeled/M998/M998_covered_long_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB100D69A39C}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D2473214050CF76}" {
+           m_eSlotTypes 24
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A5080B4108}" {
+         m_sEntityPrefab "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB101642EC08}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826C833965C}" {
+         m_sEntityPrefab "{27E2E58E734A80EC}Prefabs/Vehicles/Wheeled/M998/M1025_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB104AF90B9F}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D247333867A34BF}" {
+           m_eSlotTypes 24
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A51F263850}" {
+         m_sEntityPrefab "{00C9BBE426F7D459}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB1019C5DDFF}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D8951ED51D7359E}" {
+         m_sEntityPrefab "{3B1EB924602C7A07}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10E46BE097}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D8951ED2DD91FF2}" {
+           m_eSlotTypes 24
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A52C667A85}" {
+         m_sEntityPrefab "{F1FBD0972FA5FE09}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10EEE810B4}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826D775735C}" {
+         m_sEntityPrefab "{3F2AA823B6C65E1E}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10EC610460}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D24732153C66553}" {
+           m_eSlotTypes VEHICLE_MEDIUM
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A525B4AB0F}" {
+         m_sEntityPrefab "{81FDAD5EB644CC3D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10F69F36CE}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826D7E0C9A8}" {
+         m_sEntityPrefab "{04BDACC0BB83284E}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10F2AA2FD1}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D2473215D4EF21F}" {
+           m_eSlotTypes VEHICLE_MEDIUM
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A54E39C18C}" {
+         m_sEntityPrefab "{2BE1F8B9299B67C1}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10CE829778}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826D52D0504}" {
+         m_sEntityPrefab "{26013123314183EA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10CC72BB25}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D247321239625FB}" {
+           m_eSlotTypes VEHICLE_MEDIUM
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A545E912FC}" {
+         m_sEntityPrefab "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10D30F31FE}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D23482664F150D9}" {
+         m_sEntityPrefab "{38186F12F27A61C6}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10DE50FA41}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D2473212D8AA734}" {
+           m_eSlotTypes VEHICLE_MEDIUM
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A55E8A4C93}" {
+         m_sEntityPrefab "{1FF144F8A209239D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10D919A793}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5C76BEF2BF41FF08}" {
+         m_sEntityPrefab "{EA4819E0745DFAEA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10A52C97B3}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D247321D1EAF4A9}" {
+           m_eSlotTypes VEHICLE_MEDIUM
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A573358E03}" {
+         m_sEntityPrefab "{92264FF932676C13}Prefabs/Vehicles/Wheeled/M923A1/M923A1_ammo.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10AC5B3263}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A5756ED0D1}" {
+         m_sEntityPrefab "{EC657C9B3C73E192}Prefabs/Vehicles/Wheeled/M923A1/M923A1_ammo_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10A8B4101F}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A557B1F6E0}" {
+         m_sEntityPrefab "{A042ACE5C2B13206}Prefabs/Vehicles/Wheeled/M923A1/M923A1_repair.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10B66A7FCC}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5C76BEF2A52AEAA2}" {
+         m_sEntityPrefab "{C8656AECF5DF41D9}Prefabs/Vehicles/Wheeled/M923A1/M923A1_repair_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10B01C2163}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D2473219F11029A}" {
+           m_eSlotTypes VEHICLE_MEDIUM
+           m_aVariantData {
+            SCR_SpawnerVariantData "{5D895EB8B62A5D29}" {
+             m_sVariantPrefab "{C8656AECF5DF41D9}Prefabs/Vehicles/Wheeled/M923A1/M923A1_repair_MERDC.et"
+            }
+           }
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A53304A4F3}" {
+         m_sEntityPrefab "{2D74C39A650A3030}Prefabs/Vehicles/Wheeled/M923A1/M923A1_engineer.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10FB989E56}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826D6BF5CE8}" {
+         m_sEntityPrefab "{37A9871AD4CC9610}Prefabs/Vehicles/Wheeled/M923A1/M923A1_engineer_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10C4023CEF}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D24732158EDBD57}" {
+           m_eSlotTypes VEHICLE_MEDIUM
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A5D7AEAD02}" {
+         m_bEnabled 0
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB1037DBF3E7}" {
+           m_bEnabled 0
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826CA7617D2}" {
+         m_bEnabled 0
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB1033E0D5A8}" {
+           m_bEnabled 0
+          }
+          SCR_EntityCatalogSpawnerData "{5D2473217359F181}" {
+           m_bEnabled 0
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{605098A507386856}" {
+         m_sEntityPrefab "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB1010592092}" {
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{5D234826C8C740EF}" {
+         m_sEntityPrefab "{DD774A8FD0989A78}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB_MERDC.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB101C855C27}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D247321486AE512}" {
+           m_eSlotTypes 24
+          }
+         }
+        }
+       }
+      }
+      SCR_EntityCatalogMultiListEntry "{60569780DC27DDBC}" {
+       m_sIdentifier "Helicopters"
+       m_aEntities {
+        SCR_EntityCatalogEntry "{5D23482661E39833}" {
+         m_sEntityPrefab "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10BA6FF517}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D2473213748C772}" {
+           m_eSlotTypes VEHICLE_LARGE
+          }
+         }
+        }
+        SCR_EntityCatalogEntry "{60C3186FC18A1A22}" {
+         m_sEntityPrefab "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et"
+         m_aEntityDataList {
+          SCR_EntityCatalogEditorData "{6052BB10BA6FF517}" {
+           m_eValidEditorModes 33
+          }
+          SCR_EntityCatalogSpawnerData "{5D2473213748C772}" {
+           m_eSlotTypes VEHICLE_LARGE
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    SCR_EntityCatalogMultiList "{5C68A0EE8B97CA50}" : "{4E70E7C4C2C17D4A}Configs/EntityCatalog/US/Groups_EntityCatalog_US.conf" {
+    }
+    SCR_EntityCatalog "{5C68A0EEB7DB3E84}" : "{0E4B62F186F97C43}Configs/EntityCatalog/US/WeaponTripod_EntityCatalog_US.conf" {
+    }
+    SCR_EntityCatalogMultiList "{5C68A0EEB3F124F9}" : "{5F7EC52FC40A03E2}Configs/EntityCatalog/US/InventoryItems_EntityCatalog_US.conf" {
+    }
+    SCR_EntityCatalog "{5C9EDDD37394AD40}" : "{0BF36EFF9FFAF92B}Configs/EntityCatalog/US/SupplyContainerItems_EntityCatalog_US.conf" {
+    }
+   }
+  }
+  SCR_Faction "{56DEAC40D3C2E623}" {
+   m_bShowInWelcomeScreenIfNonPlayable 0
+   m_aFriendlyFactionsIds {
+    "FIA" "CIV"
+   }
+  }
+  SCR_Faction "{56DEAC40D132400B}" {
+   m_bShowInWelcomeScreenIfNonPlayable 0
+   m_aFriendlyFactionsIds {
+    "USSR" "CIV"
+   }
+  }
+  SCR_Faction "{607AA5C7A94496DA}" : "{3FA20B01D950D31F}Configs/Factions/CIV.conf" {
+   m_aFriendlyFactionsIds {
+   }
+  }
+ }
+}
+RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 6500 161.874 6500
+}
+SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
+ components {
+  SCR_CommunicationSoundComponent "{5A96D5C2D1670EEF}" {
+   Filenames {
+    "{91D53896F5AD5DB4}Sounds/RadioProtocol/RadioProtocol_CombatPatrol_US.acp"
+   }
+  }
+  SCR_CampaignBuildingManagerComponent "{626CA729FAAF5812}" {
+  }
+  SCR_CampaignBuildingPlacingObstructionEditorComponent "{6242C2903D61EC0B}" {
+   m_fEntityTiltWarning 90
+  }
+  SCR_CommandingManagerComponent "{61BCA25F87A587C7}" {
+  }
+  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+   m_aTaskTypesAvailable {
+    SCR_ScenarioFrameworkTaskType "{620CA9B790AFD17A}" {
+     m_eTypeOfTask CLEAR_AREA
+    }
+   }
+   m_iMaxNumberOfTasks 1
+   m_bDynamicDespawn 1
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   m_iPlayableGroupFrequencyOffset 1000
+   m_iPlayableGroupFrequencyMin 32000
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{5D36888CC966608A}" {
+    m_sForcedFaction "US"
+   }
+  }
+  SCR_TimeAndWeatherHandlerComponent "{617F33658A130F9F}" {
+   m_iStartingHours 0
+   m_bRandomStartingDaytime 1
+   m_iRangeHoursStart 0
+   m_iRangeHoursEnd 0
+   m_bRandomStartingWeather 1
+   m_bRandomWeatherChanges 1
+  }
+  SCR_WelcomeScreenComponent "{616901D691E3A1C0}" {
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{616901D6EF1B9492}" {
+    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{616901D6EB8CDB20}" {
+     m_sTitleText "MILITARY OPERATIONS for Reforger v1.2"
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{61691AEBBE63592C}" {
+       m_sContentImage "{6EB44A780AF7DDDF}UI/Textures/Map/worlds/EveronRasterized.edds"
+       m_sContentTitleText "READ ME"
+       m_sContentDescriptionText "Conduct Military Operations across Everon. "\
+       "You will be issued 1 Military Base Task, and 1 related task to that base. Additionally you will be assigned common tasks that do not require a military base to complete. "
+      }
+     }
+    }
+    m_MiddleColumn SCR_WelcomeScreenIntroductionContent "{616901D6E5B83DB5}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{61691AEB98CD8183}" {
+       m_sContentImage "{09B618A6D0DAAD38}UI/Textures/SplashScreen/EASplashScreen/SplashCaravan2x_UI.edds"
+       m_sContentDescriptionText "At the TAA"\
+       "- Determine vehicle requirements to move troops. "\
+       "- Deploy vehicles via TAA Vehicle Depot.  "\
+       "- Command Van and comm devices are objective rally points (ORPs)."
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenMissionObjectivesContent "{616901D6E79305F2}" {
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{61691AEAA45DA6D4}" {
+       m_sObjectiveQuadName "Intel"
+       m_sDescription "The main base gains access to armor vehicles. "
+      }
+      SCR_WelcomeScreenMissionObjectives "{61691AEB6E6771F8}" {
+       m_sObjectiveQuadName "Ressuply"
+       m_sDescription "The logistics base gains access to contruction and arsenal vehicles. "
+      }
+      SCR_WelcomeScreenMissionObjectives "{61691AEB753D0FB9}" {
+       m_sObjectiveQuadName "Reconfigure"
+       m_sDescription "The repair base gains access to repair, fuel, and meduim depot. "
+      }
+      SCR_WelcomeScreenMissionObjectives "{61691AEABF8C0480}" {
+       m_sObjectiveQuadName "GetOut"
+       m_sDescription "The air base gains access to rotary wing assets. "
+      }
+      SCR_WelcomeScreenMissionObjectives "{61691AEB2BDDC668}" {
+       m_sObjectiveQuadName "Heal"
+       m_sDescription "The hospital base gains access to medical assets. "
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 6500 161.874 6500
+ m_bAutoPlayerRespawn 0
+ m_bAllowFactionChange 0
+ m_bAdvanceTimeRequiresPlayers 0
+}
+ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 6500 161.874 6500
+ Channels {
+  LocalChatChannel "{559077E6A85B7EEE}" {
+   m_fMaxDistance 50
+  }
+ }
+}
+SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/Tasks/TaskManager.et" {
+ coords 6500 161.874 6500
+ {
+  CommentEntity {
+   m_Comment "TaskManager: "\
+   "Needed for task generation"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+  SCR_ScenarioFrameworkTaskClearAreaSupportEntity {
+   ID "5A96783D483C9642"
+   coords 0 0 0
+  }
+  SCR_ScenarioFrameworkTaskDefendSupportEntity {
+   ID "5E38B27D6204EDC7"
+   coords 0 0 0
+  }
+  SCR_ScenarioFrameworkTaskDeliverSupportEntity {
+   ID "5A96783D483C9644"
+   coords 0 0 0
+  }
+  SCR_ScenarioFrameworkTaskDestroySupportEntity {
+   ID "5A96783D483C61C4"
+   coords 0 0 0
+  }
+  SCR_ScenarioFrameworkTaskExtractSupportEntity {
+   ID "5A96783D483C61C5"
+   coords 0 0 0
+  }
+  SCR_ScenarioFrameworkTaskKillSupportEntity {
+   ID "5E38B27D9A1E8ABC"
+   coords 0 0 0
+  }
+  SCR_ScenarioFrameworkTaskSupportEntity {
+   ID "5A96783D483C25E4"
+   coords 0 0 0
+  }
+ }
+}
+SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ coords 6500 161.875 6500
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{6168EB002B859394}" {
+   m_sLoadoutName "Special Forces Leader"
+   m_sLoadoutResource "{85261D5B04BFA7EE}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_SL.et"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61C4B4F16503239C}" {
+   m_sLoadoutName "Special Forces Grenadier"
+   m_sLoadoutResource "{C110498284A5418F}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_GL.et"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61C4B4F16A7E8613}" {
+   m_sLoadoutName "Special Forces Autorifleman"
+   m_sLoadoutResource "{6E1E87ECA5F5A7EA}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_LMG.et"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61C4B4F166B518F8}" {
+   m_sLoadoutName "Special Forces Engineer"
+   m_sLoadoutResource "{FCA76613163633F8}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_Sapper.et"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61C4B4F167E04E32}" {
+   m_sLoadoutName "Special Forces Marksman"
+   m_sLoadoutResource "{ADC2DE949F566202}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_Sharpshooter.et"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61C4B4F161A0C41A}" {
+   m_sLoadoutName "Special Forces Medic"
+   m_sLoadoutResource "{9A234C5857D92187}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_Medic.et"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61C4B4F13E064C39}" {
+   m_sLoadoutName "Special Forces Radio Operator"
+   m_sLoadoutResource "{5228D8F587B5EEDC}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_RTO.et"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_PlayerArsenalLoadout "{61E1488A338FEF54}" {
+   m_sLoadoutName "Saved Loadout"
+   m_sLoadoutResource "{BE7CA93E188A5B58}Prefabs/Characters/Campaign/Final/Campaign_US_Base.et"
+   m_sAffiliatedFaction "US"
+  }
+ }
+}

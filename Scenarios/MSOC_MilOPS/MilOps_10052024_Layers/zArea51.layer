@@ -1,0 +1,197 @@
+GenericEntity : "{190CC54D175F52CB}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_10ft.et" {
+ coords 1119.802 41.719 11521.695
+ angleX 5.202
+ angleY -0.897
+ angleZ -9.793
+}
+GenericEntity Area3 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 4792.53 20.552 9474.972
+ {
+  GenericEntity HQ_BLUFOR : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   coords 2712.974 145.198 -5194.268
+   {
+    $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+     Slot97 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et"
+       }
+      }
+      coords 69.002 1.094 46.46
+      angleY -160.106
+     }
+     Slot116 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et"
+       }
+      }
+      coords 73.46 1.094 44.844
+      angleY -163.203
+     }
+     Slot117 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et"
+       }
+      }
+      coords 78.297 1.094 43.365
+      angleY -163.659
+     }
+     Slot145 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et"
+       }
+      }
+      coords 82.805 1.041 41.945
+      angleX -0.84
+      angleY -159.766
+      angleZ -0.31
+     }
+     Slot180 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et"
+       }
+      }
+      coords 87.348 0.976 40.532
+      angleX -0.84
+      angleY -159.766
+      angleZ -0.31
+     }
+     Slot181 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et"
+       }
+      }
+      coords 92.166 0.96 39.205
+      angleX -0.873
+      angleY -167.167
+      angleZ -0.199
+     }
+     Slot54 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{5FFD91CF507BFFFB}Prefabs/Props/Military/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Ammunition_US.et"
+       }
+      }
+      coords 77.691 1.228 29.648
+      angleX -0.212
+      angleY 11.666
+      angleZ -0.061
+     }
+     Slot182 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{43E4371F76A8706A}PrefabLibrary/Props/Industrial/Pallet_01.et"
+       }
+      }
+      coords 77.642 1.093 29.333
+      angleY 11.016
+     }
+     Slot184 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{5FFD91CF507BFFFB}Prefabs/Props/Military/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Ammunition_US.et"
+       }
+      }
+      coords 77.567 1.218 29.017
+      angleX 0.215
+      angleY -170.669
+      angleZ 0.052
+     }
+     Slot900 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{45DDFA40E1CB6B82}Prefabs/Vehicles/Wheeled/Stryker/Stryker_Dragoon.et"
+        m_bRandomizePerFaction 1
+        m_eEntityCatalogType VEHICLE
+        m_aIncludedEditableEntityLabels {
+         53
+        }
+       }
+      }
+      coords 97.499 1.008 10.848
+      angleY 14.425
+     }
+     Slot901 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{45DDFA40E1CB6B82}Prefabs/Vehicles/Wheeled/Stryker/Stryker_Dragoon.et"
+        m_bRandomizePerFaction 1
+        m_eEntityCatalogType VEHICLE
+        m_aIncludedEditableEntityLabels {
+         53
+        }
+       }
+      }
+      coords 88.244 1.067 13.371
+      angleY 14.425
+     }
+     Slot903 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{45DDFA40E1CB6B82}Prefabs/Vehicles/Wheeled/Stryker/Stryker_Dragoon.et"
+        m_bRandomizePerFaction 1
+        m_eEntityCatalogType VEHICLE
+        m_aIncludedEditableEntityLabels {
+         53
+        }
+       }
+      }
+      coords 79.139 1.085 16.29
+      angleY 14.425
+     }
+     Slot904 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{45DDFA40E1CB6B82}Prefabs/Vehicles/Wheeled/Stryker/Stryker_Dragoon.et"
+        m_bRandomizePerFaction 1
+        m_eEntityCatalogType VEHICLE
+        m_aIncludedEditableEntityLabels {
+         53
+        }
+       }
+      }
+      coords 69.935 1.094 19.495
+      angleY 14.425
+     }
+     Slot905 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{45DDFA40E1CB6B82}Prefabs/Vehicles/Wheeled/Stryker/Stryker_Dragoon.et"
+        m_bRandomizePerFaction 1
+        m_eEntityCatalogType VEHICLE
+        m_aIncludedEditableEntityLabels {
+         53
+        }
+       }
+      }
+      coords 60.941 1.094 21.903
+      angleY 14.425
+     }
+    }
+    GenericEntity SlotMarker16 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
+     components {
+      SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+       m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{61B28498BBAF0724}" {
+        m_sMapMarkerText "CAMP HOOD"
+        m_eMapMarkerDimension INSTALLATION
+        m_eMapMarkerType1Modifier ARMOR
+        m_eMapMarkerType2Modifier ARMOR
+       }
+      }
+     }
+     coords 77.36 1.094 29.682
+    }
+   }
+  }
+ }
+}

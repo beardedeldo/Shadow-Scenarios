@@ -1,0 +1,22 @@
+GameProject {
+ ID "NCHiHiChapterOne"
+ GUID "62A1520761A67979"
+ TITLE "NC_HiHi_ChapterOne"
+ Dependencies {
+  "61EAF5D776D87D38" "595F2BF2F44836FB" "61E55A29FEE0B919"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

@@ -1,0 +1,196 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  FactionAffiliationComponent "{62A2FC9DD0C74F15}" {
+   "faction affiliation" "US"
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{E348F0867AB83F77}Assets/Structures/BuildingsParts/Misc/TvAntenna_02.xob"
+  }
+  PerceivableComponent "{62A2FC9DD0C74F1F}" {
+   Enabled 0
+   "Additional aim points" {
+    AimPoint "{62A2FC9DD0C74F24}" {
+     AimPointPosition PointInfo "{62A2FC9DD0C74F26}" {
+      Offset 0 0.2119 0
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.25
+    }
+   }
+   IlluminationLvPerLight 4
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Mass 20
+   CenterOfMass 0 0.5 0
+   ResponseIndex "MediumDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DeployableInventoryItemReplacementComponent "{62A2FC9DD0C74F2B}" {
+   m_vItemPosition PointInfo "{62A2FC9DD0C74F2C}" {
+    Offset -0.0244 0 0.4294
+   }
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" : "{76DA308CC9E2AB84}Prefabs/Props/Core/DestructionMultiPhase_Base.ct" {
+   Enabled 1
+   "Additional hit zones" {
+    SCR_HitZone Default {
+     MaxHealth 10000
+    }
+   }
+   m_fBaseHealth 500
+   m_eMaterialSoundType BREAK_MATRESS
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+   "Rpl State Override" Runtime
+  }
+  Hierarchy "{62A2FC9DD0C74F38}" {
+  }
+ }
+ coords -0.064 0 0
+ {
+  GameEntity {
+   ID "62A2FC9DD0C61EAC"
+   components {
+    MeshObject "{62A2FC9DD0C74F3A}" {
+     Enabled 0
+     Object ""
+    }
+   }
+   coords -0.573 0.041 -0.011
+   angleX 4.346
+   angleY 72.229
+   angleZ -92.467
+  }
+  $grp GenericEntity {
+   {
+    ID "62A2FC9DD0C61EAD"
+    components {
+     MeshObject "{62A2FC9DD0C74F3E}" {
+      Object "{C1BFD239F9A10AF5}Assets/Items/Equipment/Compass/Compass_SY183/Compass_SY183.xob"
+     }
+     Hierarchy "{62A2FC9DD0C74FC1}" {
+     }
+    }
+    coords -0.486 0.017 0.319
+    angleY 84.634
+   }
+   {
+    ID "62A2FC9DD0C6B124"
+    components {
+     MeshObject "{62A2FC9DD0C74FCC}" {
+      Enabled 0
+     }
+     Hierarchy "{62A2FC9DD0C74FCE}" {
+     }
+    }
+    coords -0.578 0.026 0.157
+    angleX 80.179
+    angleY 175.6
+    angleZ -90
+   }
+   {
+    ID "62A2FC9DD0C6ED45"
+    components {
+     MeshObject "{62A2FC9DD0C74FC9}" {
+      Object "{8371BD0DC3367F75}Assets/Items/Equipment/Radios/Radio_RF10/Radio_RF10_01_item.xob"
+     }
+     Hierarchy "{62A2FC9DD0C74FCB}" {
+     }
+    }
+    coords -0.355 -0.007 -0.285
+    angleY 159.89
+   }
+   {
+    ID "62A2FC9DD0C6ED4A"
+    components {
+     MeshObject "{62A2FC9DD0C74FC3}" {
+      Object "{F8D670EE27974340}Assets/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.xob"
+     }
+     Hierarchy "{62A2FC9DD0C74FC7}" {
+     }
+    }
+    coords -0.573 0.041 -0.011
+    angleX 4.346
+    angleY 72.229
+    angleZ -92.467
+   }
+   {
+    ID "62A2FC9DD0C74F08"
+    components {
+     MeshObject "{62A2FC9DD0C74FD0}" {
+      Object "{BDB7E0B5CEA16D85}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_title.xob"
+     }
+     Hierarchy "{62A2FC9DD0C74FD2}" {
+     }
+    }
+    coords -0.445 0 0.267
+    angleY -80.006
+   }
+   {
+    ID "62A2FC9DD0C74F09"
+    components {
+     MeshObject "{62A2FC9DD0C74FD3}" {
+     }
+     Hierarchy "{62A2FC9DD0C74FD5}" {
+     }
+    }
+    coords -0.225 0 0.293
+    angleY -120.895
+   }
+  }
+  GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
+   ID "62A2FC9DD0C74F0E"
+   components {
+    InventoryItemComponent "{5222EB4D0C73006B}" {
+     Enabled 0
+    }
+    MeshObject "{51F66EC3C5BC700D}" {
+     Enabled 0
+     Object ""
+    }
+    ActionsManagerComponent "{508AB5952B584B2E}" {
+     Enabled 0
+    }
+   }
+   coords -0.367 0.014 -0.144
+   angleX -90
+   angleY 180
+   angleZ 116.427
+   Flags 2
+  }
+  GenericEntity : "{CDCC313B2FB76FE7}Prefabs/Items/Medicine/FieldDressing_01/Gauze_01.et" {
+   ID "62A2FC9DD0C74F10"
+   components {
+    InventoryItemComponent "{5222EB4D0C73006B}" {
+     Enabled 0
+    }
+    MeshObject "{51F66EC3C5BC700D}" {
+     Enabled 0
+     Object ""
+    }
+    RigidBody "{51F66EC3C5BC7033}" {
+     Enabled 0
+    }
+    SCR_ConsumableItemComponent "{5943631460899505}" {
+     Enabled 0
+    }
+    SCR_SoundDataComponent "{5B18D20ED0099A17}" {
+     Enabled 0
+    }
+    ActionsManagerComponent "{508AB5952B584B2E}" {
+     Enabled 0
+    }
+    RplComponent "{508AB59531D748C9}" {
+     Enabled 0
+    }
+   }
+   coords -0.387 -0.014 -0.065
+   angleY -28.127
+   Flags 2
+  }
+ }
+}

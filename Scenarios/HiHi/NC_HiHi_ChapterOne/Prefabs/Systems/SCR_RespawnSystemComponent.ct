@@ -1,0 +1,4 @@
+SCR_RespawnSystemComponent {
+ m_SpawnLogic SCR_MenuSpawnLogic "{62A36A848761A322}" {
+ }
+}

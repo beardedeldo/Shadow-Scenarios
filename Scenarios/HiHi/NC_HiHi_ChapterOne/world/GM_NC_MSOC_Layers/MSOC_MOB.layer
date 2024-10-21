@@ -6,7 +6,7 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
     coords -19.797 -2.408 -125.949
     {
      GenericEntity : "{060E70051177F302}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_Barracks_US_02.et" {
-      coords 53.987 2.592 114.585
+      coords 53.987 2.867 114.585
       angleY 90.528
      }
      GenericEntity SH_MOB_props_briefing_tent_0 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -238,11 +238,11 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
       angleY -164.775
      }
      GenericEntity : "{F09296B9255F6704}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_CommandPost_US_01.et" {
-      coords 57.864 3.68 96.47
+      coords 57.864 3.904 96.47
       angleY 70.661
      }
      StaticModelEntity : "{F1C5F8E2EF1105F9}Prefabs/Compositions/Misc/SubCompositions/Tent_HQ_Camo_Cluttered_US_01.et" {
-      coords 55.743 2.928 105.465
+      coords 55.743 3.187 105.465
       angleY -105.703
       {
        GenericEntity {
@@ -1031,13 +1031,25 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        {
         GenericEntity {
          ID "5D1EB45BA40E2740"
-         coords -0.941 -1.581 -14.503
+         coords -0.955 -0.458 -14.5
          angleY 177.42
+         {
+          GenericEntity {
+           ID "5A26B380A8E7BDB9"
+           coords -0.005 -0.002 0.064
+          }
+         }
         }
         GenericEntity {
          ID "5D1EB45BA40E2783"
-         coords -0.792 -2.568 -20.506
+         coords -0.815 -0.699 -20.502
          angleY 170.004
+         {
+          GenericEntity {
+           ID "5A26B380A8E7BDB9"
+           coords -0.003 -0.004 0.064
+          }
+         }
         }
         GenericEntity {
          ID "5D1EB45BA40E2798"
@@ -1056,8 +1068,14 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
         }
         GenericEntity {
          ID "5D1EB45BA40E27DF"
-         coords -0.823 -1.104 -11.502
+         coords -0.832 -0.336 -11.5
          angleY 4.578
+         {
+          GenericEntity {
+           ID "5A26B380A8E7BDB9"
+           coords 0.004 0.003 0.063
+          }
+         }
         }
         GenericEntity {
          ID "5D1EB45BA40E27F7"
@@ -1433,9 +1451,125 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
       coords -2.473 -0.015 0.37
       angleY 17.477
       m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
-       Name "Shadow Division MOB"
+       Name "MSOC FOB"
       }
-      m_bSpawnPointEnabled 0
+     }
+     GenericEntity Deployable_tents : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 0 0
+      {
+       $grp GenericEntity : "{9D4607422CBA0335}Prefabs/Items/Equipment/Tents/Tent_Deployable_Base.et" {
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -17.182 0.321 -6.514
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -18.953 0.342 -9.321
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -19.905 0.472 -8.299
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -17.244 0.336 -7.713
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -18.487 0.311 -6.662
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -17.416 0.347 -8.685
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -18.249 0.326 -7.653
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -20.106 0.274 -6.237
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -19.798 0.304 -7.211
+         angleY -33.487
+        }
+        {
+         components {
+          SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+           m_sReplacementPrefab "{B16ECE2CE1C0E176}Prefabs/Systems/DeployableRadios/DeployableSpawnPointTent.et"
+           m_FactionKey "US"
+           m_iMaxSpawnPointsPerGroup 2
+          }
+         }
+         coords -18.628 0.276 -5.329
+         angleY -33.487
+        }
+       }
+      }
      }
     }
    }

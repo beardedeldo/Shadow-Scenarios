@@ -5404,7 +5404,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_bDynamicDespawn 1
    }
   }
-  coords 7450.581 7.876 6726.717
+  coords 4518.391 11.156 8830.551
   {
    GenericEntity REP_BLUFOR : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
@@ -5422,8 +5422,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_bShowDebugShapesInWorkbench 0
         }
        }
-       coords -51.834 1.812 -8.286
-       angleY 125.893
+       coords -5.842 0.238 30.448
+       angleY -175.789
       }
       Slot33 {
        components {
@@ -5432,8 +5432,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_bShowDebugShapesInWorkbench 0
         }
        }
-       coords -44.304 1.813 1.438
-       angleY 125.893
+       coords 18.253 0.238 28.85
+       angleY -174.158
       }
       Slot32 {
        components {
@@ -5442,8 +5442,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_bShowDebugShapesInWorkbench 0
         }
        }
-       coords 24.805 -0.06 -21.962
-       angleY -25.353
+       coords -7.595 0.001 11.226
+       angleY 113.244
       }
       Slot68 {
        components {
@@ -5452,8 +5452,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_bShowDebugShapesInWorkbench 0
         }
        }
-       coords -26.831 1.812 26.374
-       angleY 125.893
+       coords 22.914 0.238 28.104
+       angleY -174.063
       }
      }
      GenericEntity SlotMarker18 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
@@ -5467,7 +5467,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
-      coords 0 0 0
+      coords 0.586 0 0
      }
     }
    }
@@ -5496,10 +5496,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
-      coords -296.949 86.587 -41.428
-      angleX -10.455
-      angleY 87.436
-      angleZ 3.984
+      coords -244.695 -0.58 -406.032
+      angleX 11.161
+      angleY -68.117
+      angleZ 0.669
      }
      $grp GenericEntity : "{FCE82B7F21949782}Prefabs/ScenarioFramework/Compositions/QRFSpawnpoint.et" {
       QRFSpawnpoint91 {
@@ -5518,10 +5518,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 123.779 -5.492 4.136
-       angleX 1.048
-       angleY -79.164
-       angleZ -0.711
+       coords -140.535 29.844 738.987
+       angleX -1.145
+       angleY 160.247
+       angleZ -0.54
       }
       QRFSpawnpoint92 {
        components {
@@ -5539,7 +5539,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -60.886 0.576 -247.248
+       coords 500.014 3.257 400.117
        angleX -2.31
        angleY 20.902
        angleZ 1.033
@@ -5560,10 +5560,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -11.942 -6.302 133.116
-       angleX 20.392
-       angleY 169.696
-       angleZ -2.775
+       coords -137.267 14.341 -478.59
+       angleX 0.193
+       angleY -18.758
+       angleZ -3.924
       }
      }
     }
@@ -5586,6 +5586,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     coords 0 0 0
+    angleY 3.73
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
       REP_REDFOR {
@@ -5607,8 +5608,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 85.22 5.361 23.203
-          angleY 131.495
+          coords 21.156 0 17.259
+          angleY -160.021
          }
          {
           components {
@@ -5625,8 +5626,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -6.731 9.716 91.515
-          angleY -49.485
+          coords -28.555 0 3.012
+          angleY 5.036
          }
          {
           components {
@@ -5643,8 +5644,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -16.122 7.464 -41.457
-          angleY -73.651
+          coords 42.298 0 -14.829
+          angleY -85.322
          }
          {
           components {
@@ -5661,7 +5662,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 10.236 0.117 40.021
+          coords 10.236 0.117 40.682
          }
          {
           components {
@@ -5678,7 +5679,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 17.1 0.117 34.68
+          coords -18.344 0.237 29.354
+          angleY -177.048
          }
          {
           components {
@@ -5695,7 +5697,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 11.072 0.117 44.442
+          coords 44.193 0.117 40.28
+          angleY 176.697
          }
          {
           components {
@@ -5712,7 +5715,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 18.518 0.117 52.524
+          coords 38.285 1.009 -70.494
+          angleY -173.615
          }
          {
           components {
@@ -5729,7 +5733,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 24.376 0.117 43.254
+          coords 32.894 0 41.683
+          angleY -172.854
          }
          {
           components {
@@ -5746,7 +5751,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 46.904 -0.782 31.632
+          coords 41.946 0 13.594
+          angleY -97.749
          }
          {
           components {
@@ -5763,7 +5769,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 39.772 -0.782 35.288
+          coords -25.161 0.019 -31.869
+          angleY 177.363
          }
          {
           components {
@@ -5780,7 +5787,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 40.665 -0.782 22.882
+          coords 30.612 0.945 -66.404
          }
          {
           components {
@@ -5797,7 +5804,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 33.005 -0.782 28.76
+          coords 5.561 -0.035 -28.638
+          angleY 84.793
          }
          {
           components {
@@ -5814,7 +5822,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 30.822 -0.782 23.913
+          coords 27.295 0 25.28
+          angleY 158.386
          }
          {
           components {
@@ -5831,7 +5840,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 35.866 -0.782 18.322
+          coords -20.215 0 -2.836
          }
          {
           components {
@@ -5848,7 +5857,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords 38.865 -0.782 27.98
+          coords -39.46 0 8.638
+          angleY 54.946
          }
          {
           components {
@@ -5865,7 +5875,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -11.591 4.265 -39.272
+          coords -48.983 0.015 9.222
+          angleY -128.139
          }
          {
           components {
@@ -5882,7 +5893,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -12.234 4.477 -39.864
+          coords -35.074 0 -31.289
           angleY 152.403
          }
          SlotAI61 {
@@ -5900,7 +5911,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -6.152 4.265 -39.163
+          coords -2.761 0 -22.415
+          angleY 10.636
          }
          {
           components {
@@ -5917,7 +5929,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -13.695 1.42 -45.326
+          coords 47.265 0.533 -48.334
+          angleY -155.214
          }
          {
           components {
@@ -5934,7 +5947,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -6.683 1.064 -42.836
+          coords -6.683 15.178 -86.961
+          angleY 136.978
          }
         }
        }

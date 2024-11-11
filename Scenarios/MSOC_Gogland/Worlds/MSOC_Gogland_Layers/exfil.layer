@@ -3,10 +3,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_iRandomPercent 100
-    m_iDynamicDespawnRange 125
+    m_fAreaRadius 100
+    m_iDynamicDespawnRange 100
+    m_bShowDebugShapesInWorkbench 1
    }
   }
-  coords 4613.386 25.688 11168.682
+  coords 2128.433 4.596 1848.211
   {
    GenericEntity EOSTask1 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
     components {
@@ -153,10 +155,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  EOSArea2 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 25
     m_iDynamicDespawnRange 125
+    m_bShowDebugShapesInWorkbench 1
    }
   }
-  coords 12080.647 32.51 1850.293
+  coords 6108.147 7.873 1515.4
   {
    GenericEntity EOSTask2 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
     components {
@@ -268,10 +272,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  EOSArea3 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 25
     m_iDynamicDespawnRange 125
+    m_bShowDebugShapesInWorkbench 1
    }
   }
-  coords 1267.716 52.061 6303.254
+  coords 4630.989 5.679 10978.668
   {
    GenericEntity EOSTask3 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
     components {

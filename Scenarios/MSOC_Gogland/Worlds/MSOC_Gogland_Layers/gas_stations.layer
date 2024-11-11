@@ -7,8 +7,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_iDynamicDespawnRange 300
    }
   }
-  coords 4432.093 1.594 11134.941
-  angleY 178.016
+  coords 7196.976 4.88 5303.908
+  angleY -177.33
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Layer128 {
@@ -21,7 +21,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
         }
        }
-       coords 0 0 0
+       coords 0 0 -0.169
       }
      }
     }
@@ -39,7 +39,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_iDynamicDespawnRange 300
    }
   }
-  coords 4280.762 2.033 10710.153
+  coords 5168.844 7.955 9069.803
   angleX -0.146
   angleY 145.55
   angleZ 7.654

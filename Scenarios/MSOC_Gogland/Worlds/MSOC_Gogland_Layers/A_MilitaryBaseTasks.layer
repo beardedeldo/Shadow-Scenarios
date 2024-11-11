@@ -4276,7 +4276,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords 32.572 0.095 -5.806
+        coords 130.408 -0.188 -70.904
         angleY -85.219
        }
        {
@@ -4286,7 +4286,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords 21.533 0.095 7.274
+        coords 119.37 0.053 -57.824
         angleY -35.476
        }
        {
@@ -4296,7 +4296,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords 33.083 1.148 3.417
+        coords 130.919 0.053 -61.681
         angleX -1.144
         angleY -107.93
         angleZ 0.317
@@ -4313,7 +4313,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 0 0 0
+       coords 97.836 0.164 -65.098
       }
      }
     }
@@ -4623,7 +4623,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4634,14 +4634,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -24.312 0.307 -8.799
+          coords -21.267 0.307 -7.646
           angleY -178.334
          }
          {
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4652,14 +4652,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -24.312 0.307 -8.799
+          coords -23.011 0.007 -6.275
           angleY 10.553
          }
          {
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4677,7 +4677,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4694,7 +4694,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4711,7 +4711,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4728,7 +4728,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4745,7 +4745,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4762,7 +4762,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4779,7 +4779,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4790,13 +4790,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_fPerceptionFactor 25
            }
           }
-          coords -24.312 0.307 -8.799
+          coords -21.066 0.307 -10.907
          }
          SlotAI608 {
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4813,7 +4813,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4830,7 +4830,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4847,7 +4847,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4864,7 +4864,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4881,7 +4881,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4899,7 +4899,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4917,7 +4917,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {
@@ -4937,7 +4937,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sFactionKey "USSR"
-            m_sObjectToSpawn "{7DE1CBA32A0225EB}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Randomized.et"
+            m_sObjectToSpawn "{98F5A79FC694BFC7}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO_Summer/RandomSoldiers/Character_RHS_RF_MSV_VKPO_S_AAT_Random.et"
             m_bRandomizePerFaction 1
             m_eEntityCatalogType CHARACTER
             m_aIncludedEditableEntityLabels {

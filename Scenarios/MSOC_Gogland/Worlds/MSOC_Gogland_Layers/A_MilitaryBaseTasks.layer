@@ -2747,7 +2747,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
         }
-        coords -136.978 -3.811 -48.091
+        coords -106.225 -36.31 7.759
        }
        SlotWaypoint200 {
         components {
@@ -2756,7 +2756,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
         }
-        coords 132.691 1.002 -1.186
+        coords 34.168 0.856 -67.224
        }
       }
      }
@@ -2777,8 +2777,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords -161.132 -3.372 -77.174
-        angleY -130.885
+        coords 12.845 0.999 -0.076
+        angleY 126.686
        }
        Slot28 {
         components {
@@ -2787,10 +2787,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords -126.625 -3.404 -56.083
-        angleX -1.701
-        angleY -39.319
-        angleZ -2.076
+        coords -0.415 -0.283 -21.107
+        angleX 2.538
+        angleY 71.003
+        angleZ -0.873
        }
        Slot29 {
         components {
@@ -2799,8 +2799,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords -173.302 -2.936 -60.587
-        angleY 141.158
+        coords 9.19 0.649 -5.773
+        angleY 120.479
        }
        Slot35 {
         components {
@@ -2809,8 +2809,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords -197.793 -2.123 -69.704
-        angleY 53.187
+        coords 13.467 1.139 14.791
+        angleY -133.624
        }
        Slot31 {
         components {
@@ -2819,8 +2819,26 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bShowDebugShapesInWorkbench 0
          }
         }
-        coords -194.381 -2.154 -73.644
-        angleY 49.471
+        coords 21.819 1.346 18.513
+        angleY -133.24
+       }
+       Slot271 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{190CC54D175F52CB}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_10ft.et"
+         }
+        }
+        coords 2.71 0.659 3.778
+        angleY -3.014
+       }
+       Slot272 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{190CC54D175F52CB}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_10ft.et"
+         }
+        }
+        coords 1.452 0.314 -0.662
+        angleY -5.655
        }
       }
       GenericEntity SlotMarker17 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
@@ -2834,7 +2852,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 0 0 0
+       coords -22.329 -1.522 -11.544
       }
      }
     }

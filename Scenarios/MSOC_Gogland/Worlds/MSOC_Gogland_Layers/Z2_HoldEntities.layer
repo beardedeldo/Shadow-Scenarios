@@ -10499,6 +10499,662 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
    }
   }
  }
+ ERQUY_REDFOR_STATIC {
+  components {
+   SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+    Enabled 0
+    m_iRandomPercent 50
+   }
+  }
+  coords 9092.3 5.128 10684.312
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    Layer19 {
+     coords 134.525 -2.087 -34.671
+     {
+      GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+             m_iInvestigationDistance 1
+            }
+            SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
+            }
+           }
+          }
+         }
+         m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+         m_eAICombatType SUPPRESSIVE
+         m_fPerceptionFactor 25
+        }
+       }
+       coords -0.499 0.142 0.695
+       angleY 143.21
+      }
+      GenericEntity Slot34 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{16148BF23770F1D3}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_02.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 90
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX -0.468
+       angleY 148.448
+       angleZ -0.763
+      }
+     }
+    }
+    Layer21 {
+     coords 61.808 -1.387 -86.576
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+             SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_eAICombatType SUPPRESSIVE
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 2.283 0.159 1.602
+        angleY 124.848
+       }
+       SlotAI426 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+             SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 0.133 -0.004 -0.908
+        angleY 124.848
+       }
+      }
+      GenericEntity Slot36 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{7C85836D444E3797}Prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          93 94
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleY 126.122
+      }
+     }
+    }
+    Layer23 {
+     coords 31.336 -2.956 -118.619
+     {
+      GenericEntity SlotAI410 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+             m_iInvestigationDistance 1
+            }
+            SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
+            }
+           }
+          }
+         }
+         m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType CHARACTER
+         m_aIncludedEditableEntityLabels {
+          40 41 46 45 47 49
+         }
+         m_bIncludeOnlySelectedLabels 1
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+         m_eAICombatType SUPPRESSIVE
+         m_fPerceptionFactor 25
+        }
+       }
+       coords -0.448 0.08 0.488
+       angleY 137.143
+      }
+      GenericEntity Slot37 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{16148BF23770F1D3}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_02.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 28 90
+         }
+         m_bIncludeOnlySelectedLabels 1
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX -0.397
+       angleY 141.002
+       angleZ 3.772
+      }
+     }
+    }
+    Layer25 {
+     coords 203.077 -7.696 112.173
+     {
+      GenericEntity SlotAI411 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+             m_iInvestigationDistance 1
+            }
+            SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
+            }
+           }
+          }
+         }
+         m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType CHARACTER
+         m_aIncludedEditableEntityLabels {
+          40 41 46 45 47 49
+         }
+         m_bIncludeOnlySelectedLabels 1
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+         m_eAICombatType SUPPRESSIVE
+         m_fPerceptionFactor 25
+        }
+       }
+       coords -0.636 0.246 0.436
+       angleY 124.848
+      }
+      GenericEntity Slot38 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{16148BF23770F1D3}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_02.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 90
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX 0.027
+       angleY 124.165
+       angleZ -3.224
+      }
+     }
+    }
+    Layer26 {
+     coords 177.315 -2.804 -8.202
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI418 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 0.945 -0.049 1.864
+        angleY 116.057
+       }
+       SlotAI419 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -0.735 0.04 -1.395
+        angleY 110.463
+       }
+      }
+      GenericEntity Slot41 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{8E1DF47DD56E69E6}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_01.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 90
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX -0.589
+       angleY 113.177
+       angleZ -3.17
+      }
+     }
+    }
+    Layer27 {
+     coords 95.31 -2.352 -61.055
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI420 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 1.227 0.303 1.422
+        angleY 136.926
+       }
+       SlotAI421 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -1.507 0.392 -1.024
+        angleY 131.332
+       }
+      }
+      GenericEntity Slot42 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{3AE1A95C1023F894}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_04.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 90
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX 0.474
+       angleY 132.13
+       angleZ -3.189
+      }
+     }
+    }
+    Layer28 {
+     coords 184.636 -5.915 64.587
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI416 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -0.033 0.038 -1.026
+        angleY 92.434
+       }
+       SlotAI417 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 1.083 -0.034 0.583
+        angleY 132.006
+       }
+      }
+      GenericEntity Slot43 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{3AE1A95C1023F894}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_04.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 90
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX -0.842
+       angleY 108.552
+       angleZ -3.112
+      }
+     }
+    }
+    Layer29 {
+     coords 189.607 -11.187 231.793
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI414 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 0.22 -0.091 1.499
+        angleY 70.289
+       }
+       SlotAI415 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 0.496 0.163 -1.828
+        angleY 70.289
+       }
+      }
+      GenericEntity Slot46 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{3AE1A95C1023F894}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_04.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 90
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX -2.106
+       angleY 82.929
+       angleZ -2.442
+      }
+     }
+    }
+    Layer30 {
+     coords 26.599 -12.781 365.334
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI412 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -1.307 0.289 1.463
+        angleY 70.289
+       }
+       SlotAI413 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
+              m_iInvestigationDistance 1
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 46 45 47 49
+          }
+          m_bIncludeOnlySelectedLabels 1
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -0.108 -0.026 -1.717
+        angleY 70.289
+       }
+      }
+      GenericEntity Slot47 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sFactionKey "USSR"
+         m_sObjectToSpawn "{07D58C64654F71A3}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType COMPOSITION
+         m_aIncludedEditableEntityLabels {
+          5 90
+         }
+         m_bShowDebugShapesInWorkbench 0
+        }
+       }
+       coords 0 0 0
+       angleX -2.536
+       angleY 71.834
+       angleZ -1.991
+      }
+     }
+    }
+   }
+  }
+ }
 }
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  MilitaryTrafficSystem {

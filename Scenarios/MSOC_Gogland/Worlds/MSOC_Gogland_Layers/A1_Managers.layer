@@ -31,7 +31,12 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
    m_fTourniquetStrengthMultiplier 0.9
   }
   SCR_GameModeSFManager "{5A96783ABCA252AE}" {
-   m_iMaxNumberOfTasks 6
+   m_aTaskTypesAvailable {
+    SCR_ScenarioFrameworkTaskType "{62F028FA68342FAA}" {
+     m_eTypeOfTask CLEAR_AREA
+    }
+   }
+   m_iMaxNumberOfTasks 1
   }
   SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
    m_SpawnLogic SCR_MenuSpawnLogic "{5D36888CC966608A}" {

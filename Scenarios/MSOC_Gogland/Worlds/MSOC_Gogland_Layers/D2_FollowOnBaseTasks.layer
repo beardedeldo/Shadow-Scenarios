@@ -237,7 +237,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
          angleZ -5.366
          {
           GenericEntity Layer24 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-           coords 0 0 -0
+           coords 0 0 0
            angleX 0.144
            angleY 169.019
            angleZ 5.427
@@ -296,7 +296,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              }
             }
            }
-           coords 0 0 -0
+           coords 0 0 0
           }
          }
         }
@@ -437,7 +437,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                }
               }
              }
-             coords -0 -0.119 0.703
+             coords 0 -0.119 0.703
              angleX -12.392
             }
            }
@@ -468,7 +468,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              }
             }
            }
-           coords 0 -0 0
+           coords 0 0 0
           }
          }
         }
@@ -1127,7 +1127,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
               }
              }
             }
-            coords 0.02 -0 0.001
+            coords 0.02 0 0.001
             angleX 5.356
            }
            SlotTrigger3 {
@@ -2488,7 +2488,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
             m_bShowDebugShapesInWorkbench 1
            }
           }
-          coords -77.197 53.572 -770.829
+          coords 398.379 -76.525 -388.645
           angleX 9.739
           angleY 0.458
           angleZ 2.706
@@ -2659,7 +2659,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords 3.556 0.057 0.003
+                  coords 145.722 -11.655 -279.755
                   angleX -1.298
                   angleY -87.583
                   angleZ 1.484
@@ -2676,7 +2676,8 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords 0.001 0 -0.001
+                  coords 140.693 -11.945 -280.823
+                  angleY -137.286
                  }
                  GenericEntity SlotMarker30 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
                   components {
@@ -2689,7 +2690,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords 70.521 -0.487 -59.375
+                  coords 142.811 -11.184 -286.908
                   angleX -3.084
                   angleY 156.215
                   angleZ -2.042
@@ -2709,7 +2710,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords -0.001 0 -0.001
+                  coords -397.831 -36.312 -38.828
                   angleX 0.108
                   angleY -0.001
                   angleZ -0.246
@@ -2726,7 +2727,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords -0.001 0 -0.001
+                  coords -394.518 -35.771 -35.361
                   angleX 0.108
                   angleY -0.001
                   angleZ -0.246
@@ -2742,7 +2743,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords -57.623 -5.54 -50.936
+                  coords -402.829 -36.549 -39.15
                   angleX -1.256
                   angleY 0.152
                   angleZ -6.393
@@ -2762,9 +2763,9 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords 2.721 -0.002 0.001
+                  coords 179.019 33.584 158.97
                   angleX 0.608
-                  angleY -86.674
+                  angleY -169.778
                   angleZ -0.609
                  }
                  GenericEntity Slot264 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
@@ -2779,7 +2780,8 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords 0 0 0
+                  coords 178.672 33.264 156.359
+                  angleY -83.104
                  }
                  GenericEntity SlotMarker33 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
                   components {
@@ -2792,9 +2794,9 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords -21.29 -5.399 -42.37
+                  coords 184.875 33.465 151.01
                   angleX -3.729
-                  angleY 118.793
+                  angleY 35.689
                   angleZ 13.982
                  }
                 }
@@ -2812,8 +2814,10 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords -2.355 0 0
-                  angleY 86.238
+                  coords 117.615 19.47 37.153
+                  angleX 5.804
+                  angleY 85.775
+                  angleZ -9.111
                  }
                  GenericEntity Slot265 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                   components {
@@ -2827,7 +2831,9 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords 0 0 0.001
+                  coords 119.673 19.886 37.798
+                  angleX -19.232
+                  angleY -36.458
                  }
                  GenericEntity SlotMarker34 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
                   components {
@@ -2840,7 +2846,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords 0.002 0 -0.001
+                  coords 116.915 19.931 34.508
                   angleY 146.529
                  }
                 }
@@ -2858,7 +2864,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords 3.28 -0.049 -0.007
+                  coords 30.119 37.919 -59.728
                   angleX 0.794
                   angleY -85.821
                   angleZ 2.364
@@ -2875,7 +2881,8 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords 0 0 0
+                  coords 26.198 38.312 -59.203
+                  angleX -4.608
                  }
                  GenericEntity SlotMarker35 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
                   components {
@@ -2888,7 +2895,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords 0 0 0.002
+                  coords 26.212 38.309 -59.175
                   angleY 130.161
                  }
                 }
@@ -2921,7 +2928,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  "3) Sweep and clear area of all REDFOR units of the surrounding area (500 meters)."
                 }
                }
-               coords 0 0 0
+               coords -5.83 4.659 63.769
               }
              }
             }
@@ -2931,7 +2938,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                m_eActivationType ON_TRIGGER_ACTIVATION
               }
              }
-             coords 0 -0 0
+             coords 0 0 0
              {
               $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
                Layer358 {
@@ -3542,7 +3549,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
            "7. Air assets will provide CAP/CAS as directed by ground commander."
           }
          }
-         coords 43.498 -5.412 -235.863
+         coords 4487.424 7.923 4437.676
          {
           GenericEntity SlotMoveTo11 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
            components {
@@ -3570,7 +3577,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              }
             }
            }
-           coords 0 0 0
+           coords 0.001 0 0
           }
          }
         }
@@ -3589,7 +3596,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
            "7. Air assets will provide CAP/CAS as directed by ground commander."
           }
          }
-         coords 57.098 -5.412 -248.121
+         coords 2701.875 -3.208 4440.031
          {
           GenericEntity SlotMoveTo47 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
            components {
@@ -3617,7 +3624,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              }
             }
            }
-           coords 0 0 0
+           coords 9.358 0 6.205
           }
          }
         }

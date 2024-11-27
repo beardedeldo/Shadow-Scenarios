@@ -786,6 +786,9 @@ $grp GenericEntity : "{77F90F896D5145C8}Prefabs/Compositions/Slotted/SlotFlatSma
   coords 10843.274 9.406 8776.808
   angleY -93.643
  }
+ {
+  coords 10130.958 7.314 6417.122
+ }
 }
 $grp GenericEntity : "{79AA43911CC6C3E8}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_Small_Soviet.et" {
  {

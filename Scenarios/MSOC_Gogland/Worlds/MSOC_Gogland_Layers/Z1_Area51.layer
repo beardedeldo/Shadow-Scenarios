@@ -1,0 +1,14 @@
+GenericEntity : "{190CC54D175F52CB}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_10ft.et" {
+ coords 1119.802 41.719 11521.695
+ angleX 5.202
+ angleY -0.897
+ angleZ -9.793
+}
+GenericEntity Area3 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   Enabled 0
+  }
+ }
+ coords 4792.53 20.552 9474.972
+}

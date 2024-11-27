@@ -4,7 +4,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
    m_SpawnChildren RANDOM_ONE
   }
  }
- coords 6500 161.875 6500
+ coords 10175.657 5.048 6381.385
  {
   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
    Layer300 {
@@ -17,7 +17,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
       }
      }
     }
-    coords -295.554 20.7 951.912
+    coords -41.68 1.655 59.726
     angleX -2.35
     angleY 41.037
     angleZ 2.697
@@ -28,7 +28,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
         m_iRandomPercent 100
         m_aPlugins {
          SCR_ScenarioFrameworkPluginTrigger "{5A6513EB3A4B9621}" {
-          m_fAreaRadius 1.5
+          m_fAreaRadius 1
           m_bOnce 0
          }
         }
@@ -47,18 +47,13 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
         }
        }
       }
-      coords -15.416 0.214 6.862
+      coords 10.9 0.888 -20.644
      }
      GenericEntity LayerTask1 : "{5AF3BFDA2EAE56EA}Prefabs/ScenarioFramework/Components/LayerTask.et" {
       components {
        SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
-        m_SpawnChildren RANDOM_ONE
         m_sTaskTitle "OPORD 300100ZSEP24"
-        m_sTaskDescription "Objective: Locate missing supplies"\
-        "Mission: Locate it to secure your battle kits. "\
-        "Execution:"\
-        "1. Spiral search the area. The crates should be no more than 100 meters from your position.   "\
-        "2. Recover battle kits as needed. "
+        m_sTaskDescription "Objective: Get battle kits as needed. "
         m_bShowDebugShapesInWorkbench 1
        }
       }
@@ -83,7 +78,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
               m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
              }
             }
-            coords 0 0 0
+            coords -60.227 -0.35 -27.921
            }
            Slot220 {
             components {
@@ -91,7 +86,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
               m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
              }
             }
-            coords 0 0 0
+            coords -58.266 -0.234 -28.447
            }
           }
           GenericEntity SlotTask9 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
@@ -105,13 +100,18 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
              m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
             }
            }
-           coords 0 0 0
+           coords -59.116 -0.114 -27.392
            angleY -4.991
           }
          }
         }
         Layer311 {
-         coords 1.142 1.042 86.696
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           Enabled 0
+          }
+         }
+         coords -6.816 1.848 48.242
          angleX 4.866
          angleY -0.294
          angleZ -2.887
@@ -152,7 +152,12 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
          }
         }
         Layer313 {
-         coords -3.008 1.709 -89.644
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           Enabled 0
+          }
+         }
+         coords -2.585 -7.27 -89.275
          angleX -0.348
          angleY 0.025
          angleZ -5.044
@@ -164,7 +169,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
               m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
              }
             }
-            coords 0 0 -0.001
+            coords -0.001 -0.001 -0.002
            }
            Slot221 {
             components {
@@ -172,7 +177,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
               m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
              }
             }
-            coords 0 0 0
+            coords -0.001 0 -0.001
            }
           }
           GenericEntity SlotTask3 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
@@ -186,11 +191,16 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
              m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
             }
            }
-           coords 0 0 -0.001
+           coords -0.001 -0.001 -0.002
           }
          }
         }
         Layer314 {
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           Enabled 0
+          }
+         }
          coords -85.226 -12.105 10.278
          angleX 12.307
          angleY -4.126
@@ -230,7 +240,12 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
          }
         }
         Layer315 {
-         coords 53.419 -0.756 67.377
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           Enabled 0
+          }
+         }
+         coords 25.874 2.38 -0.445
          angleX -3.538
          angleY -71.798
          angleZ 6.2
@@ -269,7 +284,12 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
          }
         }
         Layer316 {
-         coords 51.43 1.235 -75.733
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           Enabled 0
+          }
+         }
+         coords 51.642 -3.265 -75.548
          angleX 4.456
          angleY -0.034
          angleZ 0.33
@@ -281,7 +301,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
               m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
              }
             }
-            coords 0 0 0
+            coords -0.001 0 -0.001
            }
            Slot224 {
             components {
@@ -289,7 +309,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
               m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
              }
             }
-            coords 0 0 0
+            coords -0.001 0 -0.001
            }
           }
           GenericEntity SlotTask6 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
@@ -303,11 +323,16 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
              m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
             }
            }
-           coords 0 0 0
+           coords -0.001 0 -0.001
           }
          }
         }
         Layer317 {
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           Enabled 0
+          }
+         }
          coords -69.5 -13.674 -50.184
          angleX 13.464
          angleY 34.291
@@ -347,6 +372,11 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
          }
         }
         Layer318 {
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           Enabled 0
+          }
+         }
          coords -51.582 -2.006 71.015
          angleX 6.125
          angleY -0.318
@@ -402,7 +432,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
          m_bShowDebugShapesInWorkbench 0
         }
        }
-       coords 0 0 0
+       coords 6.388 0.114 -19.383
        angleY -12.492
       }
       Slot150 {
@@ -412,10 +442,10 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
          m_bShowDebugShapesInWorkbench 0
         }
        }
-       coords 11.857 0.13 22.662
-       angleX -3.42
-       angleY -5.604
-       angleZ -1.345
+       coords 24.658 1.332 -0.158
+       angleX -3.135
+       angleY -14.733
+       angleZ -1.773
       }
      }
      GenericEntity SlotMarker2 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
@@ -428,13 +458,14 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
         }
        }
       }
-      coords 0 0 0
+      coords 10.235 0.09 -20.37
      }
     }
    }
    Layer64 {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      Enabled 0
       m_aPlugins {
        SCR_ScenarioFrameworkPluginTrigger "{61AA9C9B9043F3A0}" {
         m_fAreaRadius 50
@@ -853,6 +884,7 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
    Layer99 {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      Enabled 0
       m_aPlugins {
        SCR_ScenarioFrameworkPluginTrigger "{61AA9C9B9043F3A0}" {
         m_fAreaRadius 50

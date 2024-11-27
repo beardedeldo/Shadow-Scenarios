@@ -3,6 +3,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_bShowDebugShapesDuringRuntime 1
+    m_bOnce 0
     m_iDynamicDespawnRange 150
     m_bShowDebugShapesInWorkbench 1
    }
@@ -503,6 +504,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     ArmorAttack2 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 2239.079 43.598 3590.663
      angleX -1.929
      angleY -94.64

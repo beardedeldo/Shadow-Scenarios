@@ -5,6 +5,56 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621AE0AF2BFF63B6}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer3"
+      m_fThreatLevelEscalation 1
+      m_fQRFNextWaveDelay 60
+      m_aGroupList {
+       SCR_QRFGroupConfig "{605276DF13DDDEF2}" {
+        m_sGroupPrefab "{41E5EE94EB651A2F}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MachineGunTeam.et"
+       }
+       SCR_QRFGroupConfig "{605276DF13DDDEF8}" {
+        m_sGroupPrefab "{75B62458A893FD98}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_ManeuverGroup.et"
+       }
+       SCR_QRFGroupConfig "{605276DF13DDDEFA}" {
+        m_sGroupPrefab "{3B07D5507B06050D}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MedicalSection.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8AB163B52}" {
+        m_sGroupPrefab "{77313758E32191F4}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_SentryTeam.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8A885528D}" {
+        m_sGroupPrefab "{A07675B0C083D337}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_GL.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8A85BDAF8}" {
+        m_sGroupPrefab "{750B62504EBDA441}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_AT.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E85768556F}" {
+        m_sGroupPrefab "{28BC4A33AC3B5BBB}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_LightFireTeam.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8571D91A1}" {
+        m_sGroupPrefab "{4E7F8EA6145579B3}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_FireGroup.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E85499DAE3}" {
+       }
+      }
+      m_aQRFMaxDistanceConfig {
+       SCR_QRFTypeMaxDistance "{60627D460CF5CFC9}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460C972FB2}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460CBEDF72}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460C40EA81}" {
+       }
+      }
+      m_aWPConfig {
+       SCR_QRFWaypointConfig "{60627D462AD4430F}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462AAB2D07}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462A57EB7E}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462A324D4C}" {
+       }
+      }
      }
     }
     m_fAreaRadius 5
@@ -13,7 +63,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_iDynamicDespawnRange 400
    }
   }
-  coords 7070.729 118.867 6028.733
+  coords 6838.783 138.736 2475.29
   {
    GenericEntity Layer61 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
@@ -56,7 +106,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -68,7 +118,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -0.939 -0.013 -0.367
+             coords -13.051 -3.153 -59.322
              angleY 142.132
             }
             SlotAI17 {
@@ -86,7 +136,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -98,7 +148,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -34.272 -0.321 3.83
+             coords -34.729 2.556 69.651
              angleX 1.262
              angleY 49.566
              angleZ 0.101
@@ -118,7 +168,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -129,7 +179,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords 15.839 0.019 -11.45
+             coords 11.136 -0.19 -16.748
              angleX 2
              angleY 28.011
              angleZ 0.051
@@ -163,7 +213,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                    }
                   }
                  }
-                 m_sObjectToSpawn "{8115F6535855D5F2}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_UAZTeam_POE.et"
+                 m_sObjectToSpawn "{56FD583BBC989204}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_SentryTeam.et"
                  m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6227312508E22BA0}" {
                   m_aLayerName {
                    "SlotWaypoint311" "SlotWaypoint312"
@@ -172,8 +222,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords -45.773 -1.21 -27.228
-               angleY -63.823
+               coords -57.433 -11.271 -70.934
+               angleY -160.384
               }
               GenericEntity Slot111 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                components {
@@ -187,9 +237,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords -47.894 -1.217 -26.939
+               coords -57.478 -11.177 -73.075
                angleX -3.277
-               angleY -147.263
+               angleY 116.176
                angleZ -3.165
               }
               $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
@@ -201,7 +251,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   }
                  }
                 }
-                coords -45.709 -1.209 -27.2
+                coords -55.638 -11.025 -72.051
                }
                SlotWaypoint312 {
                 components {
@@ -214,7 +264,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   }
                  }
                 }
-                coords -76.858 -8.451 -146.716
+                coords -55.596 -10.932 -74.064
                }
               }
              }
@@ -240,7 +290,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords 18.53 0.206 6.789
+               coords -3.574 -0.291 -17.246
                angleX 3.195
                angleY 41.396
                angleZ 0.433
@@ -257,10 +307,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords 21.534 0.268 9.886
-               angleX 3.301
-               angleY 40.518
-               angleZ 1.643
+               coords -6.656 -0.28 -20.228
+               angleX -3.64
+               angleY -175.118
+               angleZ 0.586
               }
              }
             }
@@ -285,7 +335,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords 28.974 -1.818 -39.18
+               coords -35.188 2.637 75.57
                angleY -139.155
               }
               GenericEntity Slot71 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
@@ -300,7 +350,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords 28.073 -1.862 -40.234
+               coords -34.125 2.598 78.422
                angleX 1.447
                angleY -40.817
                angleZ -2.431
@@ -318,7 +368,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   }
                  }
                 }
-                coords 82.37 -2.301 72.9
+                coords -20.665 -10.743 360.763
                 angleX -2.681
                 angleY -0.084
                 angleZ 1.792
@@ -330,10 +380,121 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   }
                  }
                 }
-                coords -152.139 10.755 117.652
+                coords -122.183 -16.612 16.638
                }
               }
              }
+            }
+           }
+          }
+         }
+         redforSingles2 {
+          coords 0 0 0
+          {
+           $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+            SlotAI1284 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_aActivationActions {
+                SCR_ScenarioFrameworkActionAI "{6219661E3B4F181B}" {
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{6219661E09A858B8}" {
+                  m_sLayerName "SlotAI982"
+                 }
+                 m_aAIActions {
+                  SCR_ScenarioFrameworkAIActionSetCharacterStance "{6219661E3381D2F6}" {
+                   m_eAICharacterStance CROUCH
+                  }
+                 }
+                }
+               }
+               m_sObjectToSpawn "{2113EE7AFFE66688}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/RandomSoldiers/Character_RHS_RF_MSV_VKPO_3.0_SL_Random.et"
+               m_bShowDebugShapesInWorkbench 0
+               m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+              }
+             }
+             coords 17.878 7.102 -34.192
+             angleX 0.022
+             angleY -159.29
+             angleZ -1.008
+            }
+            SlotAI1285 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_aActivationActions {
+                SCR_ScenarioFrameworkActionAI "{6219661E3B4F181B}" {
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{6219661E09A858B8}" {
+                  m_sLayerName "SlotAI982"
+                 }
+                 m_aAIActions {
+                  SCR_ScenarioFrameworkAIActionSetCharacterStance "{6219661E3381D2F6}" {
+                   m_eAICharacterStance CROUCH
+                  }
+                 }
+                }
+               }
+               m_sObjectToSpawn "{2113EE7AFFE66688}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/RandomSoldiers/Character_RHS_RF_MSV_VKPO_3.0_SL_Random.et"
+               m_bShowDebugShapesInWorkbench 0
+               m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+              }
+             }
+             coords 46.869 6.795 -19.759
+             angleX 0.022
+             angleY -159.29
+             angleZ -1.008
+            }
+            SlotAI1286 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_aActivationActions {
+                SCR_ScenarioFrameworkActionAI "{6219661E3B4F181B}" {
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{6219661E09A858B8}" {
+                  m_sLayerName "SlotAI982"
+                 }
+                 m_aAIActions {
+                  SCR_ScenarioFrameworkAIActionSetCharacterStance "{6219661E3381D2F6}" {
+                   m_eAICharacterStance CROUCH
+                  }
+                 }
+                }
+               }
+               m_sObjectToSpawn "{2113EE7AFFE66688}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/RandomSoldiers/Character_RHS_RF_MSV_VKPO_3.0_SL_Random.et"
+               m_bShowDebugShapesInWorkbench 0
+               m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+              }
+             }
+             coords 18.454 8.217 69.335
+             angleX 0.022
+             angleY -159.29
+             angleZ -1.008
+            }
+            SlotAI1287 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_aActivationActions {
+                SCR_ScenarioFrameworkActionAI "{6219661E3B4F181B}" {
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{6219661E09A858B8}" {
+                  m_sLayerName "SlotAI982"
+                 }
+                 m_aAIActions {
+                  SCR_ScenarioFrameworkAIActionSetCharacterStance "{6219661E3381D2F6}" {
+                   m_eAICharacterStance CROUCH
+                  }
+                 }
+                }
+               }
+               m_sObjectToSpawn "{2113EE7AFFE66688}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/RandomSoldiers/Character_RHS_RF_MSV_VKPO_3.0_SL_Random.et"
+               m_bShowDebugShapesInWorkbench 0
+               m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+              }
+             }
+             coords -14.347 7.038 -3.924
+             angleX 0.022
+             angleY -159.29
+             angleZ -1.008
             }
            }
           }
@@ -345,7 +506,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
    }
    GenericEntity QRFSpawnpointsLayer3 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
-    coords -0.195 0.005 0.181
+    coords 0.292 -0.442 -20.719
     {
      GenericEntity QRFSpawnpoint2 {
       ID "6054EE897FB6C21B"
@@ -359,7 +520,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
-      coords 28.496 -7.275 196.311
+      coords -166.728 -0.112 413.548
       angleX 6.435
       angleY -178.189
       angleZ -6.005
@@ -376,7 +537,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 121.197 -6.098 -32.466
+       coords 251.578 -46.563 56.419
        angleX 16.032
        angleY -77.77
        angleZ -7.964
@@ -392,7 +553,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -156.01 -1.909 -67.452
+       coords -216.478 -57.179 -214.921
        angleX 2.398
        angleY 91.521
        angleZ 10.676
@@ -408,7 +569,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -35.094 -12.286 -182.331
+       coords -29.702 -43.972 -211.574
        angleX 6.79
        angleY -8.432
        angleZ -2.799
@@ -423,7 +584,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        m_fLookDirectionRange 360
       }
      }
-     coords 15.353 -0.192 -13.668
+     coords -14.627 -0.7 -42.802
      angleY 0
     }
     {
@@ -432,7 +593,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        m_fLookDirectionRange 360
       }
      }
-     coords -34.349 -0.33 -1.204
+     coords 3.905 0.28 -34.386
      angleY 0
     }
    }
@@ -444,6 +605,56 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621AE736919C48A8}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer4"
+      m_fThreatLevelEscalation 1
+      m_fQRFNextWaveDelay 60
+      m_aGroupList {
+       SCR_QRFGroupConfig "{605276DF13DDDEF2}" {
+        m_sGroupPrefab "{41E5EE94EB651A2F}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MachineGunTeam.et"
+       }
+       SCR_QRFGroupConfig "{605276DF13DDDEF8}" {
+        m_sGroupPrefab "{75B62458A893FD98}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_ManeuverGroup.et"
+       }
+       SCR_QRFGroupConfig "{605276DF13DDDEFA}" {
+        m_sGroupPrefab "{3B07D5507B06050D}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MedicalSection.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8AB163B52}" {
+        m_sGroupPrefab "{77313758E32191F4}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_SentryTeam.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8A885528D}" {
+        m_sGroupPrefab "{A07675B0C083D337}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_GL.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8A85BDAF8}" {
+        m_sGroupPrefab "{750B62504EBDA441}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_AT.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E85768556F}" {
+        m_sGroupPrefab "{28BC4A33AC3B5BBB}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_LightFireTeam.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8571D91A1}" {
+        m_sGroupPrefab "{4E7F8EA6145579B3}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_FireGroup.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E85499DAE3}" {
+       }
+      }
+      m_aQRFMaxDistanceConfig {
+       SCR_QRFTypeMaxDistance "{60627D460CF5CFC9}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460C972FB2}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460CBEDF72}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460C40EA81}" {
+       }
+      }
+      m_aWPConfig {
+       SCR_QRFWaypointConfig "{60627D462AD4430F}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462AAB2D07}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462A57EB7E}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462A324D4C}" {
+       }
+      }
      }
     }
     m_fAreaRadius 5
@@ -452,7 +663,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_iDynamicDespawnRange 350
    }
   }
-  coords 8821.727 94.656 2749.798
+  coords 6799.006 126.158 2856.563
   {
    GenericEntity Layer189 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
@@ -491,14 +702,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                    }
                   }
                  }
-                 m_sObjectToSpawn "{8115F6535855D5F2}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_UAZTeam_POE.et"
+                 m_sObjectToSpawn "{56FD583BBC989204}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_SentryTeam.et"
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords -19.275 1.043 25.155
-               angleX 0.082
-               angleY 69.906
-               angleZ 2.828
+               coords 12.87 -0.774 10.605
+               angleX 1.071
+               angleY -86.214
+               angleZ -2.619
               }
               GenericEntity Slot153 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                components {
@@ -512,10 +723,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords -16.921 1.062 25.994
-               angleX 3.972
-               angleY -20.14
-               angleZ 0.447
+               coords 10.39 -0.788 10.788
+               angleX -1.475
+               angleY -176.226
+               angleZ -0.538
               }
              }
             }
@@ -540,8 +751,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords -8.277 0.224 9.979
-               angleY -108.432
+               coords -109.108 11.998 -8.05
+               angleY 157.758
               }
               GenericEntity Slot156 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                components {
@@ -555,9 +766,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords -10.083 0.323 9.54
+               coords -108.55 11.998 -9.824
                angleX -0.086
-               angleY 159.516
+               angleY 65.706
                angleZ -1.988
               }
              }
@@ -583,10 +794,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords 3.742 0.546 26.286
-               angleX 0.151
-               angleY -112.243
-               angleZ -1.995
+               coords -152.627 18.309 -226.695
+               angleX -1.079
+               angleY 50.674
+               angleZ 2.856
               }
               GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                components {
@@ -600,10 +811,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords -1.059 0.677 24.396
-               angleX 0.998
-               angleY -111.781
-               angleZ -2.325
+               coords -148.7 19.155 -223.401
+               angleX -0.274
+               angleY 51.206
+               angleZ 2.515
               }
              }
             }
@@ -629,7 +840,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -641,7 +852,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -22.381 1.062 12.767
+             coords 1.185 -0.393 3.185
              angleY 142.132
             }
             SlotAI578 {
@@ -659,7 +870,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -671,7 +882,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -38.167 0.734 9.29
+             coords -129.474 11.991 -0.888
              angleX 1.263
              angleY -48.619
              angleZ -0.08
@@ -691,7 +902,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -703,7 +914,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -49.457 4.793 51.814
+             coords -6.437 -9.376 79.485
              angleX 5.569
              angleY 27.83
              angleZ 0.92
@@ -718,7 +929,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
    }
    GenericEntity QRFSpawnpointsLayer4 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
-    coords -0.005 0 0.003
+    coords -0.649 3.8 -28.096
     {
      GenericEntity QRFSpawnpoint6 {
       ID "6054EE897FB6C21B"
@@ -732,7 +943,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
-      coords 28.496 16.368 196.311
+      coords 195.608 -64.646 232.447
       angleX 6.435
       angleY -178.189
       angleZ -6.005
@@ -749,7 +960,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 121.197 4.809 -32.466
+       coords -72.282 1.773 -296.754
        angleX 16.032
        angleY -77.77
        angleZ -7.964
@@ -765,7 +976,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -156.01 25.054 -67.452
+       coords -376.096 -33.698 -0.169
        angleX 2.398
        angleY 91.521
        angleZ 10.676
@@ -781,7 +992,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -35.094 10.204 -182.331
+       coords -43.12 -9.431 -124.249
        angleX 6.79
        angleY -8.432
        angleZ -2.799
@@ -791,11 +1002,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
    $grp GenericEntity : "{E105D2F87098E1D8}Prefabs/Systems/Compositions/PatrolPoint/PatrolPoint_LoiterPoint.et" {
     {
-     coords -33.06 0.76 11.534
+     coords -18.777 -1.055 19.935
      angleY 0
     }
     {
-     coords 9.485 0.45 29.568
+     coords -1.613 -8.351 86.784
      angleY 0
     }
    }
@@ -806,7 +1017,57 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621AED9031DE8626}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
-      m_sQRFLayerName "QRFSpawnpointLayer5"
+      m_sQRFLayerName "QRFSpawnpointsLayer5"
+      m_fThreatLevelEscalation 1
+      m_fQRFNextWaveDelay 60
+      m_aGroupList {
+       SCR_QRFGroupConfig "{605276DF13DDDEF2}" {
+        m_sGroupPrefab "{41E5EE94EB651A2F}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MachineGunTeam.et"
+       }
+       SCR_QRFGroupConfig "{605276DF13DDDEF8}" {
+        m_sGroupPrefab "{75B62458A893FD98}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_ManeuverGroup.et"
+       }
+       SCR_QRFGroupConfig "{605276DF13DDDEFA}" {
+        m_sGroupPrefab "{3B07D5507B06050D}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MedicalSection.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8AB163B52}" {
+        m_sGroupPrefab "{77313758E32191F4}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_SentryTeam.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8A885528D}" {
+        m_sGroupPrefab "{A07675B0C083D337}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_GL.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8A85BDAF8}" {
+        m_sGroupPrefab "{750B62504EBDA441}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_AT.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E85768556F}" {
+        m_sGroupPrefab "{28BC4A33AC3B5BBB}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_LightFireTeam.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E8571D91A1}" {
+        m_sGroupPrefab "{4E7F8EA6145579B3}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_FireGroup.et"
+       }
+       SCR_QRFGroupConfig "{6054C6E85499DAE3}" {
+       }
+      }
+      m_aQRFMaxDistanceConfig {
+       SCR_QRFTypeMaxDistance "{60627D460CF5CFC9}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460C972FB2}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460CBEDF72}" {
+       }
+       SCR_QRFTypeMaxDistance "{60627D460C40EA81}" {
+       }
+      }
+      m_aWPConfig {
+       SCR_QRFWaypointConfig "{60627D462AD4430F}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462AAB2D07}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462A57EB7E}" {
+       }
+       SCR_QRFWaypointConfig "{60627D462A324D4C}" {
+       }
+      }
      }
     }
     m_bOnce 0
@@ -814,7 +1075,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_iDynamicDespawnRange 400
    }
   }
-  coords 5769.584 217.398 7063.717
+  coords 7476.651 18.562 3167.819
   {
    GenericEntity Layer190 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
@@ -846,12 +1107,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   SCR_ScenarioFrameworkAIActionDisableLOD "{620CD6C939C3C5F0}" {
                   }
                   SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{620CD6C93A9A35CB}" {
-                   m_iInvestigationDistance 50
+                   m_iInvestigationDistance 100
                   }
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -863,7 +1124,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords 5.277 -0.888 -11.692
+             coords 27.081 27.307 -173.97
              angleX 7.908
              angleY -32.86
              angleZ -0.869
@@ -883,7 +1144,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -895,7 +1156,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -15.964 -0.103 -8.072
+             coords -76.681 -13.827 -36.795
              angleX 4.694
              angleY -48.941
              angleZ -5.366
@@ -915,7 +1176,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
+               m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
                m_bRandomizePerFaction 1
                m_eEntityCatalogType GROUP
                m_aIncludedEditableEntityLabels {
@@ -927,7 +1188,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -27.596 1.397 17.308
+             coords -0.583 0.002 59.195
              angleX -12.231
              angleY 153.364
              angleZ -6.607
@@ -960,10 +1221,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords -12.18 0.441 6.762
-               angleX 2.254
-               angleY 18.764
-               angleZ 1.71
+               coords 27.969 0.011 90.369
+               angleX -2.467
+               angleY 132.236
+               angleZ 1.385
               }
               GenericEntity Slot157 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                components {
@@ -977,10 +1238,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords -11.284 0.393 9.245
-               angleX 1.489
-               angleY -74.635
-               angleZ 1.337
+               coords 29.889 0.051 88.558
+               angleX 1.439
+               angleY 38.958
+               angleZ 6.07
               }
              }
             }
@@ -1005,10 +1266,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                 }
                }
-               coords -19.214 -2.447 -32.413
-               angleX -5.633
-               angleY 158.1
-               angleZ 0.34
+               coords -7.327 -0.031 -0.489
+               angleX 1.472
+               angleY -93.372
+               angleZ -5.449
               }
               GenericEntity Slot159 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                components {
@@ -1022,10 +1283,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                  }
                 }
                }
-               coords -18.416 -2.829 -34.362
-               angleX -0.786
-               angleY 70.959
-               angleZ 5.932
+               coords -9.543 -0.059 -0.551
+               angleX -6.205
+               angleY 179.728
+               angleZ -1.469
               }
              }
             }
@@ -1039,7 +1300,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
    }
    GenericEntity QRFSpawnpointsLayer5 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
-    coords -0.003 0 0.003
+    coords 10.546 0 55.359
     {
      GenericEntity QRFSpawnpoint10 {
       ID "6054EE897FB6C21B"
@@ -1053,7 +1314,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
-      coords 28.496 14.387 196.312
+      coords 31.794 12.01 237.223
       angleX 6.435
       angleY -178.189
       angleZ -6.005
@@ -1070,7 +1331,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 121.197 -7.941 -32.466
+       coords -192.543 12.492 108.1
        angleX 16.032
        angleY -77.77
        angleZ -7.964
@@ -1086,7 +1347,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -156.01 -10.234 -67.452
+       coords -250.243 28.757 -117.636
        angleX 2.398
        angleY 91.521
        angleZ 10.676
@@ -1102,7 +1363,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -35.094 -29.419 -182.331
+       coords 242.445 18.408 -260.394
        angleX 6.79
        angleY -8.432
        angleZ -2.799
@@ -1117,7 +1378,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        m_fLookDirectionRange 360
       }
      }
-     coords -28.586 1.428 16.763
+     coords 22.822 0 -5.456
      angleX -2.684
      angleY 0
     }
@@ -1127,7 +1388,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        m_fLookDirectionRange 360
       }
      }
-     coords 0.151 -3.393 -34.571
+     coords 51.831 -0.06 -29.668
      angleX -2.684
      angleY 0
     }
@@ -1137,7 +1398,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        m_fLookDirectionRange 360
       }
      }
-     coords 5.623 -0.998 -12.232
+     coords -11.618 0 60.518
      angleX -2.684
      angleY 0
     }
@@ -1153,920 +1414,260 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_iDynamicDespawnRange 1000
    }
   }
-  coords 11087.286 32.083 11621.615
+  coords 9099.273 3.074 10701.09
   angleX -5.293
   angleY 0.581
   angleZ -6.269
   {
-   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    ERQUY_REDFOR {
-     coords -6.709 1.231 -16.966
-     angleX 5.325
-     angleZ 6.242
-     {
-      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-       {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 2
-             }
+   GenericEntity ERQUY_REDFOR : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    coords -7.111 -2.45 -16.622
+    angleX 5.325
+    angleZ 6.242
+    {
+     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 2
             }
            }
           }
-          m_sObjectToSpawn "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-          m_bRandomizePerFaction 1
-          m_eEntityCatalogType GROUP
-          m_aIncludedEditableEntityLabels {
-           70
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-          m_fPerceptionFactor 25
          }
-        }
-        coords -132.865 -8.914 55.007
-        angleY 10.124
-       }
-       SlotAI423 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 1
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-          m_bRandomizePerFaction 1
-          m_eEntityCatalogType GROUP
-          m_aIncludedEditableEntityLabels {
-           70
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn ""
-          m_fPerceptionFactor 25
+         m_sObjectToSpawn "{AD038CFD89AB81C7}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_ManeuverGroup.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType GROUP
+         m_aIncludedEditableEntityLabels {
+          70
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+         m_fPerceptionFactor 25
         }
-        coords -85.237 -9.901 202.694
-        angleY 10.124
        }
-       SlotAI424 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 2
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-          m_bRandomizePerFaction 1
-          m_eEntityCatalogType GROUP
-          m_aIncludedEditableEntityLabels {
-           70
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords -216.894 -11.186 140.151
-        angleY 39.568
-       }
-       SlotAI428 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 2
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-          m_aIncludedEditableEntityLabels {
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{4ECD14650D82F5CA}Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords -272.307 -12.985 121.064
-        angleY 39.236
-       }
-       SlotAI427 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 2
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-          m_aIncludedEditableEntityLabels {
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{4ECD14650D82F5CA}Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords -120.953 -10.89 159.273
-        angleY -39.886
-       }
-       SlotAI429 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 2
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-          m_aIncludedEditableEntityLabels {
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{4ECD14650D82F5CA}Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords 0.595 -13.012 246.227
-        angleY -144.393
-       }
-       SlotAI425 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 1
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
-          m_aIncludedEditableEntityLabels {
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords -194.291 -3.62 104.711
-        angleY -101.509
-       }
-       SlotAI430 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 1
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
-          m_aIncludedEditableEntityLabels {
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords -197.919 -3.62 102.375
-        angleY 10.124
-       }
-       SlotAI431 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 1
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
-          m_aIncludedEditableEntityLabels {
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords -197.252 -7.42 103.282
-        angleY 10.124
-       }
-       SlotAI432 {
-        components {
-         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
-            m_aAIActions {
-             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
-              m_iInvestigationDistance 1
-             }
-            }
-           }
-          }
-          m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
-          m_aIncludedEditableEntityLabels {
-          }
-          m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-          m_fPerceptionFactor 25
-         }
-        }
-        coords -200.089 -7.42 105.514
-        angleY 10.124
-       }
+       coords 669.478 4.158 -46.807
+       angleY 10.124
       }
-     }
-    }
-    ERQUY_REDFOR_STATIC {
-     components {
-      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-       m_iRandomPercent 50
+      SlotAI423 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 1
+            }
+           }
+          }
+         }
+         m_sObjectToSpawn "{73A7F75147CD0884}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_SentryTeam.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType GROUP
+         m_aIncludedEditableEntityLabels {
+          70
+         }
+         m_bShowDebugShapesInWorkbench 0
+         m_fPerceptionFactor 25
+        }
+       }
+       coords -28.325 1.243 43.125
+       angleY 10.124
       }
-     }
-     coords -6.709 1.231 -16.966
-     angleX 5.325
-     angleZ 6.242
-     {
-      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-       Layer19 {
-        coords 134.525 -2.087 -34.671
-        {
-         GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          components {
-           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-            m_aActivationActions {
-             SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-              m_aAIActions {
-               SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                m_iInvestigationDistance 1
-               }
-               SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
-               }
-              }
-             }
+      SlotAI424 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 2
             }
-            m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-            m_bShowDebugShapesInWorkbench 0
-            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-            m_eAICombatType SUPPRESSIVE
-            m_fPerceptionFactor 25
            }
           }
-          coords -0.499 0.142 0.695
-          angleY 143.21
          }
-         GenericEntity Slot34 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{16148BF23770F1D3}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_02.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 90
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX -0.468
-          angleY 148.448
-          angleZ -0.763
+         m_sObjectToSpawn "{73A7F75147CD0884}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_SentryTeam.et"
+         m_bRandomizePerFaction 1
+         m_eEntityCatalogType GROUP
+         m_aIncludedEditableEntityLabels {
+          70
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer21 {
-        coords 61.808 -1.387 -86.576
-        {
-         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-                SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_eAICombatType SUPPRESSIVE
-             m_fPerceptionFactor 25
+       coords 62.288 2.184 -5.259
+       angleY 39.568
+      }
+      SlotAI428 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 2
             }
            }
-           coords 2.283 0.159 1.602
-           angleY 124.848
-          }
-          SlotAI426 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-                SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
-            }
-           }
-           coords 0.133 -0.004 -0.908
-           angleY 124.848
           }
          }
-         GenericEntity Slot36 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sObjectToSpawn "{7C85836D444E3797}Prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             93 94
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleY 126.122
+         m_sObjectToSpawn "{D3940577D05FE450}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_RifleSquad.et"
+         m_aIncludedEditableEntityLabels {
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{4ECD14650D82F5CA}Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer23 {
-        coords 31.336 -2.956 -118.619
-        {
-         GenericEntity SlotAI410 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          components {
-           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-            m_sFactionKey "USSR"
-            m_aActivationActions {
-             SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-              m_aAIActions {
-               SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                m_iInvestigationDistance 1
-               }
-               SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
-               }
-              }
-             }
+       coords 21.977 3.64 169.211
+       angleY 39.236
+      }
+      SlotAI427 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 2
             }
-            m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType CHARACTER
-            m_aIncludedEditableEntityLabels {
-             40 41 46 45 47 49
-            }
-            m_bIncludeOnlySelectedLabels 1
-            m_bShowDebugShapesInWorkbench 0
-            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-            m_eAICombatType SUPPRESSIVE
-            m_fPerceptionFactor 25
            }
           }
-          coords -0.448 0.08 0.488
-          angleY 137.143
          }
-         GenericEntity Slot37 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{16148BF23770F1D3}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_02.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 28 90
-            }
-            m_bIncludeOnlySelectedLabels 1
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX -0.397
-          angleY 141.002
-          angleZ 3.772
+         m_sObjectToSpawn "{D3940577D05FE450}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_RifleSquad.et"
+         m_aIncludedEditableEntityLabels {
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{4ECD14650D82F5CA}Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer25 {
-        coords 203.077 -7.696 112.173
-        {
-         GenericEntity SlotAI411 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          components {
-           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-            m_sFactionKey "USSR"
-            m_aActivationActions {
-             SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-              m_aAIActions {
-               SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                m_iInvestigationDistance 1
-               }
-               SCR_ScenarioFrameworkAIActionSetCombatType "{617A914764A24B3B}" {
-               }
-              }
-             }
+       coords 142.925 3.415 -5.268
+       angleY -39.886
+      }
+      SlotAI429 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "USSR"
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 2
             }
-            m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType CHARACTER
-            m_aIncludedEditableEntityLabels {
-             40 41 46 45 47 49
-            }
-            m_bIncludeOnlySelectedLabels 1
-            m_bShowDebugShapesInWorkbench 0
-            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-            m_eAICombatType SUPPRESSIVE
-            m_fPerceptionFactor 25
            }
           }
-          coords -0.636 0.246 0.436
-          angleY 124.848
          }
-         GenericEntity Slot38 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{16148BF23770F1D3}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_02.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 90
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX 0.027
-          angleY 124.165
-          angleZ -3.224
+         m_sObjectToSpawn "{D3940577D05FE450}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_RifleSquad.et"
+         m_aIncludedEditableEntityLabels {
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{FAD1D789EE291964}Prefabs/AI/Waypoints/AIWaypoint_Defend_Large.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer26 {
-        coords 177.315 -2.804 -8.202
-        {
-         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          SlotAI418 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
+       coords 455.52 9.264 132.051
+       angleY -144.393
+      }
+      SlotAI425 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 1
             }
            }
-           coords 0.945 -0.049 1.864
-           angleY 116.057
-          }
-          SlotAI419 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
-            }
-           }
-           coords -0.735 0.04 -1.395
-           angleY 110.463
           }
          }
-         GenericEntity Slot41 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{8E1DF47DD56E69E6}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_01.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 90
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX -0.589
-          angleY 113.177
-          angleZ -3.17
+         m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
+         m_aIncludedEditableEntityLabels {
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer27 {
-        coords 95.31 -2.352 -61.055
-        {
-         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          SlotAI420 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
+       coords -14.857 8.006 62.577
+       angleY -101.509
+      }
+      SlotAI430 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 1
             }
            }
-           coords 1.227 0.303 1.422
-           angleY 136.926
-          }
-          SlotAI421 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
-            }
-           }
-           coords -1.507 0.392 -1.024
-           angleY 131.332
           }
          }
-         GenericEntity Slot42 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{3AE1A95C1023F894}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_04.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 90
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX 0.474
-          angleY 132.13
-          angleZ -3.189
+         m_sObjectToSpawn "{D3940577D05FE450}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_RifleSquad.et"
+         m_aIncludedEditableEntityLabels {
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer28 {
-        coords 184.636 -5.915 64.587
-        {
-         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          SlotAI416 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
+       coords 570.04 3.119 35.411
+       angleY 10.124
+      }
+      SlotAI431 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 1
             }
            }
-           coords -0.033 0.038 -1.026
-           angleY 92.434
-          }
-          SlotAI417 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
-            }
-           }
-           coords 1.083 -0.034 0.583
-           angleY 132.006
           }
          }
-         GenericEntity Slot43 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{3AE1A95C1023F894}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_04.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 90
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX -0.842
-          angleY 108.552
-          angleZ -3.112
+         m_sObjectToSpawn "{D3940577D05FE450}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_RifleSquad.et"
+         m_aIncludedEditableEntityLabels {
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer29 {
-        coords 189.607 -11.187 231.793
-        {
-         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          SlotAI414 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
+       coords 741.089 0.869 111.55
+       angleY 10.124
+      }
+      SlotAI432 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionAI "{617A9159A28541C3}" {
+           m_aAIActions {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9159B7160905}" {
+             m_iInvestigationDistance 1
             }
            }
-           coords 0.22 -0.091 1.499
-           angleY 70.289
-          }
-          SlotAI415 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
-            }
-           }
-           coords 0.496 0.163 -1.828
-           angleY 70.289
           }
          }
-         GenericEntity Slot46 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{3AE1A95C1023F894}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_04.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 90
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX -2.106
-          angleY 82.929
-          angleZ -2.442
+         m_sObjectToSpawn "{AD038CFD89AB81C7}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/Flora/Group_RHS_RF_MSV_Flora_ManeuverGroup.et"
+         m_aIncludedEditableEntityLabels {
          }
+         m_bShowDebugShapesInWorkbench 0
+         m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
+         m_fPerceptionFactor 25
         }
        }
-       Layer30 {
-        coords 26.599 -12.781 365.334
-        {
-         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-          SlotAI412 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
-            }
-           }
-           coords -1.307 0.289 1.463
-           angleY 70.289
-          }
-          SlotAI413 {
-           components {
-            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-             m_sFactionKey "USSR"
-             m_aActivationActions {
-              SCR_ScenarioFrameworkActionAI "{617A91428025F427}" {
-               m_aAIActions {
-                SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617A9142E5F389CF}" {
-                 m_iInvestigationDistance 1
-                }
-               }
-              }
-             }
-             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-             m_bRandomizePerFaction 1
-             m_eEntityCatalogType CHARACTER
-             m_aIncludedEditableEntityLabels {
-              40 41 46 45 47 49
-             }
-             m_bIncludeOnlySelectedLabels 1
-             m_bShowDebugShapesInWorkbench 0
-             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-             m_fPerceptionFactor 25
-            }
-           }
-           coords -0.108 -0.026 -1.717
-           angleY 70.289
-          }
-         }
-         GenericEntity Slot47 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          components {
-           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sFactionKey "USSR"
-            m_sObjectToSpawn "{07D58C64654F71A3}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et"
-            m_bRandomizePerFaction 1
-            m_eEntityCatalogType COMPOSITION
-            m_aIncludedEditableEntityLabels {
-             5 90
-            }
-            m_bShowDebugShapesInWorkbench 0
-           }
-          }
-          coords 0 0 0
-          angleX -2.536
-          angleY 71.834
-          angleZ -1.991
-         }
-        }
-       }
+       coords 943.838 4.291 -53.331
+       angleY 10.124
       }
      }
     }
@@ -2609,7 +2210,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                m_aExcludedEditableEntityLabels {
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 51
               }
              }
@@ -4524,7 +4125,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{98EB9CDD85B8C92C}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Unarmed.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4535,7 +4136,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{98EB9CDD85B8C92C}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Unarmed.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4546,7 +4147,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{98EB9CDD85B8C92C}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Unarmed.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4557,7 +4158,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{98EB9CDD85B8C92C}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Unarmed.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4575,7 +4176,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4586,7 +4187,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4597,7 +4198,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4608,7 +4209,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4631,7 +4232,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4642,7 +4243,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4653,7 +4254,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4664,7 +4265,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4681,7 +4282,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4698,7 +4299,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4715,7 +4316,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4732,7 +4333,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4749,7 +4350,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4766,7 +4367,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4783,7 +4384,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4800,7 +4401,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4817,7 +4418,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4870,7 +4471,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4896,7 +4497,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4922,7 +4523,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4948,7 +4549,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -4975,7 +4576,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5001,7 +4602,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5027,7 +4628,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5053,7 +4654,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5079,7 +4680,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5105,7 +4706,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5131,7 +4732,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5157,7 +4758,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5183,7 +4784,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5209,7 +4810,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5235,7 +4836,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5261,7 +4862,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5288,7 +4889,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5315,7 +4916,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5342,7 +4943,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5369,7 +4970,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5395,7 +4996,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5421,7 +5022,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5447,7 +5048,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5473,7 +5074,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5499,7 +5100,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5525,7 +5126,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5551,7 +5152,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5577,7 +5178,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5603,7 +5204,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5629,7 +5230,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5655,7 +5256,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5681,7 +5282,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5707,7 +5308,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5733,7 +5334,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5759,7 +5360,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5785,7 +5386,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5811,7 +5412,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5838,7 +5439,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5865,7 +5466,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5892,7 +5493,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5922,7 +5523,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5939,7 +5540,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5956,7 +5557,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5973,7 +5574,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -5990,7 +5591,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6008,7 +5609,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6026,7 +5627,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6044,7 +5645,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6062,7 +5663,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6079,7 +5680,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6096,7 +5697,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6113,7 +5714,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6130,7 +5731,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6147,7 +5748,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6164,7 +5765,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6181,7 +5782,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6198,7 +5799,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6215,7 +5816,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6232,7 +5833,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6249,7 +5850,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 22
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6278,7 +5879,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6296,7 +5897,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6314,7 +5915,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6332,7 +5933,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6350,7 +5951,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6367,7 +5968,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6384,7 +5985,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6401,7 +6002,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6418,7 +6019,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6435,7 +6036,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6452,7 +6053,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6469,7 +6070,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6486,7 +6087,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6503,7 +6104,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6520,7 +6121,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6537,7 +6138,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6554,7 +6155,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6571,7 +6172,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6588,7 +6189,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6605,7 +6206,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            40 41 42 43 44 45 46 47 48 49 140 22 21
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6634,7 +6235,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6651,7 +6252,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6668,7 +6269,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6685,7 +6286,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6702,7 +6303,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6719,7 +6320,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6736,7 +6337,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6753,7 +6354,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6779,7 +6380,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_bRandomizePerFaction 1
           m_eEntityCatalogType CHARACTER
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6797,7 +6398,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6814,7 +6415,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6831,7 +6432,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6848,7 +6449,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6865,7 +6466,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6882,7 +6483,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6899,7 +6500,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -6916,7 +6517,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            42 45 46 43
           }
           m_bShowDebugShapesInWorkbench 0
-          m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
           m_fPerceptionFactor 25
          }
         }
@@ -8232,7 +7833,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                m_aExcludedEditableEntityLabels {
                }
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 51
               }
              }
@@ -8262,7 +7863,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                m_aExcludedEditableEntityLabels {
                }
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_iMinUnitsInGroup 2
                m_fPerceptionFactor 51
               }
@@ -8334,7 +7935,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                 40 41 42 43 43 44 45 46 47 48 49
                }
                m_bShowDebugShapesInWorkbench 0
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8363,7 +7964,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                 40 41 42 43 43 44 45 46 47 48 49
                }
                m_bShowDebugShapesInWorkbench 0
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8391,7 +7992,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                 40 41 42 43 43 44 45 46 47 48 49
                }
                m_bShowDebugShapesInWorkbench 0
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8419,7 +8020,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                 40 41 42 43 43 44 45 46 47 48 49
                }
                m_bShowDebugShapesInWorkbench 0
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8447,7 +8048,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                 40 41 42 43 43 44 45 46 47 48 49
                }
                m_bShowDebugShapesInWorkbench 0
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8474,7 +8075,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8502,7 +8103,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8530,7 +8131,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8558,7 +8159,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8586,7 +8187,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8614,7 +8215,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8641,7 +8242,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8668,7 +8269,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8695,7 +8296,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -8722,7 +8323,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 40 41 42 43 43 44 45 46 47 48 49
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -9863,7 +9464,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aIncludedEditableEntityLabels {
                 71 72
                }
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 25
               }
              }
@@ -9923,7 +9524,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                m_aExcludedEditableEntityLabels {
                }
-               m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 51
               }
              }
@@ -9955,7 +9556,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                m_aExcludedEditableEntityLabels {
                }
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                m_fPerceptionFactor 51
               }
              }
@@ -11335,7 +10936,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11365,7 +10966,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11395,7 +10996,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11425,7 +11026,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11455,7 +11056,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11485,7 +11086,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11515,7 +11116,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11545,7 +11146,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11575,7 +11176,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }
@@ -11605,7 +11206,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_aIncludedEditableEntityLabels {
                    40 41 42 43 43 44 45 46 47 48 49
                   }
-                  m_sWPToSpawn "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                  m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                   m_fPerceptionFactor 25
                  }
                 }

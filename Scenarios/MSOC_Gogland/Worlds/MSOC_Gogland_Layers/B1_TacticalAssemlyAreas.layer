@@ -127,10 +127,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         m_eArsenalSaveType NO_RESTRICTIONS
        }
       }
-      coords -22.953 0.205 4.711
-      angleX -2.336
-      angleY -129.149
-      angleZ 1.329
+      coords -42.913 -1.221 -7.114
+      angleX 0.702
+      angleY 5.622
+      angleZ -2.594
       {
        GenericEntity {
         ID "5E9B0BA358A0D551"
@@ -220,10 +220,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         m_eArsenalSaveType NO_RESTRICTIONS
        }
       }
-      coords -26.402 -0.213 -0.568
-      angleX -4.384
-      angleY -87.275
-      angleZ -3.53
+      coords -48.082 -1.561 -6.781
+      angleX 3.62
+      angleY 3.771
+      angleZ -4.31
      }
      GenericEntity SlotDelivery_1 : "{4C2EF5C1E53FE511}Prefabs/ScenarioFramework/Components/SlotDelivery.et" {
       components {
@@ -308,10 +308,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_sObjectToSpawn "{D0891F7E07B1D08E}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MSOC_MG.et"
         }
        }
-       coords -27.838 -0.089 1.939
-       angleX -8.882
-       angleY -164.533
-       angleZ -4.785
+       coords -33.982 -0.071 9.405
+       angleX -5.504
+       angleY 109.829
+       angleZ 8.457
       }
      }
      GenericEntity Slot151 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {

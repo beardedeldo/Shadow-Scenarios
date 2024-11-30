@@ -1024,7 +1024,7 @@ GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/He
    {
     DecalEntity {
      ID "56DEFDB4A9499F9B"
-     coords 0.002 -0 0.001
+     coords 0.002 0 0.001
      angleX -90
     }
    }
@@ -1184,7 +1184,7 @@ GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/He
      {
       GenericEntity {
        ID "5A26B380A63C2147"
-       coords 0.002 -0 0.065
+       coords 0.002 0 0.065
       }
      }
     }
@@ -1206,7 +1206,7 @@ GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/He
      {
       GenericEntity {
        ID "5A26B380A63C2147"
-       coords 0 -0 0.064
+       coords 0 0 0.064
       }
      }
     }
@@ -1312,7 +1312,7 @@ GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/He
  }
 }
 GenericEntity : "{E55FC02F8C1518A2}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_US.et" {
- coords 10121.727 7.844 6458.265
+ coords 10097.674 7.844 6462.242
  angleY 175.828
 }
 $grp StaticModelEntity : "{E8697D4489516AE0}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_USSR_03.et" {

@@ -78,3 +78,13 @@ SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/T
   }
  }
 }
+$grp GenericEntity : "{D26300F4D5316677}Prefabs/Structures/Signs/Recruitment.et" {
+ {
+  coords 10115.276 7.224 6456.443
+  angleY -43.856
+ }
+ {
+  coords 10093.938 6.944 6465.112
+  angleY 45.948
+ }
+}

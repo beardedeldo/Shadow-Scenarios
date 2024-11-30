@@ -14,6 +14,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
      }
     }
    }
+   m_bShowDebugShapesInWorkbench 1
   }
  }
  coords 6500 161.875 6500
@@ -246,7 +247,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              components {
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sObjectToSpawn "{4982FD62A5380687}Prefabs/Groups/BLUFOR/Group_US_AirCrew.et"
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
               }
              }
              coords 2.165 0.231 4.342
@@ -324,7 +325,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              components {
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sObjectToSpawn "{7A43006F3F254FB2}Prefabs/Groups/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Group_USAF_USMC_MARSOC_SentryTeam.et"
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
               }
              }
              coords 4.586 -0.461 5.13
@@ -415,7 +416,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              components {
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sObjectToSpawn "{4982FD62A5380687}Prefabs/Groups/BLUFOR/Group_US_AirCrew.et"
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
               }
              }
              coords -6.198 -0.395 2.329
@@ -492,7 +493,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              components {
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sObjectToSpawn "{4982FD62A5380687}Prefabs/Groups/BLUFOR/Group_US_AirCrew.et"
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
               }
              }
              coords 1.546 -0.236 -4.376
@@ -562,7 +563,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              components {
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sObjectToSpawn "{4982FD62A5380687}Prefabs/Groups/BLUFOR/Group_US_AirCrew.et"
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
               }
              }
              coords 6.5 -0.762 11.107
@@ -635,7 +636,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              components {
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sObjectToSpawn "{4982FD62A5380687}Prefabs/Groups/BLUFOR/Group_US_AirCrew.et"
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
               }
              }
              coords -0.313 -0.135 -6.262
@@ -717,7 +718,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              components {
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sObjectToSpawn "{7A43006F3F254FB2}Prefabs/Groups/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Group_USAF_USMC_MARSOC_SentryTeam.et"
-               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
               }
              }
              coords -0.182 0.422 3.204
@@ -902,7 +903,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  components {
                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
                    m_Waypoint SCR_ScenarioFrameworkWaypointDefend "{6226A2FAF1258EA6}" {
-                    m_sWaypointPrefab "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                    m_sWaypointPrefab "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                     m_bFastInit 1
                    }
                   }
@@ -959,7 +960,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    "SlotWaypoint25" "SlotWaypoint296"
                   }
                  }
-                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                  m_fPerceptionFactor 60
                 }
                }
@@ -1274,7 +1275,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  components {
                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
                    m_Waypoint SCR_ScenarioFrameworkWaypointDefend "{6226A2FAF1258EA6}" {
-                    m_sWaypointPrefab "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                    m_sWaypointPrefab "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                     m_bFastInit 1
                    }
                   }
@@ -1331,7 +1332,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    "SlotWaypoint23" "SlotWaypoint24"
                   }
                  }
-                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                  m_fPerceptionFactor 60
                 }
                }
@@ -1556,13 +1557,19 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
               {
                $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
                 SlotWaypoint26 {
+                 components {
+                  SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                   m_bShowDebugShapesInWorkbench 0
+                  }
+                 }
                  coords 0 -0.067 0
                 }
                 SlotWaypoint301 {
                  components {
                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                   m_bShowDebugShapesInWorkbench 0
                    m_Waypoint SCR_ScenarioFrameworkWaypointDefend "{6226A2FAF1258EA6}" {
-                    m_sWaypointPrefab "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                    m_sWaypointPrefab "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                     m_bFastInit 1
                    }
                   }
@@ -1619,7 +1626,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    "SlotWaypoint26" "SlotWaypoint301"
                   }
                  }
-                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                  m_fPerceptionFactor 60
                 }
                }
@@ -3440,7 +3447,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  components {
                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
                    m_Waypoint SCR_ScenarioFrameworkWaypointDefend "{6226A2FAF1258EA6}" {
-                    m_sWaypointPrefab "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                    m_sWaypointPrefab "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                     m_bFastInit 1
                    }
                   }
@@ -3792,7 +3799,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  components {
                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
                    m_Waypoint SCR_ScenarioFrameworkWaypointDefend "{6226A2FAF1258EA6}" {
-                    m_sWaypointPrefab "{8C81048498A66227}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+                    m_sWaypointPrefab "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                     m_bFastInit 1
                    }
                   }

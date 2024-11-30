@@ -19,6 +19,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
      m_sQRFLayerName "QRFSpawnpointsLayer2"
     }
    }
+   m_bShowDebugShapesInWorkbench 1
   }
  }
  coords 6499.377 161.885 6500.033
@@ -4240,7 +4241,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
+                   m_sObjectToSpawn "{56FD583BBC989204}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_SentryTeam.et"
                    m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    m_eAISkill EXPERT
                   }
@@ -4557,7 +4558,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
          components {
           SCR_ScenarioFrameworkLayerTaskKill "{5B02763B6A6D6C4B}" {
            m_sTaskTitle "OPORD 030200ZJUN24"
-           m_sTaskDescription "Objective: Eliminate High Value Target "\
+           m_sTaskDescription "Objective: Eliminate  the High Value Target "\
            "Execution:"\
            "1. Move to the area objective. "\
            "2. Locate of target of interest.  "\
@@ -4727,6 +4728,50 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                }
                coords 34.123 -0.053 -29
                angleY -144.336
+              }
+              SlotAI1291 {
+               components {
+                SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                 m_sObjectToSpawn "{B6A2736A7201DD23}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_RTO.et"
+                 m_bShowDebugShapesInWorkbench 0
+                 m_sWPToSpawn ""
+                 m_fPerceptionFactor 25
+                }
+               }
+               coords 9.282 0.301 23.642
+               angleY 3.731
+              }
+              SlotAI1292 {
+               components {
+                SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                 m_sObjectToSpawn "{5811F02495F6810E}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_SL.et"
+                 m_bShowDebugShapesInWorkbench 0
+                 m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{618696CAF847E5CD}" {
+                  m_aLayerName {
+                   "SlotWaypoint37"
+                  }
+                 }
+                 m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+                 m_fPerceptionFactor 25
+                }
+               }
+               coords -31.731 0.501 36.471
+              }
+              SlotAI1293 {
+               components {
+                SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                 m_sObjectToSpawn "{5811F02495F6810E}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_SL.et"
+                 m_bShowDebugShapesInWorkbench 0
+                 m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{618696CAF847E5CD}" {
+                  m_aLayerName {
+                   "SlotWaypoint37"
+                  }
+                 }
+                 m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+                 m_fPerceptionFactor 25
+                }
+               }
+               coords -62.752 0.074 53.187
               }
              }
             }
@@ -4921,7 +4966,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 12.72 0.28 -40.967
+               coords 22.553 -0.001 -8.794
                angleY -150.094
               }
               SlotKill19 {
@@ -4944,7 +4989,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 15.889 0.28 -40.25
+               coords 38.227 1.412 -32.949
                angleY 100.047
               }
               SlotKill20 {
@@ -4967,7 +5012,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 12.193 0.28 -42.306
+               coords 9.661 0.301 26.163
                angleY -109.895
               }
               SlotKill21 {
@@ -4990,7 +5035,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 7.816 0.28 -40.811
+               coords -30.416 0.502 37.27
                angleY -109.895
               }
               SlotKill22 {
@@ -5013,8 +5058,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 9.823 0.28 -38.818
-               angleY -148.132
+               coords -61.692 0.074 53.488
+               angleY -7.399
               }
               SlotKill23 {
                components {
@@ -5054,12 +5099,14 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_sSound "SOUND_CP_TD_PC"
                   }
                  }
+                 m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{62FB6CBB9E11518B}" {
+                 }
                  m_bSpawnAIOnWPPos 0
-                 m_sWPToSpawn ""
+                 m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                  m_fPerceptionFactor 10
                 }
                }
-               coords 40.362 4.612 -24.669
+               coords 14.549 0 -19.195
                angleY 45.435
               }
               SlotKill25 {
@@ -5082,8 +5129,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 44.746 4.612 -31.199
-               angleY 10.478
+               coords -1.813 0.456 -11.892
+               angleY 134.22
               }
              }
             }
@@ -5103,7 +5150,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
            "TARGET: %1"
           }
          }
-         coords 1749.641 145.985 -3672.851
+         coords -424.6 -53.772 1363.249
          {
           $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
            {
@@ -5123,7 +5170,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -6.557 -0.093 4.677
+               coords 10.336 2.27 4.05
+               angleY -142.335
               }
               SlotAI692 {
                components {
@@ -5138,7 +5186,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -8.779 -0.093 2.557
+               coords -9.118 5.232 22.47
+               angleY -128.049
               }
               SlotAI693 {
                components {
@@ -5148,12 +5197,12 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_aIncludedEditableEntityLabels {
                  }
                  m_bShowDebugShapesInWorkbench 0
-                 m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                  m_eAISkill EXPERT
                  m_fPerceptionFactor 25
                 }
                }
-               coords -9.277 -0.093 -1.142
+               coords -7.378 0.02 0.667
                angleY 74.045
               }
               SlotAI694 {
@@ -5164,12 +5213,12 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_aIncludedEditableEntityLabels {
                  }
                  m_bShowDebugShapesInWorkbench 0
-                 m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
+                 m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
                  m_eAISkill EXPERT
                  m_fPerceptionFactor 25
                 }
                }
-               coords -29.834 13.852 -15.242
+               coords 40.182 0.3 -104.59
                angleX 16.559
                angleY -101.258
                angleZ -5.855
@@ -5187,7 +5236,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 6.902 0.051 1.792
+               coords -41.865 -2.37 -14.249
                angleY 74.74
               }
               SlotAI697 {
@@ -5203,7 +5252,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -9.312 -0.421 -9.179
+               coords -47.733 6.739 -24.375
                angleY -113.086
               }
               SlotAI695 {
@@ -5218,14 +5267,14 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 19.129 -3.4 7.914
+               coords 11.123 -0.146 -19.193
                angleY 46.813
               }
               SlotAI1114 {
                components {
                 SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                  m_sFactionKey "USSR"
-                 m_sObjectToSpawn "{66EBC81DF78817E6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Underpants.et"
+                 m_sObjectToSpawn "{56FD583BBC989204}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_SentryTeam.et"
                  m_aIncludedEditableEntityLabels {
                  }
                  m_bShowDebugShapesInWorkbench 0
@@ -5233,7 +5282,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -4.184 -0.092 -7.455
+               coords 3.979 0.148 -3.795
                angleY -16.752
               }
              }
@@ -5251,11 +5300,11 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
               SlotKill3 {
                components {
                 SCR_ScenarioFrameworkSlotKill "{5B02763C1EAA0BF1}" {
-                 m_sObjectToSpawn "{66EBC81DF78817E6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Underpants.et"
+                 m_sObjectToSpawn "{5117311FB822FD1F}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Officer.et"
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords -1.136 -0.092 -6.278
+               coords 12.446 5.259 5.536
                angleY -38.548
               }
               SlotKill26 {
@@ -5265,16 +5314,16 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords -6.933 -0.093 -7.678
+               coords -9.607 2.232 27.347
               }
               SlotKill27 {
                components {
                 SCR_ScenarioFrameworkSlotKill "{5B02763C1EAA0BF1}" {
-                 m_sObjectToSpawn "{66EBC81DF78817E6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Underpants.et"
+                 m_sObjectToSpawn "{5117311FB822FD1F}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Officer.et"
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords -7.571 -0.093 -4.162
+               coords 24.988 1.172 -107.827
               }
               SlotKill28 {
                components {
@@ -5283,7 +5332,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords -5.068 -0.093 3.681
+               coords 42.116 2.086 0.8
               }
              }
             }
@@ -5303,7 +5352,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
            "TARGET: %1"
           }
          }
-         coords -3506.779 -73.384 -2046.021
+         coords 110.892 -43.074 2517.081
          angleY -168.252
          {
           $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -5322,7 +5371,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                 m_fPerceptionFactor 25
                }
               }
-              coords 1.219 0 1.79
+              coords 1.219 0.178 1.79
               angleY -138.536
              }
              GenericEntity SlotKill4 : "{C70DC6CBD1AAEC9A}Prefabs/ScenarioFramework/Components/SlotKill.et" {
@@ -5346,7 +5395,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                 m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                }
               }
-              coords -0.769 0 -1.135
+              coords -0.769 0.004 -1.135
               angleY 34.083
              }
             }
@@ -5386,7 +5435,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
                 }
                }
-               coords -73.263 6.648 -87.084
+               coords -140.33 11.87 -82.01
                angleY 52.028
               }
               SlotAI701 {
@@ -5410,7 +5459,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
                 }
                }
-               coords 206.973 -33.158 -40.146
+               coords 292.495 36.129 -93.153
                angleY -139.72
               }
               SlotAI702 {
@@ -5434,7 +5483,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
                 }
                }
-               coords -283.245 27.983 -13.69
+               coords -408.249 14.031 39.127
                angleX 1.781
                angleY 179.909
                angleZ -4.194
@@ -5460,7 +5509,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
                 }
                }
-               coords 22.798 -29.747 188.91
+               coords 225.996 31.794 242.618
                angleY -171.454
               }
              }
@@ -5489,7 +5538,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
               m_sObjectToSpawn "{49C909AFD66E90A1}Prefabs/Vehicles/Wheeled/S1203/S1203_transport_randomized.et"
              }
             }
-            coords 0.266 -0.303 14.797
+            coords 5.864 0.147 4.991
             angleX -3.489
             angleY -177.952
             angleZ -4.527
@@ -5500,10 +5549,10 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
               m_sObjectToSpawn "{F7E9AA0C813EABDA}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_FIA.et"
              }
             }
-            coords -7.136 0.219 1.011
-            angleX 0.605
-            angleY 0.108
-            angleZ 10.083
+            coords -6.203 0.168 -2.763
+            angleX 10.101
+            angleY -86.847
+            angleZ -0.062
            }
           }
          }
@@ -5520,7 +5569,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
            "TARGET: %1"
           }
          }
-         coords -1392.186 -78.386 2100.629
+         coords 3349.462 -47.557 8356.352
          {
           $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
            {
@@ -5539,7 +5588,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords 3.956 2.247 -24.008
+               coords -12.875 0.412 7.662
               }
               SlotKill2 {
                components {
@@ -5548,7 +5597,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords -15.497 5.264 -29.098
+               coords -84.815 -5.116 -114.165
                angleY 77.148
               }
               SlotKill29 {
@@ -5557,7 +5606,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sObjectToSpawn "{5117311FB822FD1F}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Officer.et"
                 }
                }
-               coords -14.516 1.678 5.294
+               coords 143.224 -1.968 12.681
                angleY 132.299
               }
              }
@@ -5582,7 +5631,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 44.247 -12.562 -4.979
+               coords -10.202 0.412 6.126
+               angleY -147.273
               }
               SlotAI713 {
                components {
@@ -5599,7 +5649,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 42.67 -12.296 -46.558
+               coords -37.721 -0.571 -4.237
+               angleY 107.8
               }
               SlotAI714 {
                components {
@@ -5616,7 +5667,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -17.831 4.924 -24.527
+               coords -31.991 -0.581 -6.611
+               angleY -94.875
               }
               SlotAI715 {
                components {
@@ -5633,7 +5685,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -27.544 19.457 -63.314
+               coords -37.442 -4.787 -75.343
               }
               SlotAI716 {
                components {
@@ -5650,7 +5702,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -27.773 7.439 9.762
+               coords -78.675 -5.116 -111.992
               }
               SlotAI717 {
                components {
@@ -5667,7 +5719,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -3.692 2.137 33.466
+               coords -93.958 -5.116 -111.452
               }
               SlotAI718 {
                components {
@@ -5683,7 +5735,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 19.857 -6.95 28.496
+               coords -80.71 -5.117 -117.702
               }
               SlotAI719 {
                components {
@@ -5700,7 +5752,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -59.089 24.792 -20.982
+               coords -77.614 -5.116 -104.262
               }
               SlotAI720 {
                components {
@@ -5717,7 +5769,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -27.493 10.226 31.31
+               coords 70.093 -4.401 -93.136
               }
               SlotAI721 {
                components {
@@ -5734,7 +5786,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 42.684 -11.624 -5.714
+               coords 149.724 -1.967 9.126
               }
               SlotAI722 {
                components {
@@ -5751,7 +5803,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 4.472 1.32 -12.333
+               coords 140.522 -1.968 17.612
               }
               SlotAI723 {
                components {
@@ -5768,7 +5820,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -7.769 1.531 -11.281
+               coords 145.395 -1.968 29.514
+               angleY 78.467
               }
               SlotAI724 {
                components {
@@ -5784,7 +5837,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -12.033 1.569 3.316
+               coords 146.635 -1.968 29.955
               }
               SlotAI727 {
                components {
@@ -5801,7 +5854,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -9.01 1.34 9.047
+               coords 162.133 -1.31 50.27
               }
               SlotAI728 {
                components {
@@ -5818,7 +5871,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 9.474 1.009 6.305
+               coords 202.35 -3.038 2.011
               }
               SlotAI729 {
                components {
@@ -5835,7 +5888,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 8.779 0.999 10.025
+               coords 206.809 -3.116 11.127
               }
               SlotAI730 {
                components {
@@ -5852,7 +5905,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 5.938 1.58 17.85
+               coords 206.768 -7.76 -53.936
+               angleY 131.687
               }
               SlotAI731 {
                components {
@@ -5869,7 +5923,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -1.491 1.436 11.622
+               coords 207.919 -7.76 -52.104
+               angleY 114.192
               }
               SlotAI732 {
                components {
@@ -5886,7 +5941,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 18.993 0.016 2.311
+               coords 65.983 -4.76 -93.008
               }
               SlotAI733 {
                components {
@@ -5902,7 +5957,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 17.58 -0.007 -9.086
+               coords 22.221 1.257 -4.755
               }
               SlotAI734 {
                components {
@@ -5919,7 +5974,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 2.679 2.271 -20.881
+               coords 26.611 1.425 -5.581
               }
               SlotAI735 {
                components {
@@ -5936,7 +5991,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 4.354 2.271 -20.82
+               coords 63.55 0.732 -36.391
               }
               SlotAI736 {
                components {
@@ -5953,7 +6008,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -12.93 5.332 -28.287
+               coords 69.771 0.91 -35.732
               }
               SlotAI737 {
                components {
@@ -5970,7 +6025,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -13.459 1.894 7.994
+               coords -14.952 -0.136 2.365
                angleY 119.53
               }
               SlotAI738 {
@@ -5988,7 +6043,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -2.101 1.544 -23.773
+               coords -48.291 -0.585 -29.873
                angleY -23.09
               }
              }
@@ -6009,7 +6064,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
            "TARGET: %1"
           }
          }
-         coords -183.802 -156.719 3158.219
+         coords -741.477 32.49 4345.605
          angleY -70.808
          {
           $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -6026,7 +6081,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 20.857 2.009 -22.42
+               coords -119.363 -4.021 -105.323
                angleY 122.541
               }
               SlotAI1115 {
@@ -6038,8 +6093,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 20.228 0.91 -25.306
-               angleY 88.744
+               coords -119.345 -3.297 -91.024
+               angleY 63.434
               }
               SlotAI1116 {
                components {
@@ -6050,8 +6105,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -23.361 0.713 -26.202
-               angleY 116.662
+               coords -138.927 -6.036 -107.765
+               angleY -55.816
               }
               SlotAI1117 {
                components {
@@ -6062,7 +6117,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -19.774 0.713 -26.203
+               coords -94.518 -2.106 -197.442
                angleY -108.233
               }
               SlotAI1118 {
@@ -6074,7 +6129,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -10.8 1.219 -64.731
+               coords -104.27 -2.026 -187.893
+               angleY -97.447
               }
               SlotAI1119 {
                components {
@@ -6090,7 +6146,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -9.997 1.218 -67.659
+               coords 285.627 41.135 139.894
               }
               SlotAI1120 {
                components {
@@ -6106,7 +6162,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -15.828 0.632 -2.444
+               coords 264.819 41.046 107.066
               }
               SlotAI1121 {
                components {
@@ -6122,8 +6178,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -14.634 0.632 -0.09
-               angleY -105.324
+               coords 322.04 41.384 150.061
+               angleY 164.239
               }
               SlotAI1122 {
                components {
@@ -6139,8 +6195,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -22.713 0.702 -41.937
-               angleY -92.786
+               coords 226.547 34.894 9.968
+               angleY 6.838
               }
               SlotAI1123 {
                components {
@@ -6156,19 +6212,19 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -19.524 0.702 -42.764
-               angleY -51.469
+               coords 5.964 -0.287 0.435
+               angleY 173.495
               }
               SlotAI1124 {
                components {
                 SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                 m_sObjectToSpawn "{5117311FB822FD1F}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Officer.et"
+                 m_sObjectToSpawn "{5811F02495F6810E}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_SL.et"
                  m_bShowDebugShapesInWorkbench 0
                  m_sWPToSpawn ""
                  m_fPerceptionFactor 25
                 }
                }
-               coords 23.414 0.909 -10.964
+               coords 5.174 -0.264 -7.173
               }
               SlotAI1129 {
                components {
@@ -6184,8 +6240,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -2.146 -0.058 7
-               angleY 71.332
+               coords 3.369 -0.166 -1.099
+               angleY 121.253
               }
               SlotAI1130 {
                components {
@@ -6201,7 +6257,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -2.113 -0.061 4.605
+               coords 203.182 35.018 29.878
                angleY 114.237
               }
               SlotAI1128 {
@@ -6213,8 +6269,32 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 23.414 0.909 -15.67
-               angleY -34.58
+               coords 8.39 -0.09 -3.773
+               angleY -69.932
+              }
+              SlotAI1294 {
+               components {
+                SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                 m_sObjectToSpawn "{B6A2736A7201DD23}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_RTO.et"
+                 m_bShowDebugShapesInWorkbench 0
+                 m_sWPToSpawn ""
+                 m_fPerceptionFactor 25
+                }
+               }
+               coords 162.375 34.849 14.184
+               angleY -37.425
+              }
+              SlotAI1295 {
+               components {
+                SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                 m_sObjectToSpawn "{B6A2736A7201DD23}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_RTO.et"
+                 m_bShowDebugShapesInWorkbench 0
+                 m_sWPToSpawn ""
+                 m_fPerceptionFactor 25
+                }
+               }
+               coords 163.199 34.849 8.437
+               angleY -37.425
               }
              }
             }
@@ -6236,7 +6316,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords 69.853 7.22 46.351
+               coords 202.396 34.774 -51.057
                angleX 5.484
                angleY 36.059
                angleZ 9.608
@@ -6254,7 +6334,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 25
                 }
                }
-               coords -31.396 -3.345 29.607
+               coords 310.554 34.774 29.061
                angleX 0.364
                angleY -0.041
                angleZ -6.479
@@ -6289,7 +6369,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 15.331 4.215 -24.877
+               coords 4.065 -0.171 -3.913
                angleY 102.228
               }
               SlotKill31 {
@@ -6310,7 +6390,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords 25.144 0.91 -26.72
+               coords 228.57 34.894 -23.239
                angleY -41.556
               }
               SlotKill32 {
@@ -6331,7 +6411,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords -22.02 0.713 -26.884
+               coords 289.395 41.135 141.115
               }
               SlotKill33 {
                components {
@@ -6351,7 +6431,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords -10.559 1.219 -64.141
+               coords 316.453 35.385 42.577
               }
               SlotKill34 {
                components {
@@ -6371,7 +6451,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords -16.361 0.632 -0.154
+               coords 230.023 34.894 18.371
               }
               SlotKill35 {
                components {
@@ -6391,7 +6471,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords -20.59 0.702 -39.574
+               coords -113.553 -4.132 -127.378
                angleY 174.11
               }
               SlotKill36 {
@@ -6412,8 +6492,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_fPerceptionFactor 10
                 }
                }
-               coords -2.98 -0.062 5.393
-               angleY -82.627
+               coords -119.074 -3.934 -103.242
+               angleY 90.681
               }
              }
             }
@@ -6448,8 +6528,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_eAISkill EXPERT
                   }
                  }
-                 coords 2.568 0 0
-                 angleY -93.665
+                 coords 241.148 37.817 104.619
+                 angleY 169.587
                 }
                 GenericEntity Slot243 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                  components {
@@ -6463,7 +6543,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    }
                   }
                  }
-                 coords 0 0 0
+                 coords 241.452 37.698 102.069
+                 angleY -96.747
                 }
                }
               }
@@ -6487,7 +6568,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_eAISkill EXPERT
                   }
                  }
-                 coords 2.107 0.155 0.193
+                 coords 71.018 44.462 -30.321
                  angleX -7.339
                  angleY -84.758
                  angleZ -0.204
@@ -6504,7 +6585,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    }
                   }
                  }
-                 coords 0 0 0
+                 coords 74.745 44.31 -31.544
+                 angleY 174.606
                 }
                }
               }
@@ -11183,6 +11265,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              GenericEntity SlotWaypoint319 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
               components {
                SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                m_bShowDebugShapesInWorkbench 0
                 m_Waypoint SCR_ScenarioFrameworkWaypointSearchAndDestroy "{6220EB2C16BC00D7}" {
                 }
                }
@@ -12241,6 +12324,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              GenericEntity SlotWaypoint322 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
               components {
                SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                m_bShowDebugShapesInWorkbench 0
                 m_Waypoint SCR_ScenarioFrameworkWaypointSearchAndDestroy "{6220EB2C16BC00D7}" {
                  m_fCompletionRadius 60
                 }
@@ -15001,6 +15085,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint206 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61C2AAA540DAD2E7}" {
                        m_fCompletionRadius 10
                        m_fPriorityLevel 1000
@@ -15013,6 +15098,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint207 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61CCA58E95715A96}" {
                        m_aLayersWithWaypointsToCycle {
                         "AmbushWP3"
@@ -15076,6 +15162,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint15 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61FD21A45F354823}" {
                        m_fCompletionRadius 10
                        m_fPriorityLevel 1000
@@ -15088,6 +15175,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint141 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61FD21A45ACD1447}" {
                        m_aLayersWithWaypointsToCycle {
                         "AmbushWP3"
@@ -15165,6 +15253,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint292 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61FD21A45F354823}" {
                        m_fCompletionRadius 10
                        m_fPriorityLevel 1000
@@ -15179,6 +15268,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint293 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61FD21A45ACD1447}" {
                        m_aLayersWithWaypointsToCycle {
                         "AmbushWP3"
@@ -15247,6 +15337,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint294 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61C2AAA540DAD2E7}" {
                        m_fCompletionRadius 10
                        m_fPriorityLevel 1000
@@ -15259,6 +15350,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SlotWaypoint295 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61CCA58E95715A96}" {
                        m_aLayersWithWaypointsToCycle {
                         "AmbushWP3"
@@ -15564,6 +15656,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              SlotWaypoint217 {
               components {
                SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                m_bShowDebugShapesInWorkbench 0
                 m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61CCA58266841635}" {
                  m_fPriorityLevel 1000
                 }
@@ -15574,6 +15667,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              SlotWaypoint218 {
               components {
                SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+                m_bShowDebugShapesInWorkbench 0
                 m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61CCA5827BFFFCBF}" {
                  m_fPriorityLevel 1000
                 }

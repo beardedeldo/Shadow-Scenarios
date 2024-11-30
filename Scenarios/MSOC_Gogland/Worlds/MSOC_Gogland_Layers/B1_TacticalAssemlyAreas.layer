@@ -1,13 +1,82 @@
-GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
- components {
-  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-   m_SpawnChildren RANDOM_ONE
+GenericEntity BriefingTent01 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+ coords 10133.364 7.387 6420.558
+ angleY -57.418
+ {
+  StaticModelEntity : "{55973C5B0950D4AB}Prefabs/Props/Military/Furniture/ChairMilitary_US_01.et" {
+   coords -2.043 0.195 -1.007
+   angleY 0
+  }
+  StaticModelEntity Table_Ashtray_US_1 : "{7B2D1744E9F2A3B3}Prefabs/Compositions/Misc/SubCompositions/Furniture/Table_Ashtray_US_01.et" {
+   coords -1.181 0.135 -1.208
+   angleY -37.179
+   {
+    GenericEntity {
+     ID "5CB0D996697DE52C"
+     coords -0.076 0.9 -0.037
+    }
+    GenericEntity : "{05B993EAF472E376}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_10.et" {
+     coords 0.479 0.9 0.237
+     angleY -178.63
+    }
+    GenericEntity : "{1EE7CF82BC148328}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_03.et" {
+     coords 0.303 0.9 -0.107
+     angleY -179.336
+    }
+    GenericEntity : "{23D3EABAC9780A1F}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_04.et" {
+     coords 0.238 0.9 0.245
+     angleY -178.607
+    }
+    GenericEntity : "{69EDA70A48B66C58}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_13.et" {
+     coords -0.342 0.9 -0.092
+     angleY -176.582
+    }
+    GenericEntity : "{8C71EBF34453FB33}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_12.et" {
+     coords -0.477 0.9 -0.09
+     angleY -178.24
+    }
+    GenericEntity : "{972FB79B0C359B6E}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_01.et" {
+     coords 0.41 0.9 -0.11
+     angleY -179.086
+    }
+    GenericEntity : "{AA1B92A37959125A}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_06.et" {
+     coords 0.189 0.9 -0.107
+     angleY 179.328
+    }
+    GenericEntity : "{E025DF13F897741D}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_11.et" {
+     coords 0.357 0.9 0.24
+     angleY -178.182
+    }
+    GenericEntity : "{FB7B837BB0F11443}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_02.et" {
+     coords 0.527 0.9 -0.111
+     angleY -179.463
+    }
+   }
+  }
+  GenericEntity CamoNet_Large_Top_US1 : "{89230C660A90788F}Prefabs/Structures/Military/CamoNets/US/CamoNet_Large_Top_US.et" {
+   coords -3.251 0.656 2.88
+   angleY -76.972
+  }
+  $grp SCR_DestructibleEntity : "{C8A5C92E74ABB5EA}Prefabs/Props/Civilian/PicnicTable/PicnicTable_01.et" {
+   {
+    coords -7.922 -0.821 5.872
+    angleY -150.593
+   }
+   {
+    coords -4.835 -0.533 8.442
+    angleY 60.484
+   }
+   {
+    coords -9.589 -0.919 1.982
+    angleY 15.19
+   }
   }
  }
- coords 10175.657 5.048 6381.385
- {
-  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-   Layer300 {
+}
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ Area2 {
+  coords 10175.657 5.048 6381.385
+  {
+   GenericEntity Layer300 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
       m_aPlugins {
@@ -22,16 +91,152 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
     angleY 41.037
     angleZ 2.697
     {
+     GenericEntity LayerTaskMove4 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+      components {
+       SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+        m_sFactionKey "US"
+        m_sTaskTitle "Deliver collected intel here. "
+       }
+      }
+      coords 14.835 0.535 -20.229
+      angleY -41.092
+      angleZ -3.577
+      {
+       GenericEntity SlotMoveTo15 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+        components {
+         SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+          m_sFactionKey "US"
+          m_aPlugins {
+           SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+            m_fAreaRadius 1
+            m_sActivatedByThisFaction "US"
+           }
+          }
+          m_bShowDebugShapesInWorkbench 0
+         }
+        }
+        coords 2.146 -0.848 2.683
+       }
+      }
+     }
+     GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
+      components {
+       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemTypes 492542
+        m_eSupportedArsenalItemModes 254
+        m_eArsenalSaveType NO_RESTRICTIONS
+       }
+      }
+      coords -22.953 0.205 4.711
+      angleX -2.336
+      angleY -129.149
+      angleZ 1.329
+      {
+       GenericEntity {
+        ID "5E9B0BA358A0D551"
+        coords -0.123 -0.005 -0.247
+       }
+       GenericEntity {
+        ID "5D4A8E6DE1C5C844"
+        coords -0.125 0 0.271
+       }
+       GenericEntity {
+        ID "58C4A255C2BC3015"
+        coords -0.344 0.001 0.857
+        angleY -45.82
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30BA"
+        coords 0.808 0.009 -1.148
+        angleX 7.117
+        angleY 97.794
+        angleZ -1.702
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30AA"
+        coords -1.438 -0.043 -0.775
+        angleX 30.705
+        angleY -127.202
+        angleZ -21.186
+       }
+       GenericEntity {
+        ID "58C4A255C2BC31E7"
+        coords -1.115 -0.028 -0.05
+        angleY 89.179
+        {
+         GenericEntity {
+          ID "56B6871A1414CB69"
+          coords 0.009 0 0.001
+         }
+        }
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30DB"
+        coords -0.852 0.073 -0.921
+        angleX 11.144
+        angleY -118.209
+       }
+       GenericEntity {
+        ID "58C4A255C2BC31D4"
+        coords 0.039 -0.01 -1.064
+        angleY 177.707
+        {
+         GenericEntity {
+          ID "56B6871A278AB642"
+          coords -0.002 0 0.005
+         }
+        }
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30C8"
+        coords 0.527 0.023 0.912
+        angleY -19.083
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30E4"
+        coords 1.091 0.03 0.271
+        angleY 39.419
+       }
+       GenericEntity {
+        ID "58C4A6B41F6088BA"
+        coords 0.434 0.014 0.308
+        angleY 54.557
+        {
+         DecalEntity {
+          ID "56DEFDB4A2C87F38"
+          coords 0 0 0
+          angleX -90
+          angleY 0
+          angleZ -2.554
+         }
+        }
+       }
+      }
+     }
+     GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
+      components {
+       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemTypes 983934
+        m_eArsenalSaveType NO_RESTRICTIONS
+       }
+      }
+      coords -26.402 -0.213 -0.568
+      angleX -4.384
+      angleY -87.275
+      angleZ -3.53
+     }
      GenericEntity SlotDelivery_1 : "{4C2EF5C1E53FE511}Prefabs/ScenarioFramework/Components/SlotDelivery.et" {
       components {
        SCR_ScenarioFrameworkSlotDelivery "{59F51EA7A10294D2}" {
         m_iRandomPercent 100
+        m_bShowDebugShapesDuringRuntime 0
         m_aPlugins {
          SCR_ScenarioFrameworkPluginTrigger "{5A6513EB3A4B9621}" {
-          m_fAreaRadius 1
+          m_fAreaRadius 2
           m_bOnce 0
          }
         }
+        m_bShowDebugShapesInWorkbench 0
         m_aActionsOnFinished {
          SCR_ScenarioFrameworkActionRemoveItemFromInventory "{61DAAAA36EB85CC3}" {
           m_aPrefabFilter {
@@ -47,1274 +252,215 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
         }
        }
       }
-      coords 10.9 0.888 -20.644
+      coords 14.488 0.779 -16.749
      }
-     GenericEntity LayerTask1 : "{5AF3BFDA2EAE56EA}Prefabs/ScenarioFramework/Components/LayerTask.et" {
+     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      SlotAI505 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "US"
+         m_sObjectToSpawn "{8B527E3FB8C8B16F}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MSOC_Medic.et"
+        }
+       }
+       coords -27.449 0.11 6.323
+       angleY -41.092
+       angleZ -3.577
+      }
+      SlotAI603 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "US"
+         m_sObjectToSpawn "{25F840AC711628ED}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MSOC_Sniper.et"
+        }
+       }
+       coords -31.624 -0.201 3.565
+       angleX -2.35
+       angleY -82.129
+       angleZ -6.274
+      }
+      SlotAI605 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{7C012886B8677059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MSOC_AMG.et"
+        }
+       }
+       coords -32.447 0.081 11.358
+       angleX -2.35
+       angleY -82.129
+       angleZ -6.274
+      }
+      SlotAI606 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "US"
+         m_sObjectToSpawn "{3BE69C20F5A01C3D}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MSOC_LAT.et"
+        }
+       }
+       coords -26.981 0.234 8.823
+       angleX -5.893
+       angleY -123.186
+       angleZ -6.766
+      }
+      SlotAI757 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sFactionKey "US"
+         m_sObjectToSpawn "{D0891F7E07B1D08E}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MSOC_MG.et"
+        }
+       }
+       coords -27.838 -0.089 1.939
+       angleX -8.882
+       angleY -164.533
+       angleZ -4.785
+      }
+     }
+     GenericEntity Slot151 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
       components {
-       SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
-        m_sTaskTitle "OPORD 300100ZSEP24"
-        m_sTaskDescription "Objective: Get battle kits as needed. "
-        m_bShowDebugShapesInWorkbench 1
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et"
+        m_bShowDebugShapesInWorkbench 0
        }
       }
-      coords 0 0 21.486
-      {
-       $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-        Layer312 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_SpawnChildren RANDOM_ONE
-          }
-         }
-         coords 78.121 -1.544 -19.651
-         angleX 0.759
-         angleY 0.033
-         angleZ 1.844
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot195 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords -60.227 -0.35 -27.921
-           }
-           Slot220 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords -58.266 -0.234 -28.447
-           }
-          }
-          GenericEntity SlotTask9 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords -59.116 -0.114 -27.392
-           angleY -4.991
-          }
-         }
-        }
-        Layer311 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
-         coords -6.816 1.848 48.242
-         angleX 4.866
-         angleY -0.294
-         angleZ -2.887
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot194 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0.001 0 -0.001
-           }
-           Slot219 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords -0.025 0.999 -0.119
-           }
-          }
-          GenericEntity SlotTask1 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_fAreaRadius 5
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0.001 0 -0.001
-           angleY 0.198
-          }
-         }
-        }
-        Layer313 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
-         coords -2.585 -7.27 -89.275
-         angleX -0.348
-         angleY 0.025
-         angleZ -5.044
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot196 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords -0.001 -0.001 -0.002
-           }
-           Slot221 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords -0.001 0 -0.001
-           }
-          }
-          GenericEntity SlotTask3 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords -0.001 -0.001 -0.002
-          }
-         }
-        }
-        Layer314 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
-         coords -85.226 -12.105 10.278
-         angleX 12.307
-         angleY -4.126
-         angleZ -21.176
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot197 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0.001
-           }
-           Slot222 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask4 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0.001
-          }
-         }
-        }
-        Layer315 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
-         coords 25.874 2.38 -0.445
-         angleX -3.538
-         angleY -71.798
-         angleZ 6.2
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot198 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot223 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask5 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-          }
-         }
-        }
-        Layer316 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
-         coords 51.642 -3.265 -75.548
-         angleX 4.456
-         angleY -0.034
-         angleZ 0.33
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot199 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords -0.001 0 -0.001
-           }
-           Slot224 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords -0.001 0 -0.001
-           }
-          }
-          GenericEntity SlotTask6 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords -0.001 0 -0.001
-          }
-         }
-        }
-        Layer317 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
-         coords -69.5 -13.674 -50.184
-         angleX 13.464
-         angleY 34.291
-         angleZ -15.019
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot200 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot225 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask7 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-          }
-         }
-        }
-        Layer318 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
-         coords -51.582 -2.006 71.015
-         angleX 6.125
-         angleY -0.318
-         angleZ -2.977
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot201 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0.001 -0.001
-            angleX -4.543
-            angleY 0.126
-            angleZ -1.597
-           }
-           Slot226 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask8 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0.001 -0.001
-           angleX -4.543
-           angleY 0.126
-           angleZ -1.597
-          }
-         }
-        }
-       }
-      }
-     }
-     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-      Slot151 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et"
-         m_bShowDebugShapesInWorkbench 0
-        }
-       }
-       coords 6.388 0.114 -19.383
-       angleY -12.492
-      }
-      Slot150 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
-         m_bShowDebugShapesInWorkbench 0
-        }
-       }
-       coords 24.658 1.332 -0.158
-       angleX -3.135
-       angleY -14.733
-       angleZ -1.773
-      }
+      coords -42.201 -0.667 4.325
+      angleY -12.492
      }
      GenericEntity SlotMarker2 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
       components {
        SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
         m_bShowDebugShapesInWorkbench 0
         m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{617C9765908D0E67}" {
-         m_sMapMarkerText "TAA ROANOKE"
+         m_sMapMarkerText "MSOC FOB"
          m_eMapMarkerType1Modifier LIGHT
         }
        }
       }
-      coords 10.235 0.09 -20.37
+      coords -37.741 -0.281 8.615
      }
     }
    }
-   Layer64 {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      Enabled 0
-      m_aPlugins {
-       SCR_ScenarioFrameworkPluginTrigger "{61AA9C9B9043F3A0}" {
-        m_fAreaRadius 50
-       }
-      }
-     }
-    }
-    coords -4033.299 -100.82 517.796
-    angleX 1.79
+  }
+ }
+ SmokePit {
+  coords 10112.44 7.844 6463.252
+  angleY -46.235
+  {
+   GenericEntity CardboardBox_MRE_US_1 : "{207B5E830AB77CB8}Prefabs/Compositions/Misc/SubCompositions/Decorations/CardboardBox_MRE_US_01.et" {
+    coords 1.409 0 -0.554
     {
-     GenericEntity SlotDelivery_2 : "{4C2EF5C1E53FE511}Prefabs/ScenarioFramework/Components/SlotDelivery.et" {
-      components {
-       SCR_ScenarioFrameworkSlotDelivery "{59F51EA7A10294D2}" {
-        m_iRandomPercent 100
-        m_aPlugins {
-         SCR_ScenarioFrameworkPluginTrigger "{5A6513EB3A4B9621}" {
-          m_fAreaRadius 1.5
-          m_bOnce 0
-         }
-        }
-        m_aActionsOnFinished {
-         SCR_ScenarioFrameworkActionRemoveItemFromInventory "{61DAAAA36EB85CC3}" {
-          m_aPrefabFilter {
-           SCR_ScenarioFrameworkPrefabFilterCount "{61DAAAA36BB4DEB1}" {
-            m_sSpecificPrefabName "{6D56FED1E55A8F84}Prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
-            m_bIncludeChildren 1
-           }
-          }
-         }
-        }
-        m_aAssociatedTaskLayers {
-         "Intel2" "Intel3" "Intel4" "Intel5"
-        }
-       }
-      }
-      coords -8.166 2.011 -8.159
-      angleX -2.194
-      angleY -9.699
-      angleZ 3.097
+     GenericEntity {
+      ID "5CB0F584A9457E98"
+      coords -0.297 0 -0.095
+      angleY -86.055
      }
-     GenericEntity LayerTask3 : "{5AF3BFDA2EAE56EA}Prefabs/ScenarioFramework/Components/LayerTask.et" {
-      components {
-       SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
-        m_SpawnChildren RANDOM_ONE
-        m_bShowDebugShapesDuringRuntime 1
-        m_sTaskTitle "OPORD 300100ZSEP24"
-        m_sTaskDescription "Objective: Locate missing supplies"\
-        "Mission: Locate it to secure your battle kits. "\
-        "Execution:"\
-        "1. Spiral search the area. The crates should be no more than 100 meters from your position.   "\
-        "2. Recover battle kits as needed. "
-        m_bShowDebugShapesInWorkbench 1
-       }
-      }
-      coords 0.003 -0.001 0.003
-      angleX -1.79
-      {
-       $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-        Layer320 {
-         coords 75.629 -4.805 -15.74
-         angleX 3.539
-         angleY 0.338
-         angleZ 6.251
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot202 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot203 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask2 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-           angleY -4.991
-          }
-         }
-        }
-        Layer321 {
-         coords 3.714 3.267 77.063
-         angleX 1.784
-         angleY -0.197
-         angleZ -1.795
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot204 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0.001 0 -0.001
-           }
-           Slot205 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords -0.056 0 -0.15
-           }
-          }
-          GenericEntity SlotTask10 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_fAreaRadius 5
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0.001 0 -0.001
-           angleY 0.198
-          }
-         }
-        }
-        Layer322 {
-         coords 10.846 -3.111 -67.442
-         angleX 0.895
-         angleY 0.025
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot206 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 -0.001
-           }
-           Slot207 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask11 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 -0.001
-          }
-         }
-        }
-        Layer323 {
-         coords -64.325 -0.713 20.31
-         angleX 6.053
-         angleY -3.783
-         angleZ -3.073
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot208 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0.001
-           }
-           Slot209 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask12 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0.001
-          }
-         }
-        }
-        Layer324 {
-         coords 55.89 -0.211 44.159
-         angleX 3.917
-         angleY -72.245
-         angleZ -3.432
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot210 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 -0.001 0
-           }
-           Slot211 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 -0.001 0
-           }
-          }
-          GenericEntity SlotTask13 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 -0.001 0
-          }
-         }
-        }
-        Layer325 {
-         coords 61.966 -6.58 -54.143
-         angleX 0.9
-         angleY -0.145
-         angleZ 1.787
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot212 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot213 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask14 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-          }
-         }
-        }
-        Layer326 {
-         coords -30.628 -1.507 -28.231
-         angleX 0.495
-         angleY 33.718
-         angleZ 2.482
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot214 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot215 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask15 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-          }
-         }
-        }
-        Layer327 {
-         coords -42.978 2.47 70.744
-         angleX -2.679
-         angleY 0.096
-         angleZ -2.685
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot216 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 -0.001 -0.001
-            angleY 0.126
-           }
-           Slot217 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask16 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 -0.001 -0.001
-           angleY 0.126
-          }
-         }
-        }
-       }
-      }
-     }
-     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-      Slot73 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
-         m_bShowDebugShapesInWorkbench 0
-        }
-       }
-       coords 7.091 -0.616 1.89
-       angleX -4.263
-       angleY -2.644
-       angleZ 4.664
-      }
-      Slot85 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sFactionKey "US"
-         m_sObjectToSpawn "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et"
-         m_bShowDebugShapesInWorkbench 0
-        }
-       }
-       coords 6.134 -0.84 13.966
-      }
-     }
-     GenericEntity SlotMarker3 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
-      components {
-       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
-        m_bShowDebugShapesInWorkbench 0
-        m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{617C9765908D0E67}" {
-         m_sMapMarkerText "TAA RICHMOND"
-         m_eMapMarkerType1Modifier LIGHT
-        }
-       }
-      }
-      coords 6.134 -0.84 13.966
+     GenericEntity {
+      ID "5CB0F584A9457E92"
+      coords -0.247 0 -0.136
+      angleZ 180
      }
     }
    }
-   Layer99 {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      Enabled 0
-      m_aPlugins {
-       SCR_ScenarioFrameworkPluginTrigger "{61AA9C9B9043F3A0}" {
-        m_fAreaRadius 50
-       }
-      }
-     }
-    }
-    coords -2133.049 -104.304 -1706.256
-    angleX 1.657
-    angleY -60.689
-    angleZ -1.122
+   $grp StaticModelEntity : "{55973C5B0950D4AB}Prefabs/Props/Military/Furniture/ChairMilitary_US_01.et" {
     {
-     GenericEntity SlotDelivery_3 : "{4C2EF5C1E53FE511}Prefabs/ScenarioFramework/Components/SlotDelivery.et" {
-      components {
-       SCR_ScenarioFrameworkSlotDelivery "{59F51EA7A10294D2}" {
-        m_iRandomPercent 100
-        m_aPlugins {
-         SCR_ScenarioFrameworkPluginTrigger "{5A6513EB3A4B9621}" {
-          m_fAreaRadius 1
-          m_bOnce 0
-         }
-        }
-        m_aActionsOnFinished {
-         SCR_ScenarioFrameworkActionRemoveItemFromInventory "{61DAAAA36EB85CC3}" {
-          m_aPrefabFilter {
-           SCR_ScenarioFrameworkPrefabFilterCount "{61DAAAA36BB4DEB1}" {
-            m_sSpecificPrefabName "{6D56FED1E55A8F84}Prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
-            m_bIncludeChildren 1
-           }
-          }
-         }
-        }
-        m_aAssociatedTaskLayers {
-         "Intel2" "Intel3" "Intel4" "Intel5"
-        }
-       }
+     coords 4.225 0 2.249
+     angleY -51.855
+    }
+    {
+     coords 3.316 0 1.457
+     angleY -76.191
+    }
+    {
+     coords 4.229 0 -1.131
+     angleY 46.284
+    }
+    {
+     coords 6.003 0 -1.788
+     angleY 0
+    }
+    {
+     coords 6.228 0 3.288
+     angleY 0
+    }
+    {
+     coords 7.745 0 0.002
+     angleY -50.153
+    }
+   }
+   $grp GenericEntity : "{590D0CC992E8AC25}Prefabs/Compositions/Misc/SubCompositions/Decorations/Crate_Bottles_01.et" {
+    Crate_Bottles_5 {
+     coords -0.104 0 0.945
+     angleY -53.924
+     {
+      GenericEntity {
+       ID "5CB0D990B6C742C8"
+       coords -0.121 0 -0.055
+       angleY -92.18
       }
-      coords 7.648 -0.431 19.579
-      angleX -1.313
-      angleY -0.054
-      angleZ 2.342
-     }
-     GenericEntity LayerTask4 : "{5AF3BFDA2EAE56EA}Prefabs/ScenarioFramework/Components/LayerTask.et" {
-      components {
-       SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
-        m_SpawnChildren RANDOM_ONE
-        m_aPlugins {
-         SCR_ScenarioFrameworkPluginTrigger "{62829282AA601FFF}" {
-          m_fAreaRadius 100
-         }
-        }
-        m_sTaskTitle "OPORD 300100ZSEP24"
-        m_sTaskDescription "Objective: Locate missing supplies"\
-        "Mission: Locate it to secure your battle kits. "\
-        "Execution:"\
-        "1. Spiral search the area. The crates should be no more than 100 meters from your position.   "\
-        "2. Recover battle kits as needed. "
-        m_bShowDebugShapesInWorkbench 1
-       }
+      GenericEntity {
+       ID "5CB0D990B6C742CA"
+       coords 0.009 0 -0.048
+       angleX 90
+       angleY 17.456
+       angleZ 146.429
       }
-      coords 0 0 0.006
-      angleX -1.789
-      angleY 60.687
-      angleZ -0.896
-      {
-       $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-        Layer328 {
-         coords 77.865 1.635 -7.292
-         angleX 6.242
-         angleY 0.033
-         angleZ 0.004
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot218 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot227 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask17 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-           angleY -4.991
-          }
-         }
-        }
-        Layer329 {
-         coords 1.142 1.08 86.696
-         angleX -0.898
-         angleY -0.204
-         angleZ -0.892
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot228 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0.001 0 -0.001
-           }
-           Slot229 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords -0.026 0.885 -0.118
-           }
-          }
-          GenericEntity SlotTask18 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_fAreaRadius 5
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0.001 0 -0.001
-           angleY 0.198
-          }
-         }
-        }
-        Layer330 {
-         coords -3.007 1.652 -89.644
-         angleX -0.893
-         angleY -0.026
-         angleZ 5.356
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot230 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 -0.001
-           }
-           Slot231 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask19 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 -0.001
-          }
-         }
-        }
-        Layer331 {
-         coords -90.826 2.887 16.329
-         angleX -2.355
-         angleY -5.111
-         angleZ 3.797
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot232 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 -0.001 0.001
-           }
-           Slot233 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 -0.001 0
-           }
-          }
-          GenericEntity SlotTask20 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 -0.001 0.001
-          }
-         }
-        }
-        Layer332 {
-         coords 55.355 2.182 64.789
-         angleX -2.858
-         angleY -71.865
-         angleZ -5.622
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot234 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot235 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask21 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-          }
-         }
-        }
-        Layer333 {
-         coords 57.79 -0.069 -67.767
-         angleX 0.008
-         angleY 0.175
-         angleZ -2.684
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot236 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0.001 0
-           }
-           Slot237 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0.001 0
-           }
-          }
-          GenericEntity SlotTask22 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0.001 0
-          }
-         }
-        }
-        Layer334 {
-         coords -70.911 5.638 -42.695
-         angleX -7.886
-         angleY 33.45
-         angleZ 2.245
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot238 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords 0 0 0
-           }
-           Slot239 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0 0
-           }
-          }
-          GenericEntity SlotTask23 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords 0 0 0
-          }
-         }
-        }
-        Layer335 {
-         coords -52.107 0.6 69.923
-         angleX 4.493
-         angleY -0.419
-         angleZ 3.533
-         {
-          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           Slot240 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
-             }
-            }
-            coords -0.001 0.001 -0.001
-            angleX -4.543
-            angleY 0.126
-            angleZ -1.597
-           }
-           Slot241 {
-            components {
-             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{0FA74A2EB5EF6A01}Particles/Logistics/Prefabs/Smoke_Trail_Small_Green.et"
-             }
-            }
-            coords 0 0.001 0
-           }
-          }
-          GenericEntity SlotTask24 : "{D5F479FD905C73C1}Prefabs/ScenarioFramework/Components/SlotTask.et" {
-           components {
-            SCR_ScenarioFrameworkSlotTask "{609CCA8A5D36FACD}" {
-             m_aPlugins {
-              SCR_ScenarioFrameworkPluginTrigger "{627CB546E7F5EB3A}" {
-               m_sActivatedByThisFaction "US"
-              }
-             }
-             m_sObjectToSpawn "{2CB3F93211D06F83}Prefabs/ScenarioFramework/Triggers/TriggerDominance.et"
-            }
-           }
-           coords -0.001 0.001 -0.001
-           angleX -4.543
-           angleY 0.126
-           angleZ -1.597
-          }
-         }
-        }
-       }
+      GenericEntity {
+       ID "5CB0D990B6C742CB"
+       coords 0.142 0 -0.091
+       angleY -121.853
       }
-     }
-     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-      Slot81 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
-         m_bShowDebugShapesInWorkbench 0
-        }
-       }
-       coords 0.014 0.424 -9.892
-       angleX -6.136
-       angleY -40.23
-       angleZ 1.178
+      GenericEntity {
+       ID "5CB0D990B6D8C890"
+       coords -0.097 0 0.09
+       angleY 43.728
       }
-      Slot84 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sFactionKey "US"
-         m_sObjectToSpawn "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et"
-         m_bShowDebugShapesInWorkbench 0
-        }
-       }
-       coords 8.179 -0.58 21.587
-       angleX -2.468
-       angleY 28.518
-       angleZ -0.563
+      GenericEntity {
+       ID "5CB0D990B6D8C896"
+       coords 0.009 0 0.088
+       angleY -155.911
       }
-     }
-     GenericEntity SlotMarker1 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
-      components {
-       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
-        m_bShowDebugShapesInWorkbench 0
-        m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{617C9765908D0E67}" {
-         m_sMapMarkerText "TAA MANASSAS"
-         m_eMapMarkerType1Modifier LIGHT
-        }
-       }
-      }
-      coords 0 0 0
      }
     }
+    Crate_Bottles_1 {
+     coords 0.732 0 0.38
+     {
+      GenericEntity {
+       ID "5CB0D990B6C742C8"
+       coords -0.121 0 -0.055
+       angleY -92.18
+      }
+      GenericEntity {
+       ID "5CB0D990B6C742CA"
+       coords 0.009 0 -0.051
+       angleX 90
+       angleY 17.456
+       angleZ 146.429
+      }
+      GenericEntity {
+       ID "5CB0D990B6C742CB"
+       coords 0.142 0 -0.09
+       angleY -121.853
+      }
+      GenericEntity {
+       ID "5CB0D990B6D8C890"
+       coords -0.097 0 0.088
+       angleY 43.728
+      }
+      GenericEntity {
+       ID "5CB0D990B6D8C896"
+       coords 0.008 0 0.085
+       angleY -155.911
+      }
+     }
+    }
+   }
+   GenericEntity AspirinBottle1 : "{C98FCC6CA6C56069}Prefabs/Items/Medicine/AspirinBottle.et" {
+    coords 1.176 0.201 4.342
+   }
+   GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
+    coords 5.758 0 0.841
+   }
+   GenericEntity : "{F76340CCD79DCC5A}Prefabs/Props/Civilian/RadioSmall_01_red.et" {
+    coords 7.633 0 1.573
+    angleY -110.942
    }
   }
  }

@@ -1517,15 +1517,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     Spawn {
      coords -15.072 0.038 78.763
      angleY 33.487
-     {
-      SCR_SpawnPoint SpawnPoint_US1 : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
-       coords 4.038 0.109 1.663
-       angleY 17.477
-       m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
-        Name "Shadow Division MOB"
-       }
-      }
-     }
     }
     SmokePit001 {
      coords -16.635 -0.097 76.855

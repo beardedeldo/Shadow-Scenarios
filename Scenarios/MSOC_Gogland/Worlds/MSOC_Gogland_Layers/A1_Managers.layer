@@ -1,4 +1,27 @@
 SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{628B630642B4E883}" {
+     NavmeshFile "{20E5B728C88940C2}Worlds/Gamemaster/Navmeshes/gogland_navmesh.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60CA9BE5536BF701}" {
+     NavmeshFile "{283723190A998A3A}Worlds/Gamemaster/Navmeshes/Vehicle_navmesh/gogland_vehicle_navmesh.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{A32430981C1ACB9C}Worlds/Gamemaster/Navmeshes/lowres_navmesh/gogland_lowres_navmesh.nmn"
+    }
+   }
+  }
+ }
  coords 5224.089 4.573 5596.738
  {
   CommentEntity {
@@ -25,18 +48,7 @@ RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.
 }
 SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
  components {
-  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
-   m_fDOTScale 0.3
-   m_bPermitUnconsciousVON 0
-   m_fTourniquetStrengthMultiplier 0.9
-  }
-  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
-   m_aTaskTypesAvailable {
-    SCR_ScenarioFrameworkTaskType "{62F028FA68342FAA}" {
-     m_eTypeOfTask CLEAR_AREA
-    }
-   }
-   m_iMaxNumberOfTasks 1
+  SCR_CommandingManagerComponent "{62FD4C9D3B60BB73}" {
   }
   SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
    m_SpawnLogic SCR_MenuSpawnLogic "{5D36888CC966608A}" {

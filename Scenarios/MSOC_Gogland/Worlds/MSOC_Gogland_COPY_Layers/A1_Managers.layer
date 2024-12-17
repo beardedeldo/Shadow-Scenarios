@@ -71,54 +71,12 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   }
  }
  coords 5224.089 4.482 5595.738
- {
-  SCR_LoadoutManager : "{D01A1F697E602870}Configs/LoadoutManager_Base_Shadow.et" {
-   coords 4891.188 2.742 860.706
-   angleY -43.856
-   m_aPlayerLoadouts {
-    SCR_PlayerArsenalLoadout "{61E978987C425D38}" {
-     m_sLoadoutResource "{B889387E9A33D667}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_Army/Character_RHS_USA_BaseLoadout.et"
-     m_sLoadoutImage "{3FBFAFB3EC6B8A99}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/D/Character_RHS_USAF_USMC_D_AAR.edds"
-    }
-    SCR_FactionPlayerLoadout "{62032AAE46A6A9F6}" {
-     m_sLoadoutName "MSOC 0311 RFLM"
-     m_sLoadoutResource "{358ED1265B29F1AE}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_AMG.et"
-     m_sLoadoutImage "{3FBFAFB3EC6B8A99}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/D/Character_RHS_USAF_USMC_D_AAR.edds"
-    }
-    SCR_FactionPlayerLoadout "{61DB347B6FEA2904}" {
-     m_sLoadoutName "MSOC 0311 SAW"
-     m_sLoadoutResource "{3D270E33D3225863}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_MG2.et"
-     m_sLoadoutImage "{3FBFAFB3EC6B8A99}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/D/Character_RHS_USAF_USMC_D_AAR.edds"
-    }
-    SCR_FactionPlayerLoadout "{61F00BEC1E400C01}" {
-     m_sLoadoutName "MSOC 0311 GL"
-     m_sLoadoutResource "{340BFA3E488048BE}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_GL.et"
-     m_sLoadoutImage "{3FBFAFB3EC6B8A99}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/D/Character_RHS_USAF_USMC_D_AAR.edds"
-    }
-    SCR_FactionPlayerLoadout "{61F00BEC3A843208}" {
-     m_sLoadoutName "MSOC 8404 Medic "
-     m_sLoadoutResource "{1CE48B40E06B1DEE}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_Medic.et"
-     m_sLoadoutImage "{3FBFAFB3EC6B8A99}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/D/Character_RHS_USAF_USMC_D_AAR.edds"
-    }
-    SCR_FactionPlayerLoadout "{61F00BECEA8A4012}" {
-     m_sLoadoutName "MSOC 0365 SL "
-     m_sLoadoutResource "{EB4F847EEDFF4FCB}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_SL.et"
-     m_sLoadoutImage "{3FBFAFB3EC6B8A99}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/D/Character_RHS_USAF_USMC_D_AAR.edds"
-     m_sAffiliatedFaction "US"
-    }
-    SCR_FactionPlayerLoadout "{61F00BEDF34AE41F}" {
-     m_sLoadoutName "MSOC Pilot "
-     m_sLoadoutResource "{42A502E3BB727CEC}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_HeliPilot.et"
-    }
-    SCR_FactionPlayerLoadout "{61F74338DCE854DE}" {
-     m_sLoadoutImage "{3FBFAFB3EC6B8A99}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/D/Character_RHS_USAF_USMC_D_AAR.edds"
-    }
-   }
-  }
- }
 }
 ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 5224.089 5.167 5602.738
+}
+SCR_LoadoutManager : "{0986170D9A79DFD4}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
+ coords 5226.156 5.203 5602.077
 }
 SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/Tasks/TaskManager.et" {
  coords 5224.089 4.667 5597.738

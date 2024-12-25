@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{7C27617B133A8AE9}Worlds/GameMode_CampaignSCRBuilding_Layers/SCR_CampaignBuildingManagerComponent.ct"
+ Name "{71F691EE7B1A9CFE}Worlds/SCR_CampaignBuildingManagerComponent.ct"
  Configurations {
   ComponentTemplateResourceClass PC {
   }

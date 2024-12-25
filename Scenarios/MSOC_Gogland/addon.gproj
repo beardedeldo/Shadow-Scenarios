@@ -3,6 +3,20 @@ GameProject {
  GUID "62CB3EBB69DD6D34"
  TITLE "MSOC_Gogland"
  Dependencies {
-  "61EAF5D776D87D38" "595F2BF2F44836FB" "58D0FB3206B6F859"
+  "61EAF5D776D87D38" "595F2BF2F44836FB" "58D0FB3206B6F859" "623EEDF242F6265E"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
  }
 }

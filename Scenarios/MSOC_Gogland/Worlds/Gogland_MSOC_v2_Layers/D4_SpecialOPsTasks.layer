@@ -1,0 +1,983 @@
+GenericEntity : "{24B7AC8A3BE10CCB}Prefabs/Props/Military/Compositions/US/VehicleService_US_Large.et" {
+ components {
+  SCR_CatalogEntitySpawnerComponent "{5D22B968F23A847A}" {
+   m_eBuildingLabel VEHICLE_HELICOPTER
+  }
+ }
+ coords 10099.514 7.566 6414.035
+}
+$grp GenericEntity : "{775C493CE872C3A5}Prefabs/ScenarioFramework/Components/LayerTaskDefend.et" {
+ Defend12 {
+  components {
+   SCR_ScenarioFrameworkLayerTaskDefend "{5C52E161174024CB}" {
+    m_sFactionKey "US"
+    m_eActivationType ON_TRIGGER_ACTIVATION
+    m_sTaskTitle "OPORD 100100ZJUN24"
+    m_sTaskDescription "Objective:"\
+    "Conduct Area Defense"\
+    "Execution:"\
+    "1. Determine route to the AO marked on map. "\
+    "2. Move to the AO via ground/air. "\
+    "3. Establish defensive positions based on direction of attack. "\
+    "4. Defend the area until mission complete. DEFEND: 360 degrees"
+    m_sTaskPrefab "{888DC29A0B4F3F20}Prefabs/ScenarioFramework/Tasks/TaskDefend.et"
+    m_bPlaceMarkerOnSubjectSlot 1
+    m_bShowDebugShapesInWorkbench 1
+    m_sTriggerName "TrgDefend12"
+    m_sCountdownTitleText "DEFEND POSITION"
+    m_fDefendTime 300
+    m_aFactionSettings {
+     SCR_ScenarioFrameworkTaskDefendAttackingFaction "{5C5A81043FCD0717}" {
+      m_sFactionKey "USSR"
+     }
+     SCR_ScenarioFrameworkTaskDefendDefendingFaction "{5C5A8104314438A8}" {
+      m_sFactionKey "US"
+      m_bCountOnlyPlayers 1
+     }
+    }
+    m_fMinDefenderPercentageRatio 0.51
+    m_aAttackerLayerNames {
+     "Attackers12"
+    }
+   }
+  }
+  coords 4586.468 13.234 7945.846
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    Defenders12 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_iRandomPercent 100
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity TrgDefend12 : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotPlayerTrigger.et" {
+       components {
+        SCR_ScenarioFrameworkSlotTrigger "{5A4B5098DE424991}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginTrigger "{5AC53D73FCB1F805}" {
+           m_fAreaRadius 100
+           m_sActivatedByThisFaction "US"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+      }
+      GenericEntity WPDefend12 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_Waypoint SCR_ScenarioFrameworkWaypointSearchAndDestroy "{617F03FC18ABB8CB}" {
+         }
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    Attackers12 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_MULTIPLE
+       m_iRandomPercent 50
+       m_bEnableRepeatedSpawn 1
+       m_iRepeatedSpawnNumber 3
+       m_fRepeatedSpawnTimer 75
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_bEnableRepeatedSpawn 1
+          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType GROUP
+          m_aIncludedEditableEntityLabels {
+           72 71
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{617F03FC6C9AB80A}" {
+           m_aLayerName {
+            "WPDefend12"
+           }
+          }
+          m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 433.4 33.742 -22.458
+        angleY 37.575
+       }
+       SlotAI827 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_bEnableRepeatedSpawn 1
+          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType GROUP
+          m_aIncludedEditableEntityLabels {
+           72 71
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{617F03FC6C9AB80A}" {
+           m_aLayerName {
+            "WPDefend12"
+           }
+          }
+          m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 268.474 31.893 148.879
+        angleY 108.662
+       }
+       SlotAI836 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_bEnableRepeatedSpawn 1
+          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType GROUP
+          m_aIncludedEditableEntityLabels {
+           72 71
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{617F03FC6C9AB80A}" {
+           m_aLayerName {
+            "WPDefend12"
+           }
+          }
+          m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 102.6 -2.598 -609.09
+        angleY -46.981
+       }
+       SlotAI838 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_bEnableRepeatedSpawn 1
+          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType GROUP
+          m_aIncludedEditableEntityLabels {
+           72 71
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{617F03FC6C9AB80A}" {
+           m_aLayerName {
+            "WPDefend12"
+           }
+          }
+          m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -353.407 0 533.89
+        angleY 149.293
+       }
+      }
+     }
+    }
+   }
+   GenericEntity SlotDefend12 : "{E123BAC59A9B3D5F}Prefabs/ScenarioFramework/Components/SlotDefend.et" {
+    components {
+     SCR_ScenarioFrameworkSlotDefend "{5C52E161597D867A}" {
+      m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/ScenarioFrameworkCharacterTrigger.et"
+      m_bShowDebugShapesInWorkbench 0
+     }
+    }
+    coords 0 0 0
+    angleX -1.4
+   }
+  }
+ }
+ Defend11 {
+  components {
+   SCR_ScenarioFrameworkLayerTaskDefend "{5C52E161174024CB}" {
+    m_sFactionKey "US"
+    m_eActivationType ON_TRIGGER_ACTIVATION
+    m_sTaskTitle "OPORD 100100ZJUN24"
+    m_sTaskDescription "Objective:"\
+    "Conduct Area Defense"\
+    "Execution:"\
+    "1. Determine route to the AO marked on map. "\
+    "2. Move to the AO via ground/air. "\
+    "3. Establish defensive positions based on direction of attack. "\
+    "4. Defend the area until mission complete. DEFEND: 360 degrees"
+    m_sTaskPrefab "{888DC29A0B4F3F20}Prefabs/ScenarioFramework/Tasks/TaskDefend.et"
+    m_bPlaceMarkerOnSubjectSlot 1
+    m_sTriggerName "Defend11Trigger"
+    m_sCountdownTitleText "DEFEND POSITION"
+    m_fDefendTime 300
+    m_aFactionSettings {
+     SCR_ScenarioFrameworkTaskDefendAttackingFaction "{5C5A81043FCD0717}" {
+      m_sFactionKey "USSR"
+     }
+     SCR_ScenarioFrameworkTaskDefendDefendingFaction "{5C5A8104314438A8}" {
+      m_sFactionKey "US"
+      m_bCountOnlyPlayers 1
+     }
+    }
+    m_fMinDefenderPercentageRatio 0.51
+    m_aAttackerLayerNames {
+     "Defend11REDFOR"
+    }
+   }
+  }
+  coords 5390.741 11.125 9955.402
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    Layer54 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_iRandomPercent 100
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity Defend11Trigger : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotPlayerTrigger.et" {
+       components {
+        SCR_ScenarioFrameworkSlotTrigger "{5A4B5098DE424991}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginTrigger "{5AC53D73FCB1F805}" {
+           m_fAreaRadius 50
+           m_eActivationPresence ANY_CHARACTER
+          }
+         }
+        }
+       }
+       coords 0 0 0
+      }
+      GenericEntity Defend11WP : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_Waypoint SCR_ScenarioFrameworkWaypointSearchAndDestroy "{617F03FC18ABB8CB}" {
+         }
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    Defend11REDFOR {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_iRandomPercent 50
+       m_bEnableRepeatedSpawn 1
+       m_iRepeatedSpawnNumber 3
+       m_fRepeatedSpawnTimer 75
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI778 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_bEnableRepeatedSpawn 1
+          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType GROUP
+          m_aIncludedEditableEntityLabels {
+           72 71
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{617F03FC6C9AB80A}" {
+           m_aLayerName {
+            "Defend11WP"
+           }
+          }
+          m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -394.188 6.335 41.792
+        angleY 37.575
+       }
+       SlotAI779 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_bEnableRepeatedSpawn 1
+          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType GROUP
+          m_aIncludedEditableEntityLabels {
+           72 71
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{617F03FC6C9AB80A}" {
+           m_aLayerName {
+            "Defend11WP"
+           }
+          }
+          m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -286.935 8.254 -151.714
+        angleY 108.662
+       }
+       SlotAI780 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_bEnableRepeatedSpawn 1
+          m_sObjectToSpawn "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType GROUP
+          m_aIncludedEditableEntityLabels {
+           72 71
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{617F03FC6C9AB80A}" {
+           m_aLayerName {
+            "Defend11WP"
+           }
+          }
+          m_sWPToSpawn "{B3E7B8DC2BAB8ACC}Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 118.332 -3.982 -297.582
+        angleY -46.981
+       }
+      }
+     }
+    }
+   }
+   GenericEntity SlotDefend1 : "{E123BAC59A9B3D5F}Prefabs/ScenarioFramework/Components/SlotDefend.et" {
+    components {
+     SCR_ScenarioFrameworkSlotDefend "{5C52E161597D867A}" {
+      m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/ScenarioFrameworkCharacterTrigger.et"
+      m_bShowDebugShapesInWorkbench 0
+     }
+    }
+    coords 0 0 0
+    angleX -1.4
+   }
+  }
+ }
+}
+GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_bShowDebugShapesInWorkbench 1
+  }
+ }
+ coords 6500 161.875 6500
+ {
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   ReturnTasks {
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+      MEDReturn {
+       components {
+        SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords -538.235 -122.323 -746.364
+       angleY 5.58
+       {
+        GenericEntity SlotMoveTo2 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 15
+             m_sActivatedByThisFaction "US"
+            }
+           }
+           m_sTaskTitle "FRAGO 250000ZJUN24"
+           m_sTaskDescription "Objective:"\
+           "Return To Base"\
+           "Execution:"\
+           "1. Fuel up vehicle(s) if available. "\
+           "2. Safely deliver patient alive to Camp Hood."\
+           "3. Drop off in front of field hospital. "
+           m_aActionsOnFinished {
+            SCR_ScenarioFrameworkActionMedical "{61997029B515A596}" {
+             m_Getter SCR_ScenarioFrameworkGetArrayOfLayerBases "{619970299ECC0782}" {
+              m_aLayerBaseNames {
+               "MedevacBLUFORAI1" "MedevacBLUFORAI2" "MedevacBLUFORAI3" "MedevacBLUFORAI4" "MedevacBLUFORAI5"
+              }
+             }
+             m_aMedicalActions {
+              SCR_ScenarioFrameworkMedicalActionRemoveGroupBleeding "{6199702CEB032B80}" {
+              }
+              SCR_ScenarioFrameworkMedicalActionSetRegenerationRate "{6199702E7BAAFCFB}" {
+               m_fRegeneration 5
+              }
+              SCR_ScenarioFrameworkMedicalActionSetBlood "{61997029E0C6A991}" {
+              }
+             }
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+      REPReturn {
+       components {
+        SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords -1991.764 -150.719 2337.084
+       {
+        GenericEntity SlotMoveTo36 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+           m_sTaskTitle "FRAGO 130000ZJUN24"
+           m_sTaskDescription "Objective:"\
+           "Deliver vehicle"\
+           "Execution:"\
+           "1. Once repairs are complete, RTB to maintenance facility. "\
+           "2. Park vehicle on maintenace ramp."\
+           "3. Complete any other necessary repairs. "
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+      LOGReturn {
+       components {
+        SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords 783.223 -154.555 -5418.271
+       {
+        GenericEntity SlotMoveTo37 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+           m_sTaskTitle "FRAGO 140000ZJUN24"
+           m_sTaskDescription "Objective:"\
+           "Return to Base"\
+           "Execution:"\
+           "1. Fuel up vehicle(s) if available."\
+           "3. Follow route back to Base "\
+           "4. Use proper convoy techniques. "\
+           "5. Mission Complete upon return. "
+          }
+         }
+         coords 146.1 -2.744 -19.376
+        }
+       }
+      }
+      AIRReturn {
+       components {
+        SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords 3638.721 -156.804 11.935
+       {
+        GenericEntity SlotMoveTo41 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+           m_sTaskTitle "FRAGO 140000ZJUN24"
+           m_sTaskDescription "Objective:"\
+           "Return to Base"\
+           "Execution:"\
+           "1. Fuel up vehicle(s) if available."\
+           "3. Follow route back to Air Base "\
+           "4. Use proper convoy techniques. "\
+           "5. Mission Complete upon return. "
+          }
+         }
+         coords 1.309 -1.542 9.462
+        }
+       }
+      }
+     }
+    }
+   }
+   S21_Ambient_Haukkavuori {
+    coords -956.408 -29.788 179.785
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      i_Def_group00 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords 6.372 -3.43 19.907
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI1360 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+           }
+          }
+          coords -1.788 -5.282 46.158
+         }
+         SlotAI1363 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{A62FA97C4EC64F14}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_HeliPilot.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+           }
+          }
+          coords 26.553 -4.881 33.291
+         }
+         SlotAI1365 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{4D3BBEC1A955626A}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_Squad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+           }
+          }
+          coords 3.346 -4.641 223.191
+         }
+         SlotAI1366 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+            m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           }
+          }
+          coords -88.932 6.353 34.657
+         }
+         SlotAI1367 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+            m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           }
+          }
+          coords -109.954 8.435 249.617
+         }
+         SlotAI1368 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+            m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           }
+          }
+          coords 35.122 1.618 215.603
+         }
+         SlotAI1369 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+            m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           }
+          }
+          coords 80.732 1.699 123.496
+         }
+         SlotAI1370 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+            m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           }
+          }
+          coords 53.096 6.242 -17.454
+         }
+         SlotAI1371 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{4D3BBEC1A955626A}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_Squad.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+            m_sWPToSpawn "{FAD1D789EE291964}Prefabs/AI/Waypoints/AIWaypoint_Defend_Large.et"
+           }
+          }
+          coords -9.086 -5.176 58.185
+         }
+        }
+       }
+      }
+      h_S21_OPFOR_trigger {
+       coords 22.585 -5.106 20.909
+       {
+        GenericEntity SlotTrigger21 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+         components {
+          SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+             m_fAreaRadius 400
+             m_eActivationPresence PLAYER
+             m_sActivatedByThisFaction "US"
+             m_bEnableAudio 1
+            }
+           }
+           m_aTriggerActions {
+            SCR_ScenarioFrameworkActionWaitAndExecute "{632ED8544A42795E}" {
+             m_iMaxNumberOfActivations 1
+             m_iDelayInSeconds 1
+             m_aActions {
+              SCR_ScenarioFrameworkActionSpawnObjects "{632ED8545BC7B318}" {
+               m_iMaxNumberOfActivations 1
+               m_aNameOfObjectsToSpawnOnActivation {
+                "i_OPFOR_S21_00" "i_Def_group00"
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+         coords -2.346 112.184 92.034
+        }
+       }
+      }
+      i_OPFOR_S21_00 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords -11.329 -5.355 -138.127
+       {
+        $grp RHS_Tank : "{52B13341B4A2F012}Prefabs/Vehicles/Tracked/2S1/Tank_2S1_Green.et" {
+         Tank_2S1_Green4 {
+          coords 7.263 -1.822 -3.892
+          angleY -178.245
+         }
+         Tank_2S1_Green5 {
+          coords 41.854 -7.81 -12.484
+          angleY 152.447
+         }
+        }
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI1361 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6330D2BB84A726A3}" {
+             m_aLayerName {
+              "SlotWaypoint370" "SlotWP_Cycle_00"
+             }
+            }
+           }
+          }
+          coords 42.149 -7.996 -7.276
+          angleY 77.804
+         }
+         SlotAI1362 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6330D2BE553561C6}" {
+             m_aLayerName {
+              "SlotWaypoint370" "SlotWP_Cycle_00" ""
+             }
+            }
+           }
+          }
+          coords 8.489 -2.509 3.304
+         }
+        }
+        GenericEntity SlotWP_Cycle_00 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{6332C6D97E89C39A}" {
+            m_fCompletionRadius 30
+            m_aLayersWithWaypointsToCycle {
+             "o_Suppress_S21_00"
+            }
+           }
+          }
+         }
+         coords 21.629 -2.767 -5.231
+        }
+       }
+      }
+      o_Suppress_S21_00 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_bExcludeFromDynamicDespawn 1
+        }
+       }
+       coords 7.58 -8.081 -141.076
+       {
+        $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         SlotWaypoint367 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_bShowDebugShapesInWorkbench 0
+            m_Waypoint SCR_ScenarioFrameworkWaypointSuppress "{6330D2B81A1F597D}" {
+             m_fSuppressionHeight 5
+            }
+           }
+          }
+          coords 327.65 -105.724 -1188.311
+         }
+         SlotWaypoint368 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_bShowDebugShapesInWorkbench 0
+            m_Waypoint SCR_ScenarioFrameworkWaypointSuppress "{6330D2BBFF030D81}" {
+             m_fSuppressionHeight 5
+            }
+           }
+          }
+          coords 143.576 -109.733 -1161.647
+         }
+         SlotWaypoint369 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_bShowDebugShapesInWorkbench 0
+            m_Waypoint SCR_ScenarioFrameworkWaypointSuppress "{6330D2B81A1F597D}" {
+             m_fSuppressionHeight 5
+            }
+           }
+          }
+          coords 605.039 -79.59 -1164.487
+         }
+        }
+       }
+      }
+      o_GetIn_nearest_00 {
+       coords 14.403 -8.206 -145.929
+       {
+        GenericEntity SlotWaypoint370 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{6332C6D032C9B698}" {
+            m_fCompletionRadius 35
+            m_fPriorityLevel 2000
+            m_bDriverAllowed 0
+            m_bCargoAllowed 0
+           }
+          }
+         }
+         coords -6.82 -0.352 2.5
+        }
+       }
+      }
+     }
+    }
+   }
+   S21_Ambient_02_nearFOB {
+    coords 822.232 -67.643 -4587.973
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      i_Def_group02 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords 6.372 -3.43 19.907
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI1359 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+           }
+          }
+          coords 30.639 5.619 -29.616
+         }
+         SlotAI1364 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{129039549B0B82FF}Prefabs/Groups/OPFOR/KLMK/Group_USSR_Team_AT_KLMK.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
+            }
+           }
+          }
+          coords -95.154 3.781 0.661
+         }
+        }
+       }
+      }
+      h_S21_OPFOR_trigger_02 {
+       coords 22.585 -5.106 20.909
+       {
+        GenericEntity SlotTrigger18 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+         components {
+          SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+             m_fAreaRadius 350
+             m_eActivationPresence PLAYER
+             m_sActivatedByThisFaction "US"
+            }
+           }
+           m_aTriggerActions {
+            SCR_ScenarioFrameworkActionWaitAndExecute "{632ED8544A42795E}" {
+             m_iMaxNumberOfActivations 1
+             m_iDelayInSeconds 1
+             m_aActions {
+              SCR_ScenarioFrameworkActionSpawnObjects "{632ED8545BC7B318}" {
+               m_iMaxNumberOfActivations 1
+               m_aNameOfObjectsToSpawnOnActivation {
+                "i_OPFOR_S21_02" "i_Def_group02"
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+         coords 11.012 -130.912 -508.107
+        }
+       }
+      }
+      i_OPFOR_S21_02 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords -11.329 -5.355 -138.127
+       {
+        $grp RHS_Tank : "{52B13341B4A2F012}Prefabs/Vehicles/Tracked/2S1/Tank_2S1_Green.et" {
+         Tank_2S1_Green6 {
+          coords 38.731 8.012 108.601
+          angleY 178.486
+         }
+         Tank_2S1_Green3 {
+          coords 22.168 8.888 106.873
+          angleY -178.245
+         }
+        }
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI1379 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6F788B9BC75}" {
+             m_aLayerName {
+              "SlotWaypoint372" "SlotWP_Cycle_2"
+             }
+            }
+           }
+          }
+          coords 35.399 8.311 110.71
+          angleY 77.804
+         }
+         SlotAI1373 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6F788B9BC75}" {
+             m_aLayerName {
+              "SlotWaypoint372" "SlotWP_Cycle_2"
+             }
+            }
+           }
+          }
+          coords 25.215 8.91 106.957
+          angleY 77.804
+         }
+        }
+        GenericEntity SlotWP_Cycle_2 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{6332C6D97E89C39A}" {
+            m_fCompletionRadius 15
+            m_aLayersWithWaypointsToCycle {
+             "o_Suppress_S21_02"
+            }
+           }
+          }
+         }
+         coords 29.061 9.088 109.01
+        }
+       }
+      }
+      o_Suppress_S21_02 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_bExcludeFromDynamicDespawn 1
+        }
+       }
+       coords 7.58 -8.081 -141.076
+       {
+        $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         SlotWaypoint356 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_bShowDebugShapesInWorkbench 0
+            m_Waypoint SCR_ScenarioFrameworkWaypointSuppress "{6330D2B81A1F597D}" {
+            }
+           }
+          }
+          coords -31.957 -74.401 -656.864
+         }
+         SlotWaypoint366 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_bShowDebugShapesInWorkbench 0
+            m_Waypoint SCR_ScenarioFrameworkWaypointSuppress "{6330D2BBFF030D81}" {
+            }
+           }
+          }
+          coords -69.476 -81.059 -599.431
+         }
+         SlotWaypoint371 {
+          components {
+           SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+            m_bShowDebugShapesInWorkbench 0
+            m_Waypoint SCR_ScenarioFrameworkWaypointSuppress "{6330D2B81A1F597D}" {
+            }
+           }
+          }
+          coords 91.531 -62.967 -452.512
+         }
+        }
+       }
+      }
+      o_GetIn_nearest_02 {
+       coords 14.403 -8.206 -145.929
+       {
+        GenericEntity SlotWaypoint372 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{6332C6D032C9B698}" {
+            m_fCompletionRadius 15
+            m_fPriorityLevel 2000
+            m_bDriverAllowed 0
+            m_bCargoAllowed 0
+           }
+          }
+         }
+         coords 3.623 11.904 116.609
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

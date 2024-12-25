@@ -1,0 +1,383 @@
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ FlyByMission01 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_iRepeatedSpawnNumber 3
+    m_iDynamicDespawnRange 5
+   }
+  }
+  coords 10086.616 12.486 6423.512
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    xF22_01 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_iRepeatedSpawnNumber 3
+       m_eActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot151 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{EAD777F4CDA11F16}Prefabs/Vehicles/Airplanes/F22/F22_Flyby.et"
+         }
+        }
+        coords 0 38.675 0
+       }
+       Slot194 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{EAD777F4CDA11F16}Prefabs/Vehicles/Airplanes/F22/F22_Flyby.et"
+         }
+        }
+        coords -10.366 51.658 31.832
+       }
+      }
+     }
+    }
+    Player_trigger01 {
+     coords 0 0 0
+     {
+      GenericEntity SlotTrigger8 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+       components {
+        SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+           m_fAreaRadius 2
+           m_eActivationPresence PLAYER
+           m_sActivatedByThisFaction "US"
+           m_bEnableAudio 1
+          }
+         }
+         m_aTriggerActions {
+          SCR_ScenarioFrameworkActionWaitAndExecute "{632ED8544A42795E}" {
+           m_iDelayInSeconds 1
+           m_aActions {
+            SCR_ScenarioFrameworkActionSpawnObjects "{632ED8545BC7B318}" {
+             m_aNameOfObjectsToSpawnOnActivation {
+              "xF22_01"
+             }
+            }
+            SCR_ScenarioFrameworkActionPlaySound "{632EE95D1ADD9DD5}" {
+             m_iMaxNumberOfActivations 1
+             m_sSound "SOUND_CP_IPL_1"
+            }
+           }
+          }
+         }
+        }
+       }
+       coords -2.263 0.047 0.372
+      }
+     }
+    }
+   }
+  }
+ }
+ MissionMusic01 {
+  coords 10084.864 12.544 6424.585
+  {
+   GenericEntity MissionStart01 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_SpawnChildren RANDOM_ONE
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+      SlotTrigger11 {
+       components {
+        SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+           m_fAreaRadius 2
+           m_eActivationPresence PLAYER
+           m_sActivatedByThisFaction "US"
+           m_bOnce 1
+          }
+         }
+         m_aTriggerActions {
+          SCR_ScenarioFrameworkActionPlaySound "{632EE95EA281D3B3}" {
+           m_iMaxNumberOfActivations 1
+           m_sSound "SOUND_DRIVING_COURSE"
+          }
+         }
+        }
+       }
+       coords -0.137 0.335 -0.765
+      }
+      SlotTrigger12 {
+       components {
+        SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+           m_fAreaRadius 2
+           m_eActivationPresence PLAYER
+           m_sActivatedByThisFaction "US"
+          }
+         }
+         m_aTriggerActions {
+          SCR_ScenarioFrameworkActionPlaySound "{632EE95FE74F9F46}" {
+           m_iMaxNumberOfActivations 1
+           m_sSound "SOUND_FREE_ROAM"
+          }
+         }
+        }
+       }
+       coords 0 0.517 -0.686
+      }
+     }
+    }
+   }
+  }
+ }
+ FlyByArsenalMusic01 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_iRepeatedSpawnNumber 3
+    m_iDynamicDespawnRange 5
+   }
+  }
+  coords 10101.099 7.844 6454.392
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    Layer171 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_iRepeatedSpawnNumber 3
+       m_eActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot152 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{EAD777F4CDA11F16}Prefabs/Vehicles/Airplanes/F22/F22_Flyby.et"
+         }
+        }
+        coords 0 38.675 0
+       }
+       Slot195 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{EAD777F4CDA11F16}Prefabs/Vehicles/Airplanes/F22/F22_Flyby.et"
+         }
+        }
+        coords 3.949 51.658 31.832
+       }
+      }
+     }
+    }
+    Layer2 {
+     coords 0 0 0
+     {
+      GenericEntity SlotTrigger13 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+       components {
+        SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+           m_fAreaRadius 2
+           m_eActivationPresence PLAYER
+           m_sActivatedByThisFaction "US"
+           m_bEnableAudio 1
+          }
+         }
+         m_aTriggerActions {
+          SCR_ScenarioFrameworkActionWaitAndExecute "{632ED8544A42795E}" {
+           m_iDelayInSeconds 1
+           m_aActions {
+            SCR_ScenarioFrameworkActionSpawnObjects "{632ED8545BC7B318}" {
+             m_iMaxNumberOfActivations 1
+             m_aNameOfObjectsToSpawnOnActivation {
+              "xF22_01"
+             }
+            }
+            SCR_ScenarioFrameworkActionPlaySound "{632EE95A37FD79BD}" {
+             m_iMaxNumberOfActivations 1
+             m_sSound "SOUND_RESPAWNMENU"
+            }
+           }
+          }
+         }
+        }
+       }
+       coords -4.125 0.261 10.28
+      }
+     }
+    }
+   }
+  }
+ }
+ F18_Attack01 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_iRepeatedSpawnNumber 3
+    m_iDynamicDespawnRange 50
+   }
+  }
+  coords 6091.006 0 9755.081
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    xF18_attack01 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_iRepeatedSpawnNumber 3
+       m_eActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 117.23 0 -15.29
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot196 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{EDD3E14E481BDA62}Prefabs/Vehicles/Airplanes/FA18A/FA18A_GBU_CAS.et"
+         }
+        }
+        coords -426.097 92.742 45.043
+       }
+       Slot197 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{EDD3E14E481BDA62}Prefabs/Vehicles/Airplanes/FA18A/FA18A_GBU_CAS.et"
+         }
+        }
+        coords -409.613 71.397 131.461
+       }
+      }
+     }
+    }
+    Layer172 {
+     coords 0 0 0
+     {
+      GenericEntity SlotTrigger14 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+       components {
+        SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+           m_fAreaRadius 400
+           m_eActivationPresence PLAYER
+           m_sActivatedByThisFaction "US"
+           m_bEnableAudio 1
+          }
+         }
+         m_aTriggerActions {
+          SCR_ScenarioFrameworkActionWaitAndExecute "{632ED8544A42795E}" {
+           m_iMaxNumberOfActivations 1
+           m_iDelayInSeconds 1
+           m_aActions {
+            SCR_ScenarioFrameworkActionSpawnObjects "{632ED8545BC7B318}" {
+             m_iMaxNumberOfActivations 1
+             m_aNameOfObjectsToSpawnOnActivation {
+              "xF18_attack01" "xGBU_01a" "xGBU_01b"
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       coords -189.818 -148.776 156.509
+      }
+     }
+    }
+    xGBU_01a {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_TRIGGER_ACTIVATION
+       m_aActivationActions {
+        SCR_ScenarioFrameworkActionWaitAndExecute "{63301726B3563808}" {
+         m_iMaxNumberOfActivations 1
+         m_iDelayInSeconds 16
+         m_iDelayInSecondsMax 16
+         m_aActions {
+          SCR_ScenarioFrameworkActionSpawnObjects "{63301727228EF35B}" {
+           m_iMaxNumberOfActivations 1
+           m_aNameOfObjectsToSpawnOnActivation {
+            "Slot204" "Slot199"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot204 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_eActivationType ON_TRIGGER_ACTIVATION
+          m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+         }
+        }
+        coords -431.662 17.152 58.383
+       }
+       Slot199 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_eActivationType ON_TRIGGER_ACTIVATION
+          m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+         }
+        }
+        coords -430.912 17.033 56.347
+       }
+      }
+     }
+    }
+    xGBU_01b {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_TRIGGER_ACTIVATION
+       m_aActivationActions {
+        SCR_ScenarioFrameworkActionWaitAndExecute "{63301724BD4962DE}" {
+         m_iMaxNumberOfActivations 1
+         m_iDelayInSeconds 17
+         m_iDelayInSecondsMax 17
+         m_aActions {
+          SCR_ScenarioFrameworkActionSpawnObjects "{63301724B22A1D2B}" {
+           m_iMaxNumberOfActivations 1
+           m_aNameOfObjectsToSpawnOnActivation {
+            "Slot206" "Slot200"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot206 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_eActivationType ON_TRIGGER_ACTIVATION
+          m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+         }
+        }
+        coords -404.659 17.238 8.253
+       }
+       Slot200 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_eActivationType ON_TRIGGER_ACTIVATION
+          m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+         }
+        }
+        coords -403.324 17.256 12.178
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

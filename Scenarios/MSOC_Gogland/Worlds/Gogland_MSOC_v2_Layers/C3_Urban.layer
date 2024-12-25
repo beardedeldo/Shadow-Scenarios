@@ -1,5 +1,5 @@
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
- AreaChotain {
+ NuclearSilo1 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -60,17 +60,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_fAreaRadius 5
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 400
+    m_iDynamicDespawnRange 130
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 6838.783 138.736 2475.29
   {
    GenericEntity Layer61 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -84,6 +80,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        coords 0 0 0
       }
       redfor2 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_ONE
+        }
+       }
        coords 0 0 0
        {
         $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -599,7 +600,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaDurras {
+ AreaLounatkyla {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -660,17 +661,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_fAreaRadius 5
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 350
+    m_iDynamicDespawnRange 160
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 6799.006 126.158 2856.563
   {
    GenericEntity Layer189 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -1012,7 +1009,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaEntreDeux {
+ AreaTeollisuualue {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -1072,17 +1069,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 400
+    m_iDynamicDespawnRange 250
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 7476.651 18.562 3167.819
   {
    GenericEntity Layer190 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -1090,6 +1083,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        coords 0.012 -0.002 -0.048
       }
       redfor4 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_ONE
+        }
+       }
        coords 0.012 -0.002 -0.048
        {
         $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -1405,7 +1403,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaErquy {
+ AreaSakkiluoto {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_fAreaRadius 1
@@ -1420,7 +1418,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   angleZ -6.269
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    ERQUY_REDFOR {
+    Sakkiluoto_REDFOR {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_MULTIPLE
+       m_iRandomPercent 50
+      }
+     }
      coords -7.111 -2.45 -16.622
      angleX 5.325
      angleZ 6.242
@@ -1673,9 +1677,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
      }
     }
-    ERQUY_REDFOR_STATIC {
+    Sakkiluoto_REDFOR_STATIC {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_MULTIPLE
        m_iRandomPercent 50
       }
      }
@@ -2340,377 +2345,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaFigari {
-  components {
-   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    m_aActivationActions {
-     SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0AEA7B7D9D}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
-      m_sQRFLayerName "QRFSpawnpointsLayer6"
-      m_fThreatLevelEscalation 1
-      m_fQRFNextWaveDelay 60
-      m_aGroupList {
-       SCR_QRFGroupConfig "{605276DF13DDDEF2}" {
-        m_sGroupPrefab "{41E5EE94EB651A2F}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MachineGunTeam.et"
-       }
-       SCR_QRFGroupConfig "{605276DF13DDDEF8}" {
-        m_sGroupPrefab "{75B62458A893FD98}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_ManeuverGroup.et"
-       }
-       SCR_QRFGroupConfig "{605276DF13DDDEFA}" {
-        m_sGroupPrefab "{3B07D5507B06050D}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_MedicalSection.et"
-       }
-       SCR_QRFGroupConfig "{6054C6E8AB163B52}" {
-        m_sGroupPrefab "{77313758E32191F4}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_SentryTeam.et"
-       }
-       SCR_QRFGroupConfig "{6054C6E8A885528D}" {
-        m_sGroupPrefab "{A07675B0C083D337}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_GL.et"
-       }
-       SCR_QRFGroupConfig "{6054C6E8A85BDAF8}" {
-        m_sGroupPrefab "{750B62504EBDA441}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_Team_AT.et"
-       }
-       SCR_QRFGroupConfig "{6054C6E85768556F}" {
-        m_sGroupPrefab "{28BC4A33AC3B5BBB}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_LightFireTeam.et"
-       }
-       SCR_QRFGroupConfig "{6054C6E8571D91A1}" {
-        m_sGroupPrefab "{4E7F8EA6145579B3}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VSR/Group_RHS_RF_MSV_VSR_FireGroup.et"
-       }
-       SCR_QRFGroupConfig "{6054C6E85499DAE3}" {
-       }
-      }
-      m_aQRFMaxDistanceConfig {
-       SCR_QRFTypeMaxDistance "{60627D460CF5CFC9}" {
-       }
-       SCR_QRFTypeMaxDistance "{60627D460C972FB2}" {
-       }
-       SCR_QRFTypeMaxDistance "{60627D460CBEDF72}" {
-       }
-       SCR_QRFTypeMaxDistance "{60627D460C40EA81}" {
-       }
-      }
-      m_aWPConfig {
-       SCR_QRFWaypointConfig "{60627D462AD4430F}" {
-       }
-       SCR_QRFWaypointConfig "{60627D462AAB2D07}" {
-       }
-       SCR_QRFWaypointConfig "{60627D462A57EB7E}" {
-       }
-       SCR_QRFWaypointConfig "{60627D462A324D4C}" {
-       }
-      }
-     }
-    }
-    m_bOnce 0
-    m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 375
-   }
-  }
-  coords 5278.451 63.573 5331.443
-  {
-   GenericEntity Layer191 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
-    coords 0 0 0
-    {
-     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-      redfor5 {
-       coords 0 0 0
-       {
-        $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-         redforVeh5 {
-          coords 0 0 0
-          {
-           $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-            Layer86 {
-             coords 0 0 0
-             {
-              GenericEntity SlotAI852 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-               components {
-                SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                 m_aActivationActions {
-                  SCR_ScenarioFrameworkActionAI "{620CD6C93D1E435F}" {
-                   m_aAIActions {
-                    SCR_ScenarioFrameworkAIActionDisableLOD "{620CD6C939C3C5F0}" {
-                    }
-                    SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{620CD6C93A9A35CB}" {
-                     m_iInvestigationDistance 50
-                    }
-                   }
-                  }
-                 }
-                 m_sObjectToSpawn "{8115F6535855D5F2}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_UAZTeam_POE.et"
-                 m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
-                }
-               }
-               coords 31.235 -1.501 63.277
-               angleX 0.356
-               angleY 36.816
-               angleZ -1.969
-              }
-              GenericEntity Slot158 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-               components {
-                SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-                 m_sFactionKey "USSR"
-                 m_sObjectToSpawn "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et"
-                 m_bRandomizePerFaction 1
-                 m_eEntityCatalogType VEHICLE
-                 m_aIncludedEditableEntityLabels {
-                  50 53
-                 }
-                }
-               }
-               coords 33.208 -1.475 65.479
-               angleX -1.783
-               angleY -143.542
-               angleZ 0.908
-              }
-             }
-            }
-            Layer88 {
-             coords 0 0 0
-             {
-              GenericEntity SlotAI850 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-               components {
-                SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                 m_aActivationActions {
-                  SCR_ScenarioFrameworkActionAI "{620CD6C93D1E435F}" {
-                   m_aAIActions {
-                    SCR_ScenarioFrameworkAIActionDisableLOD "{620CD6C939C3C5F0}" {
-                    }
-                    SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{620CD6C93A9A35CB}" {
-                     m_iInvestigationDistance 50
-                    }
-                   }
-                  }
-                 }
-                 m_sObjectToSpawn "{8115F6535855D5F2}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_UAZTeam_POE.et"
-                 m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
-                }
-               }
-               coords -31.585 0.138 0.43
-               angleX -1.808
-               angleY 111.265
-               angleZ 2.176
-              }
-              GenericEntity Slot160 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-               components {
-                SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-                 m_sFactionKey "USSR"
-                 m_sObjectToSpawn "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et"
-                 m_bRandomizePerFaction 1
-                 m_eEntityCatalogType VEHICLE
-                 m_aIncludedEditableEntityLabels {
-                  50 53
-                 }
-                }
-               }
-               coords -29.65 0.134 -0.15
-               angleX -3.997
-               angleY 26.016
-               angleZ 0.038
-              }
-             }
-            }
-           }
-          }
-         }
-         redforGroups5 {
-          coords 0 0 0
-          {
-           $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-            SlotAI649 {
-             components {
-              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-               m_sFactionKey "USSR"
-               m_aActivationActions {
-                SCR_ScenarioFrameworkActionAI "{620CD6C93D1E435F}" {
-                 m_aAIActions {
-                  SCR_ScenarioFrameworkAIActionDisableLOD "{620CD6C939C3C5F0}" {
-                  }
-                  SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{620CD6C93A9A35CB}" {
-                   m_iInvestigationDistance 50
-                  }
-                 }
-                }
-               }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
-               m_bRandomizePerFaction 1
-               m_eEntityCatalogType GROUP
-               m_aIncludedEditableEntityLabels {
-                71 72
-               }
-               m_sWPToSpawn "{FAD1D789EE291964}Prefabs/AI/Waypoints/AIWaypoint_Defend_Large.et"
-               m_fPerceptionFactor 25
-              }
-             }
-             coords -37.57 0.378 -2.69
-             angleX -0.596
-             angleY -106.913
-             angleZ 1.117
-            }
-            SlotAI70 {
-             components {
-              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-               m_sFactionKey "USSR"
-               m_aActivationActions {
-                SCR_ScenarioFrameworkActionAI "{620CD6C93D1E435F}" {
-                 m_aAIActions {
-                  SCR_ScenarioFrameworkAIActionDisableLOD "{620CD6C939C3C5F0}" {
-                  }
-                  SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{620CD6C93A9A35CB}" {
-                   m_iInvestigationDistance 50
-                  }
-                 }
-                }
-               }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
-               m_bRandomizePerFaction 1
-               m_eEntityCatalogType GROUP
-               m_aIncludedEditableEntityLabels {
-                71 72
-               }
-               m_aExcludedEditableEntityLabels {
-               }
-               m_sWPToSpawn "{FAD1D789EE291964}Prefabs/AI/Waypoints/AIWaypoint_Defend_Large.et"
-               m_fPerceptionFactor 51
-              }
-             }
-             coords 24.162 -1.47 55.639
-             angleX -1.594
-             angleY 63.75
-             angleZ -1.209
-            }
-            SlotAI648 {
-             components {
-              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-               m_sFactionKey "USSR"
-               m_aActivationActions {
-                SCR_ScenarioFrameworkActionAI "{620CD6C93D1E435F}" {
-                 m_aAIActions {
-                  SCR_ScenarioFrameworkAIActionDisableLOD "{620CD6C939C3C5F0}" {
-                  }
-                  SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{620CD6C93A9A35CB}" {
-                   m_iInvestigationDistance 50
-                  }
-                 }
-                }
-               }
-               m_sObjectToSpawn "{97D45056CFC22FF2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et"
-               m_bRandomizePerFaction 1
-               m_eEntityCatalogType GROUP
-               m_aIncludedEditableEntityLabels {
-                71 72
-               }
-               m_aExcludedEditableEntityLabels {
-               }
-               m_sWPToSpawn "{43CE14A5C4D60E2A}Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO_5m.et"
-               m_fPerceptionFactor 51
-              }
-             }
-             coords -1.883 -0.628 20.602
-             angleX -1.855
-             angleY -48.622
-             angleZ 0.751
-            }
-           }
-          }
-         }
-        }
-       }
-      }
-      noredfor5 {
-       coords 0 0 0
-      }
-     }
-    }
-   }
-   GenericEntity QRFSpawnpointsLayer6 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
-    coords 0.003 0 0.004
-    {
-     GenericEntity QRFSpawnpoint14 {
-      ID "6054EE897FB6C21B"
-      components {
-       SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
-        m_iGroupType INFANTRY
-        m_aSCR_QRFSpawnSafeZone {
-         SCR_QRFSpawnSafeZone "{6064CA880F81D9F5}" {
-          m_iMinDistanceToClosestObserver 200
-         }
-        }
-       }
-      }
-      coords 28.496 -5.91 196.311
-      angleX 6.435
-      angleY -178.189
-      angleZ -6.005
-     }
-     $grp GenericEntity : "{FCE82B7F21949782}Prefabs/ScenarioFramework/Compositions/QRFSpawnpoint.et" {
-      QRFSpawnpoint15 {
-       components {
-        SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
-         m_iGroupType INFANTRY
-         m_aSCR_QRFSpawnSafeZone {
-          SCR_QRFSpawnSafeZone "{6064CA88DD67FF07}" {
-           m_iMinDistanceToClosestObserver 200
-          }
-         }
-        }
-       }
-       coords 121.197 18.389 -32.466
-       angleX 16.032
-       angleY -77.77
-       angleZ -7.964
-      }
-      QRFSpawnpoint16 {
-       components {
-        SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
-         m_iGroupType INFANTRY
-         m_aSCR_QRFSpawnSafeZone {
-          SCR_QRFSpawnSafeZone "{6064CA88DD67FF07}" {
-           m_iMinDistanceToClosestObserver 200
-          }
-         }
-        }
-       }
-       coords -156.01 -3.052 -67.452
-       angleX 2.398
-       angleY 91.521
-       angleZ 10.676
-      }
-      QRFSpawnpoint17 {
-       components {
-        SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
-         m_iGroupType INFANTRY
-         m_aSCR_QRFSpawnSafeZone {
-          SCR_QRFSpawnSafeZone "{6064CA88DD67FF07}" {
-           m_iMinDistanceToClosestObserver 200
-          }
-         }
-        }
-       }
-       coords -35.094 10.249 -182.331
-       angleX 6.79
-       angleY -8.432
-       angleZ -2.799
-      }
-     }
-    }
-   }
-   GenericEntity : "{E105D2F87098E1D8}Prefabs/Systems/Compositions/PatrolPoint/PatrolPoint_LoiterPoint.et" {
-    components {
-     SCR_AISmartActionSentinelComponent "{5CB0DBCC796A6F1C}" {
-      m_fLookDirectionRange 360
-     }
-    }
-    coords -1.437 -0.635 21.043
-    angleX -2.681
-    angleY 0.07
-    angleZ -2.684
-   }
-  }
- }
- AreaGravette {
+ AreaJokela {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -2770,7 +2405,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 400
+    m_iDynamicDespawnRange 150
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 5000.31 7.029 6437.194
@@ -2785,6 +2421,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
       redfor6 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 50
+        }
+       }
        coords 0 0 0
        {
         $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -3177,7 +2819,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaLamentin {
+ AreaSayyo {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -3243,11 +2885,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   coords 1275.569 2.75 5049.92
   {
    GenericEntity Layer193 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -3783,7 +3420,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaLaRuns {
+ AreaVahasomerikonl {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -3843,17 +3480,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 700
+    m_iDynamicDespawnRange 500
    }
   }
   coords 4285.729 -0.001 9037.189
   {
    GenericEntity Layer195 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -4147,6 +3779,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
          redforSingle8 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_SpawnChildren RANDOM_MULTIPLE
+            m_iRandomPercent 66
+           }
+          }
           coords 256.74 11.156 -214.527
           {
            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -4463,7 +4101,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaLeMoule {
+ AreaLeRivinkallio {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -4523,17 +4161,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 300
+    m_iDynamicDespawnRange 380
    }
   }
   coords 4664.183 25.5 10342.564
   {
    GenericEntity Layer194 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -4840,12 +4473,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaLevie {
+ AreaSuurkyla {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0AF3E591F5}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
-      m_sQRFLayerName "QRFSpawnpointsLayer9"
+      m_sQRFLayerName "QRFSpawnpointsLayer11"
       m_fThreatLevelEscalation 1
       m_fQRFNextWaveDelay 60
       m_aGroupList {
@@ -4899,21 +4532,24 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     m_bOnce 0
-    m_iDynamicDespawnRange 400
+    m_bDynamicDespawn 1
+    m_iDynamicDespawnRange 450
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 5326.42 8.538 9124.725
   {
    GenericEntity Layer196 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
       redfor10 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 30
+        }
+       }
        coords 0.021 -0.001 -0.007
        {
         $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -5568,7 +5204,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        components {
         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
          m_SpawnChildren RANDOM_MULTIPLE
-         m_iRandomPercent 70
+         m_iRandomPercent 30
         }
        }
        coords 0 0 0
@@ -5918,7 +5554,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaLevieBaseEast {
+ AreaKappeliniemi {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_fAreaRadius 200
@@ -5929,7 +5565,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   coords 5789.132 10.572 8723.098
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    HQWarehouseSouth {
+    KappBasePerim2 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+       m_iRandomPercent 66
+      }
+     }
      coords -7.709 8.583 -35.291
      {
       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -5980,7 +5622,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
      }
     }
-    HQWarehouseWest {
+    KappBasePerim {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+      }
+     }
      coords -40.601 7.777 47.126
      {
       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -6031,10 +5678,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
      }
     }
-    HQWarehouseNorth {
+    KappBase {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-       m_iRandomPercent 50
+       m_SpawnChildren RANDOM_MULTIPLE
+       m_iRandomPercent 66
       }
      }
      coords 12.286 8.873 28.049
@@ -6242,20 +5890,76 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
      }
     }
+    KappBaseVics {
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot85 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sFactionKey "USSR"
+          m_sObjectToSpawn "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et"
+          m_eEntityCatalogType VEHICLE
+          m_aIncludedEditableEntityLabels {
+           50 53
+          }
+         }
+        }
+        coords -19.96 0.168 9.364
+        angleX -4.757
+        angleY 101.826
+        angleZ 4.04
+       }
+       Slot84 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sFactionKey "USSR"
+          m_sObjectToSpawn "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et"
+          m_eEntityCatalogType VEHICLE
+          m_aIncludedEditableEntityLabels {
+           50 53
+          }
+         }
+        }
+        coords -18.118 0.168 17.356
+        angleX 0.962
+        angleY 108.313
+        angleZ 1.175
+       }
+       Slot205 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sFactionKey "USSR"
+          m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
+          m_eEntityCatalogType VEHICLE
+          m_aIncludedEditableEntityLabels {
+           50 53
+          }
+         }
+        }
+        coords -16.484 0.168 22.591
+        angleX 0.962
+        angleY 108.313
+        angleZ 1.175
+       }
+      }
+     }
+    }
    }
   }
  }
- AreaLevieBaseWest {
+ AreaKappeliniemiWest {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_fAreaRadius 200
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 150
+    m_iDynamicDespawnRange 170
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 5852.515 8.205 8440.842
   {
-   GenericEntity HQAdminBldg : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   GenericEntity KappBeachhead : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
       m_iRandomPercent 75
@@ -6369,7 +6073,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaMeaux {
+ AreaKiiskinkyla {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -6429,7 +6133,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 350
+    m_iDynamicDespawnRange 370
    }
   }
   coords 7150.202 6.559 5322.846
@@ -6437,7 +6141,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    GenericEntity Layer197 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
+      m_SpawnChildren RANDOM_MULTIPLE
+      m_iRandomPercent 66
      }
     }
     coords 0 0 0
@@ -7696,319 +7401,379 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_bDynamicDespawn 1
     m_iDynamicDespawnRange 200
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 5786.448 5.094 8269.341
   {
-   GenericEntity HQBarracksCenter : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_iRandomPercent 50
-      m_bShowDebugShapesDuringRuntime 1
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    HQBarracksCenter {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_MULTIPLE
+       m_iRandomPercent 66
+       m_bShowDebugShapesDuringRuntime 1
+      }
+     }
+     coords -18.804 0.465 -16.989
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI486 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976F989C5761}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -29.928 -0.465 4.347
+       }
+       SlotAI487 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -90.55 -1.585 106.197
+        angleY 84.366
+       }
+       SlotAI488 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -77.668 -0.709 93.587
+        angleY 25.493
+       }
+       SlotAI489 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -13.686 -1.784 -2.145
+        angleY 121.686
+       }
+       SlotAI498 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 17.152 -0.91 -27.676
+       }
+       SlotAI499 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -58.253 -0.288 45.814
+       }
+       SlotAI500 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -38.525 -0.465 2.593
+       }
+       SlotAI501 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -13.606 -0.73 28.224
+        angleY 63.243
+       }
+       SlotAI502 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -37.463 -0.465 18.415
+        angleY 37.197
+       }
+       SlotAI503 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords 9.774 -0.465 22.185
+       }
+       SlotAI504 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sFactionKey "USSR"
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
+            m_aAIActions {
+             SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+              m_iInvestigationDistance 5
+             }
+            }
+           }
+          }
+          m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+          m_bRandomizePerFaction 1
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           40 41 42 43 44 45 46 47 48 49
+          }
+          m_bShowDebugShapesInWorkbench 0
+          m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+          m_fPerceptionFactor 25
+         }
+        }
+        coords -44.406 -0.465 14.448
+       }
+      }
      }
     }
-    coords -18.804 0.465 -16.989
-    {
-     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-      SlotAI486 {
+    Layer64 {
+     coords -42.81 -0.1 8.259
+     {
+      GenericEntity SlotAI667 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
        components {
         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
          m_sFactionKey "USSR"
          m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976F989C5761}" {
+          SCR_ScenarioFrameworkActionAI "{61B0A07FB3A8EC8E}" {
            m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
+            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{61B0A07F8B61DA1F}" {
              m_iInvestigationDistance 5
             }
            }
           }
          }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
+         m_sObjectToSpawn "{F6CEAA1D2B0A7ED0}Prefabs/Groups/OPFOR/RHS_AFRF/MSV/VKPO_Demiseason/Group_RHS_RF_MSV_VKPO_DS_RifleSquad.et"
          m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
+         m_eEntityCatalogType GROUP
          m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
+          72 71
          }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
          m_fPerceptionFactor 25
         }
        }
-       coords -29.928 -0.465 4.347
+       coords -5.18 0.338 12.022
+       angleX -19.642
+       angleY 108.98
+       angleZ 2.417
       }
-      SlotAI487 {
+      GenericEntity Slot150 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
        components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_aPlugins {
+          SCR_ScenarioFrameworkPluginOnDestroyEvent "{617B200FA74FC5E7}" {
+           m_aActionsOnDestroy {
+            SCR_ScenarioFrameworkActionIncrementCounter "{617B2000F03BB8EB}" {
+             m_sCounterName "LogicCounter3"
             }
            }
           }
          }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
+         m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
         }
        }
-       coords -32.289 -0.465 10.351
-      }
-      SlotAI488 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -18.427 -0.982 1.176
-      }
-      SlotAI489 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -69.203 -0.465 48.449
-       angleY 121.686
-      }
-      SlotAI498 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -58.897 0.216 23.679
-      }
-      SlotAI499 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -57.756 -0.29 40.767
-      }
-      SlotAI500 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -38.525 -0.465 2.593
-      }
-      SlotAI501 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -25.762 -0.66 20.828
-       angleY 63.243
-      }
-      SlotAI502 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -29.951 -0.38 28.773
-       angleY 37.197
-      }
-      SlotAI503 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -43.828 -0.465 9.675
-      }
-      SlotAI504 {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sFactionKey "USSR"
-         m_aActivationActions {
-          SCR_ScenarioFrameworkActionAI "{617C976FFC12FB4B}" {
-           m_aAIActions {
-            SCR_ScenarioFrameworkAIActionSetMaxAutonomousDistance "{617C976FEC8BE531}" {
-             m_iInvestigationDistance 5
-            }
-           }
-          }
-         }
-         m_sObjectToSpawn "{E569F066E35DA06F}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/MSV/VKPO3_EMR/Character_RHS_RF_MSV_VKPO_3.0_Rifleman.et"
-         m_bRandomizePerFaction 1
-         m_eEntityCatalogType CHARACTER
-         m_aIncludedEditableEntityLabels {
-          40 41 42 43 44 45 46 47 48 49
-         }
-         m_bShowDebugShapesInWorkbench 0
-         m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall_7m.et"
-         m_fPerceptionFactor 25
-        }
-       }
-       coords -54.95 -0.288 9.015
+       coords -0.462 0.233 9.229
+       angleX -0.441
+       angleY -121.91
+       angleZ -6.179
       }
      }
     }
    }
   }
  }
- AreaTownSmall01 {
+ AreaNiemenkyla {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 300
+    m_iDynamicDespawnRange 350
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 6306.64 6.365 7450.004
@@ -8017,7 +7782,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     HQBarracksNorth {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-       m_iRandomPercent 50
+       m_SpawnChildren RANDOM_MULTIPLE
+       m_iRandomPercent 66
       }
      }
      coords -99.887 5.379 168.942
@@ -8370,10 +8136,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
      }
     }
-    HQBarracksSouth {
+    TownGuards2 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-       m_iRandomPercent 50
+       m_SpawnChildren RANDOM_MULTIPLE
+       m_iRandomPercent 33
       }
      }
      coords 25.683 -0.084 7.89
@@ -8726,7 +8493,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
      }
     }
-    HQBldg {
+    TownGuards1 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
        m_iRandomPercent 75
@@ -8877,7 +8644,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- AreaProvins {
+ AreaPohjoisrivi {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
@@ -8937,17 +8704,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
     m_bOnce 0
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 375
+    m_iDynamicDespawnRange 300
+    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 4651.686 7.402 10924.176
   {
    GenericEntity Layer200 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_SpawnChildren RANDOM_ONE
-     }
-    }
     coords 0 0 0
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -9140,7 +8903,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -18.755 -2.044 -82.117
+             coords -65.44 0.819 -94.565
              angleZ 0.895
             }
             SlotAI11 {
@@ -9170,7 +8933,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords 45.304 -0.092 -47.546
+             coords 36.344 0.06 -51.813
              angleX 0.895
              angleY 0.014
              angleZ 0.895
@@ -9202,7 +8965,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords -87.837 -0.072 27.13
+             coords -15.759 -1.808 62.055
              angleX 8.861
              angleY -0.419
              angleZ -2.716
@@ -9330,7 +9093,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 51
               }
              }
-             coords 80.287 0.439 -159.838
+             coords 76.866 0.179 -85.751
              angleX 0.895
              angleY 0.014
              angleZ 0.895

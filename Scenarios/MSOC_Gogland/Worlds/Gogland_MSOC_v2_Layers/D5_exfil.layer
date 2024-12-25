@@ -34,12 +34,32 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        coords 0 0 0
        {
+        GenericEntity SlotTrigger15 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+         components {
+          SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+             m_fAreaRadius 20
+             m_eActivationPresence PLAYER
+             m_sActivatedByThisFaction "US"
+             m_bOnce 1
+            }
+           }
+           m_aTriggerActions {
+            SCR_ScenarioFrameworkActionPlaySound "{632EE95EA281D3B3}" {
+             m_iMaxNumberOfActivations 1
+             m_sSound "SOUND_ONVICTORY"
+            }
+           }
+          }
+         }
+         coords -0.073 0.493 0.078
+        }
         GenericEntity SlotExtraction_1 : "{9C47DECB98FDA4DA}Prefabs/ScenarioFramework/Components/SlotExtraction.et" {
          components {
           SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
            m_sFactionKey "US"
            m_iRandomPercent 100
-           m_bShowDebugShapesDuringRuntime 1
            m_aPlugins {
             SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
              m_fAreaRadius 10
@@ -49,7 +69,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              m_sPlayerActivationNotificationTitle "#AR-CombatScenario_ExfilTrigger_Notification"
             }
            }
-           m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+           m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/ScenarioFrameworkCharacterTrigger.et"
            m_sTaskTitle "#AR-CombatScenario_ExfilTask_Title"
            m_sTaskDescription "#AR-CombatScenario_ExfilTask_Description_NoLimit"
            m_aActionsOnFinished {
@@ -66,6 +86,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
            m_iRandomPercent 100
            m_sObjectToSpawn "{EFFA90623A05EB25}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V2_US.et"
+           m_bShowDebugShapesInWorkbench 0
           }
          }
          coords 0.551 0.066 5.454
@@ -185,12 +206,32 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        coords 0 0 0
        {
+        GenericEntity SlotTrigger16 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+         components {
+          SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+             m_fAreaRadius 20
+             m_eActivationPresence PLAYER
+             m_sActivatedByThisFaction "US"
+             m_bOnce 1
+            }
+           }
+           m_aTriggerActions {
+            SCR_ScenarioFrameworkActionPlaySound "{632EE95EA281D3B3}" {
+             m_iMaxNumberOfActivations 1
+             m_sSound "SOUND_ONVICTORY"
+            }
+           }
+          }
+         }
+         coords -12.658 0.339 -0.086
+        }
         GenericEntity SlotExtraction_2 : "{9C47DECB98FDA4DA}Prefabs/ScenarioFramework/Components/SlotExtraction.et" {
          components {
           SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
            m_sFactionKey "US"
            m_iRandomPercent 100
-           m_bShowDebugShapesDuringRuntime 1
            m_aPlugins {
             SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
              m_fAreaRadius 10
@@ -200,7 +241,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              m_sPlayerActivationNotificationTitle "#AR-CombatScenario_ExfilTrigger_Notification"
             }
            }
-           m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+           m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/ScenarioFrameworkCharacterTrigger.et"
            m_sTaskTitle "#AR-CombatScenario_ExfilTask_Title"
            m_sTaskDescription "#AR-CombatScenario_ExfilTask_Description_NoLimit"
            m_aActionsOnFinished {
@@ -321,12 +362,32 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        coords 0 0 0
        {
+        GenericEntity SlotTrigger17 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+         components {
+          SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+             m_fAreaRadius 20
+             m_eActivationPresence PLAYER
+             m_sActivatedByThisFaction "US"
+             m_bOnce 1
+            }
+           }
+           m_aTriggerActions {
+            SCR_ScenarioFrameworkActionPlaySound "{632EE95EA281D3B3}" {
+             m_iMaxNumberOfActivations 1
+             m_sSound "SOUND_ONVICTORY"
+            }
+           }
+          }
+         }
+         coords -0.922 -0.065 -0.496
+        }
         GenericEntity SlotExtraction_3 : "{9C47DECB98FDA4DA}Prefabs/ScenarioFramework/Components/SlotExtraction.et" {
          components {
           SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
            m_sFactionKey "US"
            m_iRandomPercent 100
-           m_bShowDebugShapesDuringRuntime 1
            m_aPlugins {
             SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
              m_fAreaRadius 10
@@ -336,7 +397,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              m_sPlayerActivationNotificationTitle "#AR-CombatScenario_ExfilTrigger_Notification"
             }
            }
-           m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+           m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/ScenarioFrameworkCharacterTrigger.et"
            m_sTaskTitle "#AR-CombatScenario_ExfilTask_Title"
            m_sTaskDescription "#AR-CombatScenario_ExfilTask_Description_NoLimit"
            m_aActionsOnFinished {
@@ -354,6 +415,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
             m_iRandomPercent 100
             m_sObjectToSpawn "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et"
+            m_bShowDebugShapesInWorkbench 0
            }
           }
           coords 0 0 0
@@ -370,6 +432,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
             m_sObjectToSpawn "{E4D245A6ECB06719}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/RandomSoldiers/Character_RHS_USMC_MARSOC_AR_Random.et"
+            m_bShowDebugShapesInWorkbench 0
            }
           }
           coords 12.651 0.779 0.832

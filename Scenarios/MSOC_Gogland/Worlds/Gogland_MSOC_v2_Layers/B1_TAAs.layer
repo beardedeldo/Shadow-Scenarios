@@ -135,6 +135,50 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
      coords -34.279 0.189 4.917
      angleY -139.787
     }
+    UH1H_gunship3 {
+     coords -58.748 -0.47 35.106
+     angleY -87.553
+    }
+   }
+   $grp GenericEntity : "{13A99500A14FA14C}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_20ft.et" {
+    {
+     components {
+      SCR_ResourceComponent "{5D247A59598D71AE}" {
+       m_aContainers {
+        SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+         m_fResourceValueCurrent 2500
+         m_fResourceValueMax 2500
+         m_bEnableResourceGain 1
+         m_fResourceGain 50
+         m_fResourceGainTickrate 60
+        }
+       }
+      }
+     }
+     coords -54.793 -2.163 47.541
+     angleX 0.888
+     angleY -83.465
+     angleZ 0.102
+    }
+    {
+     components {
+      SCR_ResourceComponent "{5D247A59598D71AE}" {
+       m_aContainers {
+        SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+         m_fResourceValueCurrent 2500
+         m_fResourceValueMax 2500
+         m_bEnableResourceGain 1
+         m_fResourceGain 50
+         m_fResourceGainTickrate 60
+        }
+       }
+      }
+     }
+     coords -41.212 -1.03 15.26
+     angleX 0.667
+     angleY -131.783
+     angleZ -0.595
+    }
    }
    $grp StaticModelEntity : "{70C5BBB437D7B64E}Prefabs/Structures/Military/Camps/HelipadImprovised_01/HelipadImprovised_US_01_base.et" {
     {
@@ -143,6 +187,9 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
     {
      coords -34.807 -0.201 3.868
      angleY 41.475
+    }
+    {
+     coords -58.688 -0.876 35.817
     }
    }
    GenericEntity : "{726A977F0C818F0C}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Ammo_01.et" {
@@ -210,36 +257,6 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
       ID "5E6A9384DDD03956"
       coords -11.165 -2.079 -0.498
       angleY 90
-     }
-     GenericEntity {
-      ID "5E64C0FB916EAF90"
-      components {
-       SCR_CampaignBuildingProviderComponent "{5ED49CDEA85A0083}" {
-        m_aBudgetsToEvaluate {
-         SCR_CampaignBuildingCooldownWithRankBudgetToEvaluateData "{5EE71CAB5BFCF9A3}" {
-          m_aCustomCooldownData {
-           SCR_CooldownData "{5EEEF52515996867}" {
-            m_fDefaultTimeMultiplier 10
-           }
-           SCR_CooldownData "{5EEEF5250BF881BF}" {
-            m_fDefaultTimeMultiplier 10
-           }
-           SCR_CooldownData "{5EEEF5250B54777E}" {
-            m_fDefaultTimeMultiplier 10
-           }
-           SCR_CooldownData "{5EEEF5250B763DE5}" {
-            m_fDefaultTimeMultiplier 5
-           }
-           SCR_CooldownData "{5EEEF52574D7AC41}" {
-            m_fDefaultTimeMultiplier 10
-           }
-          }
-         }
-        }
-       }
-      }
-      coords 8.343 0.137 1.769
-      angleY 86.96
      }
      GenericEntity {
       ID "5E64C0FB916EA309"
@@ -459,6 +476,32 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
       ID "5E64C0F2106A19C7"
       coords -11 -2.053 2.007
       angleY 24.387
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAF90"
+      components {
+       SCR_CampaignBuildingProviderComponent "{5ED49CDEA85A0083}" {
+        m_fBuildingRadius 50
+        m_aBudgetsToEvaluate {
+         SCR_CampaignBuildingCooldownWithRankBudgetToEvaluateData "{5EE71CAB5BFCF9A3}" {
+          m_aCustomCooldownData {
+           SCR_CooldownData "{5EEEF52515996867}" {
+            m_fDefaultTimeMultiplier 5
+           }
+           SCR_CooldownData "{5EEEF5250BF881BF}" {
+            m_fDefaultTimeMultiplier 5
+           }
+           SCR_CooldownData "{5EEEF5250B54777E}" {
+            m_fDefaultTimeMultiplier 5
+           }
+           SCR_CooldownData "{5EEEF5250B763DE5}" {
+            m_fDefaultTimeMultiplier 5
+           }
+          }
+         }
+        }
+       }
+      }
      }
      StaticModelEntity {
       ID "5E64C0FB916EAC32"
@@ -688,18 +731,6 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
      }
     }
    }
-   GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
-    components {
-     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-      m_eSupportedArsenalItemTypes 1016830
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-    }
-    coords -2.612 -0.16 1.544
-    angleX 1.094
-    angleY 44.968
-    angleZ -1.775
-   }
   }
  }
  Land_FOB_arsenal {
@@ -798,18 +829,6 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
       }
      }
     }
-   }
-   GenericEntity ArsenalBox_US1 : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
-    components {
-     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-      m_eSupportedArsenalItemTypes 1016830
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-    }
-    coords -65.38 1.943 -61.561
-    angleX 1.094
-    angleY 44.968
-    angleZ -1.775
    }
   }
  }

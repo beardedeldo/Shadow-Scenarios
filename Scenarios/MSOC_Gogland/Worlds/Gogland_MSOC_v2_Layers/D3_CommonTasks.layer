@@ -3861,11 +3861,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
          }
         }
         DefendTask10 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           Enabled 0
-          }
-         }
          coords -2152.875 -160.634 2557.5
          {
           GenericEntity MoveDefend10 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
@@ -4402,7 +4397,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
      Kill {
       components {
        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-        Enabled 0
         m_SpawnChildren RANDOM_ONE
        }
       }
@@ -6457,7 +6451,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
      Intel {
       components {
        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-        Enabled 0
         m_SpawnChildren RANDOM_ONE
        }
       }
@@ -13577,7 +13570,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_fPerceptionFactor 25
                   }
                  }
-                 coords -106.314 37.018 134.493
+                 coords -106.314 37.017 134.493
                  angleY 155.023
                 }
                }
@@ -13618,7 +13611,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_fPerceptionFactor 25
                   }
                  }
-                 coords 111.933 6.073 156.304
+                 coords 111.933 6.074 156.304
                  angleY -141.546
                 }
                 SlotAI843 {
@@ -13693,7 +13686,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_fPerceptionFactor 25
                   }
                  }
-                 coords -155.517 42.859 122.908
+                 coords -155.517 42.86 122.908
                  angleY 155.023
                 }
                }
@@ -13850,7 +13843,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
      Ambush {
       components {
        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-        Enabled 0
         m_SpawnChildren RANDOM_ONE
        }
       }
@@ -13974,7 +13966,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords -209.374 -35.026 -341.717
+                   coords -209.375 -35.025 -341.717
                    angleY -0.833
                   }
                   GenericEntity SlotAI491 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -13999,7 +13991,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_fPerceptionFactor 25
                     }
                    }
-                   coords -211.562 -35.025 -341.814
+                   coords -211.562 -35.024 -341.814
                    angleX -0.176
                    angleY 88.637
                    angleZ -0.875
@@ -14062,7 +14054,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_fPerceptionFactor 25
                     }
                    }
-                   coords -218.186 -38.639 -409.487
+                   coords -218.186 -38.638 -409.487
                    angleX 0.87
                    angleY 97.96
                    angleZ -0.2

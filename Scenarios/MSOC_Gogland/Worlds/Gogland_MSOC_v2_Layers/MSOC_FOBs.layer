@@ -454,11 +454,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           angleY 90
          }
          GenericEntity {
-          ID "5E64C0FB916EAF90"
-          coords 16.309 -1.249 -10.646
-          angleY 102.564
-         }
-         GenericEntity {
           ID "5E64C0FB916EA309"
           coords 15.243 -0.909 -10.666
           {
@@ -787,11 +782,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           ID "5E6A9384DDD03956"
           coords -11.164 0.44 -0.499
           angleY 90
-         }
-         GenericEntity {
-          ID "5E64C0FB916EAF90"
-          coords 8.959 -0.567 -6.891
-          angleY 102.564
          }
          GenericEntity {
           ID "5E64C0FB916EA309"
@@ -1164,11 +1154,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           ID "5E6A9384DDD03956"
           coords -11.169 0.352 -0.497
           angleY 90
-         }
-         GenericEntity {
-          ID "5E64C0FB916EAF90"
-          coords 8.975 -1.21 -6.893
-          angleY 102.564
          }
          GenericEntity {
           ID "5E64C0FB916EA309"

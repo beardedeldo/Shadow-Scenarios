@@ -1,11 +1,3 @@
-GenericEntity : "{24B7AC8A3BE10CCB}Prefabs/Props/Military/Compositions/US/VehicleService_US_Large.et" {
- components {
-  SCR_CatalogEntitySpawnerComponent "{5D22B968F23A847A}" {
-   m_eBuildingLabel VEHICLE_HELICOPTER
-  }
- }
- coords 10099.514 7.566 6414.035
-}
 $grp GenericEntity : "{775C493CE872C3A5}Prefabs/ScenarioFramework/Components/LayerTaskDefend.et" {
  Defend12 {
   components {

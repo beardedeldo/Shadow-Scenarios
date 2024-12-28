@@ -630,98 +630,9 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
       angleY -176.406
       angleZ -0.852
      }
-     GenericEntity ArsenalBox_USMC2 : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
-      components {
-       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-        m_eSupportedArsenalItemModes 254
-        m_eArsenalSaveType NO_RESTRICTIONS
-       }
-      }
-      coords 6.202 0.306 -4.018
-      angleX 1.856
-      angleY -88.498
-      angleZ -0.437
-      {
-       GenericEntity {
-        ID "5E9B0BA358A0D551"
-        coords -0.123 -0.005 -0.247
-       }
-       GenericEntity {
-        ID "5D4A8E6DE1C5C844"
-        coords -0.125 0 0.271
-       }
-       GenericEntity {
-        ID "58C4A255C2BC3015"
-        coords -0.344 0.001 0.857
-        angleY -45.82
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30BA"
-        coords 0.808 0.009 -1.148
-        angleX 7.117
-        angleY 97.794
-        angleZ -1.702
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30AA"
-        coords -1.438 -0.043 -0.775
-        angleX 30.705
-        angleY -127.202
-        angleZ -21.186
-       }
-       GenericEntity {
-        ID "58C4A255C2BC31E7"
-        coords -1.115 -0.028 -0.05
-        angleY 89.179
-        {
-         GenericEntity {
-          ID "56B6871A1414CB69"
-          coords 0.009 0 0.001
-         }
-        }
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30DB"
-        coords -0.852 0.073 -0.921
-        angleX 11.144
-        angleY -118.209
-       }
-       GenericEntity {
-        ID "58C4A255C2BC31D4"
-        coords 0.039 -0.01 -1.064
-        angleY 177.707
-        {
-         GenericEntity {
-          ID "56B6871A278AB642"
-          coords -0.002 0 0.005
-         }
-        }
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30C8"
-        coords 0.527 0.023 0.912
-        angleY -19.083
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30E4"
-        coords 1.091 0.03 0.271
-        angleY 39.419
-       }
-       GenericEntity {
-        ID "58C4A6B41F6088BA"
-        coords 0.434 0.014 0.308
-        angleY 54.557
-        {
-         DecalEntity {
-          ID "56DEFDB4A2C87F38"
-          coords 0 -0.002 0
-          angleX -90
-          angleY 0
-          angleZ 0.937
-         }
-        }
-       }
-      }
+     GenericEntity : "{2F17BFBCDB329CCA}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Weapons.et" {
+      coords 6.171 0.297 -3.619
+      angleY -93.741
      }
     }
    }
@@ -734,15 +645,9 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
  Island_FOB_arsenal {
   coords 10095.878 7.844 6466.059
   {
-   GenericEntity : "{377EB906F591E4BA}Prefabs/Props/Military/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Weapons_US.et" {
-    components {
-     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-      m_eSupportedArsenalItemTypes RIFLE
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-    }
-    coords -2.076 0 2.468
-    angleY 87.89
+   GenericEntity : "{2F17BFBCDB329CCA}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Weapons.et" {
+    coords -2.376 -0 2.214
+    angleY 88.298
    }
    GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
     components {
@@ -843,15 +748,9 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
   coords 7336.542 2.586 1007.386
   angleY 115.508
   {
-   GenericEntity : "{377EB906F591E4BA}Prefabs/Props/Military/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Weapons_US.et" {
-    components {
-     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-      m_eSupportedArsenalItemTypes RIFLE
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-    }
-    coords -64.521 2.043 -62.678
-    angleY 65.707
+   GenericEntity : "{2F17BFBCDB329CCA}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Weapons.et" {
+    coords -64.39 2.045 -62.233
+    angleY 53.551
    }
    GenericEntity ArsenalBox_USMC1 : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
     components {
@@ -1074,6 +973,16 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
      angleX 0.667
      angleY -131.783
      angleZ -0.595
+    }
+   }
+   $grp Vehicle : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
+    UH1H3 {
+     coords -26.131 -1.079 13.076
+     angleY -144.403
+    }
+    UH1H4 {
+     coords 20.726 1.188 -26.545
+     angleY 178.492
     }
    }
    $grp StaticModelEntity : "{70C5BBB437D7B64E}Prefabs/Structures/Military/Camps/HelipadImprovised_01/HelipadImprovised_US_01_base.et" {
@@ -1525,98 +1434,9 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
       angleY -176.406
       angleZ -0.852
      }
-     GenericEntity ArsenalBox_USMC3 : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
-      components {
-       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-        m_eSupportedArsenalItemModes 254
-        m_eArsenalSaveType NO_RESTRICTIONS
-       }
-      }
-      coords 5.192 0.381 -5.338
-      angleX -0.922
-      angleY -91.903
-      angleZ -1.669
-      {
-       GenericEntity {
-        ID "5E9B0BA358A0D551"
-        coords -0.123 -0.005 -0.247
-       }
-       GenericEntity {
-        ID "5D4A8E6DE1C5C844"
-        coords -0.125 0 0.271
-       }
-       GenericEntity {
-        ID "58C4A255C2BC3015"
-        coords -0.344 0.001 0.857
-        angleY -45.82
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30BA"
-        coords 0.808 0.009 -1.148
-        angleX 7.117
-        angleY 97.794
-        angleZ -1.702
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30AA"
-        coords -1.438 -0.043 -0.775
-        angleX 30.705
-        angleY -127.202
-        angleZ -21.186
-       }
-       GenericEntity {
-        ID "58C4A255C2BC31E7"
-        coords -1.115 -0.028 -0.05
-        angleY 89.179
-        {
-         GenericEntity {
-          ID "56B6871A1414CB69"
-          coords 0.009 0 0.001
-         }
-        }
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30DB"
-        coords -0.852 0.073 -0.921
-        angleX 11.144
-        angleY -118.209
-       }
-       GenericEntity {
-        ID "58C4A255C2BC31D4"
-        coords 0.039 -0.01 -1.064
-        angleY 177.707
-        {
-         GenericEntity {
-          ID "56B6871A278AB642"
-          coords -0.002 0 0.005
-         }
-        }
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30C8"
-        coords 0.527 0.023 0.912
-        angleY -19.083
-       }
-       GenericEntity {
-        ID "58C4A255C2BC30E4"
-        coords 1.091 0.03 0.271
-        angleY 39.419
-       }
-       GenericEntity {
-        ID "58C4A6B41F6088BA"
-        coords 0.434 0.014 0.308
-        angleY 54.557
-        {
-         DecalEntity {
-          ID "56DEFDB4A2C87F38"
-          coords 0 -0.002 0
-          angleX -90
-          angleY 0
-          angleZ 0.937
-         }
-        }
-       }
-      }
+     GenericEntity : "{2F17BFBCDB329CCA}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Weapons.et" {
+      coords 6.086 0.312 -5.401
+      angleY -92.988
      }
     }
    }
@@ -1625,16 +1445,6 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
     angleY -155.597
    }
   }
- }
-}
-$grp Vehicle : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
- UH1H3 {
-  coords 7378.204 1.747 998.405
-  angleY -11.086
- }
- UH1H4 {
-  coords 7317.231 4.014 991.495
-  angleY -48.191
  }
 }
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
@@ -2035,6 +1845,16 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     angleY 28.553
     angleZ 3.141
    }
+   $grp GenericEntity : "{AB1A97B1BAE8C395}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyCache_S_FIA_01.et" {
+    {
+     coords 82.109 2.822 79.961
+     angleY 67.681
+    }
+    {
+     coords 85.864 3.29 71.068
+     angleY 67.681
+    }
+   }
    GenericEntity Area16 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
     coords -63.217 2.796 81.867
     angleY -46.235
@@ -2251,6 +2071,16 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    GenericEntity : "{F09296B9255F6704}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_CommandPost_US_01.et" {
     coords 25.853 -1.374 22.612
     angleY 150.527
+    {
+     GenericEntity {
+      ID "5D371AC8D914191C"
+      components {
+       SCR_CampaignBuildingProviderComponent "{5EBCED04D0321687}" {
+        m_fBuildingRadius 300
+       }
+      }
+     }
+    }
    }
   }
  }

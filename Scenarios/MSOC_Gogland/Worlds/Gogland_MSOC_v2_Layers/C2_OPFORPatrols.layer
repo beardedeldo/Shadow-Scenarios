@@ -44,12 +44,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_fPerceptionFactor 25
         }
        }
-       coords 679.208 43.688 406.021
+       coords 679.208 43.687 406.02
       }
       GenericEntity SlotWaypoint8 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
        components {
         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_bShowDebugShapesInWorkbench 0
          m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{614EEBD1E22E415A}" {
           m_aLayersWithWaypointsToCycle {
            "PatrolWPS1120"

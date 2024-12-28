@@ -141,9 +141,19 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
   }
  }
  SupplyDropRecovery {
+  components {
+   SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+    Enabled 0
+   }
+  }
   coords 6500 161.875 6500
  }
  LayerPlayerTrigger_SpawnOBJ {
+  components {
+   SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+    Enabled 0
+   }
+  }
   coords 5651.635 16.334 9731.438
   {
    GenericEntity SlotTrigger19 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
@@ -184,6 +194,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area4 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_bShowDebugShapesDuringRuntime 1
     m_bOnce 0
     m_iDynamicDespawnRange 150

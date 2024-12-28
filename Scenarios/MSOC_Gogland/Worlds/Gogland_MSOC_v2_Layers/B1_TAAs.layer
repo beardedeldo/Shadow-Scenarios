@@ -126,19 +126,9 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
  Island_FOB_Helipad {
   coords 10092.529 8.035 6435.922
   {
-   $grp Vehicle : "{137DCF41459A89BE}Prefabs/Vehicles/Helicopters/UH1H/UH1H_gunship.et" {
-    UH1H_gunship1 {
-     coords 14.913 -0.488 -16.157
-     angleY 176.512
-    }
-    UH1H_gunship2 {
-     coords -34.279 0.189 4.917
-     angleY -139.787
-    }
-    UH1H_gunship3 {
-     coords -58.748 -0.47 35.106
-     angleY -87.553
-    }
+   Vehicle UH1H_gunship2 : "{137DCF41459A89BE}Prefabs/Vehicles/Helicopters/UH1H/UH1H_gunship.et" {
+    coords -34.279 0.189 4.917
+    angleY -139.787
    }
    $grp GenericEntity : "{13A99500A14FA14C}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_20ft.et" {
     {
@@ -180,6 +170,16 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
      angleZ -0.595
     }
    }
+   $grp Vehicle : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
+    UH1H1 {
+     coords 15.557 -0.453 -16.609
+     angleY -166.948
+    }
+    UH1H2 {
+     coords -60.205 -0.525 35.546
+     angleY -88.296
+    }
+   }
    $grp StaticModelEntity : "{70C5BBB437D7B64E}Prefabs/Structures/Military/Camps/HelipadImprovised_01/HelipadImprovised_US_01_base.et" {
     {
      coords 15.366 -0.861 -14.604
@@ -210,6 +210,904 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
    GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/Helipad_L_US_01.et" {
     coords -4.812 -0.328 -8.755
     angleY -62.297
+    {
+     GenericEntity {
+      ID "5D1EB45BA40E2740"
+      coords -0.983 -0.88 -15.257
+      angleY 177.42
+     }
+     GenericEntity {
+      ID "5D1EB45BA40E2783"
+      coords -0.847 -1.603 -21.257
+      angleY 170.004
+     }
+     GenericEntity {
+      ID "5D1EB45BA40E2798"
+      coords -0.861 -0.031 15.499
+      angleY -9.128
+     }
+     GenericEntity {
+      ID "5D1EB45BA40E27A8"
+      coords -0.893 -1.236 -18.259
+      angleY 6.639
+     }
+     GenericEntity {
+      ID "5D1EB45BA40E27C3"
+      coords -0.893 0.015 9.499
+      angleY 177.564
+     }
+     GenericEntity {
+      ID "5D1EB45BA40E27DF"
+      coords -0.861 -0.55 -12.257
+      angleY 4.578
+     }
+     GenericEntity {
+      ID "5D1EB45BA40E27F7"
+      coords -0.983 -0.01 12.499
+      angleY -178.202
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAC93"
+      coords 9.463 0.123 -5.315
+      angleX 0.744
+      angleY 82.772
+      angleZ 1.075
+     }
+     GenericEntity {
+      ID "5E6A9384DDD03956"
+      coords -11.165 -2.079 -0.498
+      angleY 90
+     }
+     GenericEntity {
+      ID "5E64C0FB916EA309"
+      coords 7.894 0.09 -6.914
+      {
+       GenericEntity {
+        ID "5E64C0FA0164205B"
+        coords 0.974 0.339 3.139
+       }
+       GenericEntity {
+        ID "5E64C0FA01647BD1"
+        coords -18.523 -0.539 -0.06
+        angleY -87.474
+       }
+       GenericEntity {
+        ID "5E64C0FA01647BCF"
+        coords -19.122 -1.159 -0.053
+        angleY -84.656
+       }
+       GenericEntity {
+        ID "5E64C0FA01642240"
+        coords -17.935 -0.298 -1.292
+       }
+       GenericEntity {
+        ID "5E64C0FA01647BD0"
+        coords -18.437 -0.572 1.059
+        angleY 4.987
+       }
+       GenericEntity {
+        ID "5E64C0FA01642242"
+        coords -19.04 -1.121 -1.299
+        angleY -175.113
+       }
+       GenericEntity {
+        ID "5E64C0FA0167FF9B"
+        coords -1.034 0.26 12.327
+        angleY 174.957
+       }
+       GenericEntity {
+        ID "5E64C0FA0164205A"
+        coords 0.939 0 2.06
+       }
+       GenericEntity {
+        ID "5E64C0FCB1C99422"
+        coords -14.652 -0.122 12.973
+        angleY -180
+       }
+       GenericEntity {
+        ID "5E64C0FA0167FF9F"
+        coords 0.971 0.047 13.502
+        angleY 175.048
+       }
+       GenericEntity {
+        ID "5E64C0FA0167FF9D"
+        coords 0.822 0.047 14.683
+        angleY 90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5E6906884A85A3A3"
+      coords -11.341 -2.091 5.689
+      angleY -83.821
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE81"
+      coords 9.237 0.104 -7.577
+      angleY 9.471
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE8F"
+      coords 8.507 0.082 -9.177
+      angleY -155.529
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE9E"
+      coords 9.106 0.091 -9.056
+      angleY 9.471
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAECF"
+      coords -11.087 -2.068 6.258
+      angleY 179.591
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAEDE"
+      coords -10.639 -2.009 9.14
+      angleX 15.791
+      angleY 106.38
+      angleZ -42.794
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAEF1"
+      coords -11.06 -2.06 8.971
+      angleY 170.089
+     }
+     GenericEntity {
+      ID "5E64C0F12EB3EA22"
+      coords -10.869 -2.031 7.797
+      angleY 29.823
+     }
+     GenericEntity {
+      ID "5E64C0F12EB3EBEC"
+      coords 7.934 0.095 -6.2
+      angleY 121.008
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAC02"
+      coords -10.609 -1.851 -9.134
+      angleY -66.217
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAC67"
+      coords -10.94 -1.87 -9.69
+      angleY -152.964
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAC74"
+      coords -11.267 -1.903 -9.092
+      angleY -152.964
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE10"
+      coords 7.714 0.137 8.806
+      angleY -55.678
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE22"
+      coords 8.351 0.084 -8.699
+      angleX -75.985
+      angleY -178.804
+      angleZ -91.798
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE35"
+      coords 8.318 0.087 -8.023
+      angleX -65.593
+      angleZ 90
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE6F"
+      coords -10.748 -2.03 5.947
+      angleY -70.915
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAE7E"
+      coords -8.44 -1.508 8.839
+      angleY -124.612
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAFCC"
+      coords 9.092 0.114 -5.828
+      angleY 65.593
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAFE3"
+      coords 8.382 0.104 -5.911
+     }
+     GenericEntity {
+      ID "5E69068BD3F68B0C"
+      coords 0 0.001 0
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAC57"
+      coords 6.483 0.137 9.364
+      angleY 82.082
+     }
+     GenericEntity {
+      ID "5E64C0F12EB3EA3D"
+      coords 8.252 0.137 7.958
+      angleY 69.671
+     }
+     GenericEntity {
+      ID "5E64C0F12EB3EB98"
+      coords -11.993 -2.149 4.468
+      angleY -38.27
+     }
+     GenericEntity {
+      ID "5E64C0F12EB3EBD3"
+      coords -10.429 -1.868 -7.823
+      angleY -21.541
+      {
+       DecalEntity {
+        ID "56DEFDB4A9499F9B"
+        coords 0 0 0
+        angleX -90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAC83"
+      coords -10.812 -2.053 0.674
+      angleX -0.236
+      angleY 83.612
+      angleZ 0.41
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAEB1"
+      coords -4.68 0.295 6.861
+      angleY 97.704
+     }
+     GenericEntity {
+      ID "5E64C0FB916EACD2"
+      coords -10.755 -2.016 7.6
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAC44"
+      coords 7.537 0.137 9.659
+      angleY -19.289
+     }
+     GenericEntity {
+      ID "5E64C0F2106A1824"
+      coords -11.712 -2.102 7.452
+      angleY -180
+     }
+     GenericEntity {
+      ID "5E64C0F2106A19C7"
+      coords -11 -2.053 2.007
+      angleY 24.387
+     }
+     GenericEntity {
+      ID "5E64C0FB916EAF90"
+      components {
+       SCR_CampaignBuildingProviderComponent "{5ED49CDEA85A0083}" {
+        m_fBuildingRadius 50
+        m_aBudgetsToEvaluate {
+         SCR_CampaignBuildingCooldownWithRankBudgetToEvaluateData "{5EE71CAB5BFCF9A3}" {
+          m_aCustomCooldownData {
+           SCR_CooldownData "{5EEEF52515996867}" {
+            m_fDefaultTimeMultiplier 5
+           }
+           SCR_CooldownData "{5EEEF5250BF881BF}" {
+            m_fDefaultTimeMultiplier 5
+           }
+           SCR_CooldownData "{5EEEF5250B54777E}" {
+            m_fDefaultTimeMultiplier 5
+           }
+           SCR_CooldownData "{5EEEF5250B763DE5}" {
+            m_fDefaultTimeMultiplier 5
+           }
+          }
+         }
+        }
+       }
+       SCR_CatalogEntitySpawnerComponent "{5D22B968F23A847A}" {
+        Enabled 0
+       }
+      }
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAC32"
+      coords 11.115 0.125 -8.125
+      angleY -87.707
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADA0"
+      coords -12.292 -2.204 10.025
+      angleY -88.767
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADAE"
+      coords -12.526 -2.202 0.983
+      angleY -87.225
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADC1"
+      coords 11.396 0.137 -2.813
+      angleY -87.707
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADCD"
+      coords 10.34 0.137 -2.836
+      angleY -85.828
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADDC"
+      coords 10.034 0.11 -8.102
+      angleY -87.443
+     }
+     StaticModelEntity {
+      ID "5D1EB45B64492FFA"
+      coords -0.502 -0.024 -0.002
+      {
+       GenericEntity {
+        ID "5D1EB45993212F55"
+        {
+         GenericEntity {
+          ID "5A26B380A63C2147"
+          coords 0 0.763 0.064
+         }
+        }
+       }
+      }
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD0B"
+      coords -11.922 -2.137 2.135
+      angleY -88.5
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD1C"
+      coords -11.826 -2.141 5.75
+      angleY -88.5
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD2D"
+      coords -11.742 -2.134 9.372
+      angleY -89.003
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD4D"
+      coords -12.938 -2.241 5.695
+      angleY -88.5
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD5A"
+      coords -12.866 -2.26 9.295
+      angleY -88.5
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD66"
+      coords -12.348 -2.133 7.441
+      angleY -88.5
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD7C"
+      coords -12.441 -2.188 3.69
+      angleY -88.5
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD84"
+      coords 10.63 0.126 -7.075
+      angleY -87.344
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EAD92"
+      coords 10.172 0.132 -5.384
+      angleY -86.4
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADBE"
+      coords -13.042 -2.254 2.101
+      angleY -86.696
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADE9"
+      coords 11.274 0.137 -5.395
+      angleY -87.007
+     }
+     StaticModelEntity {
+      ID "5E64C0FB916EADF6"
+      coords 10.821 0.137 -3.551
+      angleY -85.816
+     }
+     GenericEntity : "{13A99500A14FA14C}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_20ft.et" {
+      components {
+       SCR_ResourceComponent "{5D247A59598D71AE}" {
+        m_aContainers {
+         SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+          m_fResourceValueCurrent 2500
+          m_fResourceValueMax 2500
+          m_bEnableResourceGain 1
+          m_fResourceGain 50
+          m_fResourceGainTickrate 60
+         }
+        }
+       }
+      }
+      coords -13.786 -2.14 -3.98
+      angleX -0.271
+      angleY -176.406
+      angleZ -0.852
+     }
+     GenericEntity ArsenalBox_USMC2 : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
+      components {
+       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemModes 254
+        m_eArsenalSaveType NO_RESTRICTIONS
+       }
+      }
+      coords 6.202 0.306 -4.018
+      angleX 1.856
+      angleY -88.498
+      angleZ -0.437
+      {
+       GenericEntity {
+        ID "5E9B0BA358A0D551"
+        coords -0.123 -0.005 -0.247
+       }
+       GenericEntity {
+        ID "5D4A8E6DE1C5C844"
+        coords -0.125 0 0.271
+       }
+       GenericEntity {
+        ID "58C4A255C2BC3015"
+        coords -0.344 0.001 0.857
+        angleY -45.82
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30BA"
+        coords 0.808 0.009 -1.148
+        angleX 7.117
+        angleY 97.794
+        angleZ -1.702
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30AA"
+        coords -1.438 -0.043 -0.775
+        angleX 30.705
+        angleY -127.202
+        angleZ -21.186
+       }
+       GenericEntity {
+        ID "58C4A255C2BC31E7"
+        coords -1.115 -0.028 -0.05
+        angleY 89.179
+        {
+         GenericEntity {
+          ID "56B6871A1414CB69"
+          coords 0.009 0 0.001
+         }
+        }
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30DB"
+        coords -0.852 0.073 -0.921
+        angleX 11.144
+        angleY -118.209
+       }
+       GenericEntity {
+        ID "58C4A255C2BC31D4"
+        coords 0.039 -0.01 -1.064
+        angleY 177.707
+        {
+         GenericEntity {
+          ID "56B6871A278AB642"
+          coords -0.002 0 0.005
+         }
+        }
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30C8"
+        coords 0.527 0.023 0.912
+        angleY -19.083
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30E4"
+        coords 1.091 0.03 0.271
+        angleY 39.419
+       }
+       GenericEntity {
+        ID "58C4A6B41F6088BA"
+        coords 0.434 0.014 0.308
+        angleY 54.557
+        {
+         DecalEntity {
+          ID "56DEFDB4A2C87F38"
+          coords 0 -0.002 0
+          angleX -90
+          angleY 0
+          angleZ 0.937
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+   Vehicle UH1H_armed1 : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
+    coords -7.084 -0.002 -9.36
+    angleY -155.597
+   }
+  }
+ }
+ Island_FOB_arsenal {
+  coords 10095.878 7.844 6466.059
+  {
+   GenericEntity : "{377EB906F591E4BA}Prefabs/Props/Military/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Weapons_US.et" {
+    components {
+     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+      m_eSupportedArsenalItemTypes RIFLE
+      m_eArsenalSaveType NO_RESTRICTIONS
+     }
+    }
+    coords -2.076 0 2.468
+    angleY 87.89
+   }
+   GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
+    components {
+     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+      m_eSupportedArsenalItemModes 254
+      m_eArsenalSaveType NO_RESTRICTIONS
+     }
+    }
+    coords 1.077 0 -2.104
+    angleX -1.901
+    angleY 46.689
+    angleZ -0.141
+    {
+     GenericEntity {
+      ID "5E9B0BA358A0D551"
+      coords -0.123 -0.005 -0.247
+     }
+     GenericEntity {
+      ID "5D4A8E6DE1C5C844"
+      coords -0.125 0 0.271
+     }
+     GenericEntity {
+      ID "58C4A255C2BC3015"
+      coords -0.344 0.001 0.857
+      angleY -45.82
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30BA"
+      coords 0.808 0.009 -1.148
+      angleX 7.117
+      angleY 97.794
+      angleZ -1.702
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30AA"
+      coords -1.438 -0.043 -0.775
+      angleX 30.705
+      angleY -127.202
+      angleZ -21.186
+     }
+     GenericEntity {
+      ID "58C4A255C2BC31E7"
+      coords -1.115 -0.028 -0.05
+      angleY 89.179
+      {
+       GenericEntity {
+        ID "56B6871A1414CB69"
+        coords 0.009 0 0.001
+       }
+      }
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30DB"
+      coords -0.852 0.073 -0.921
+      angleX 11.144
+      angleY -118.209
+     }
+     GenericEntity {
+      ID "58C4A255C2BC31D4"
+      coords 0.039 -0.01 -1.064
+      angleY 177.707
+      {
+       GenericEntity {
+        ID "56B6871A278AB642"
+        coords -0.002 0 0.005
+       }
+      }
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30C8"
+      coords 0.527 0.023 0.912
+      angleY -19.083
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30E4"
+      coords 1.091 0.03 0.271
+      angleY 39.419
+     }
+     GenericEntity {
+      ID "58C4A6B41F6088BA"
+      coords 0.434 0.014 0.308
+      angleY 54.557
+      {
+       DecalEntity {
+        ID "56DEFDB4A2C87F38"
+        coords 0 -0.002 0
+        angleX -90
+        angleY 0
+        angleZ 0.937
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Land_FOB_arsenal {
+  coords 7336.542 2.586 1007.386
+  angleY 115.508
+  {
+   GenericEntity : "{377EB906F591E4BA}Prefabs/Props/Military/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Weapons_US.et" {
+    components {
+     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+      m_eSupportedArsenalItemTypes RIFLE
+      m_eArsenalSaveType NO_RESTRICTIONS
+     }
+    }
+    coords -64.521 2.043 -62.678
+    angleY 65.707
+   }
+   GenericEntity ArsenalBox_USMC1 : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
+    components {
+     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+      m_eSupportedArsenalItemModes 254
+      m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{633716E70BC21A3F}" {
+      }
+      m_eArsenalSaveType NO_RESTRICTIONS
+     }
+    }
+    coords -61.69 2.384 -65.21
+    angleX -1.901
+    angleY 46.689
+    angleZ -0.141
+    {
+     GenericEntity {
+      ID "5E9B0BA358A0D551"
+      coords -0.123 -0.005 -0.247
+     }
+     GenericEntity {
+      ID "5D4A8E6DE1C5C844"
+      coords -0.125 0 0.271
+     }
+     GenericEntity {
+      ID "58C4A255C2BC3015"
+      coords -0.344 0.001 0.857
+      angleY -45.82
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30BA"
+      coords 0.808 0.009 -1.148
+      angleX 7.117
+      angleY 97.794
+      angleZ -1.702
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30AA"
+      coords -1.438 -0.043 -0.775
+      angleX 30.705
+      angleY -127.202
+      angleZ -21.186
+     }
+     GenericEntity {
+      ID "58C4A255C2BC31E7"
+      coords -1.115 -0.028 -0.05
+      angleY 89.179
+      {
+       GenericEntity {
+        ID "56B6871A1414CB69"
+        coords 0.009 0 0.001
+       }
+      }
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30DB"
+      coords -0.852 0.073 -0.921
+      angleX 11.144
+      angleY -118.209
+     }
+     GenericEntity {
+      ID "58C4A255C2BC31D4"
+      coords 0.039 -0.01 -1.064
+      angleY 177.707
+      {
+       GenericEntity {
+        ID "56B6871A278AB642"
+        coords -0.002 0 0.005
+       }
+      }
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30C8"
+      coords 0.527 0.023 0.912
+      angleY -19.083
+     }
+     GenericEntity {
+      ID "58C4A255C2BC30E4"
+      coords 1.091 0.03 0.271
+      angleY 39.419
+     }
+     GenericEntity {
+      ID "58C4A6B41F6088BA"
+      coords 0.434 0.014 0.308
+      angleY 54.557
+      {
+       DecalEntity {
+        ID "56DEFDB4A2C87F38"
+        coords 0 -0.002 0
+        angleX -90
+        angleY 0
+        angleZ 0.937
+       }
+      }
+     }
+    }
+   }
+   GenericEntity : "{E55FC02F8C1518A2}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_US.et" {
+    coords -61.822 2.369 -67.971
+    angleY 60.32
+   }
+  }
+ }
+ Land_FOB_BriefingTent {
+  coords 7255.436 1.589 1020.279
+  angleY -96.567
+  {
+   StaticModelEntity : "{55973C5B0950D4AB}Prefabs/Props/Military/Furniture/ChairMilitary_US_01.et" {
+    coords -2.043 -0.021 -1.007
+    angleY 0
+   }
+   StaticModelEntity Table_Ashtray_US_3 : "{7B2D1744E9F2A3B3}Prefabs/Compositions/Misc/SubCompositions/Furniture/Table_Ashtray_US_01.et" {
+    coords -1.181 0.002 -1.208
+    angleY -37.179
+    {
+     GenericEntity {
+      ID "5CB0D996697DE52C"
+      coords -0.076 0.9 -0.037
+     }
+     GenericEntity : "{05B993EAF472E376}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_10.et" {
+      coords 0.479 0.9 0.237
+      angleY -178.63
+     }
+     GenericEntity : "{1EE7CF82BC148328}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_03.et" {
+      coords 0.303 0.9 -0.107
+      angleY -179.336
+     }
+     GenericEntity : "{23D3EABAC9780A1F}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_04.et" {
+      coords 0.238 0.9 0.245
+      angleY -178.607
+     }
+     GenericEntity : "{69EDA70A48B66C58}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_13.et" {
+      coords -0.342 0.9 -0.092
+      angleY -176.582
+     }
+     GenericEntity : "{8C71EBF34453FB33}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_12.et" {
+      coords -0.477 0.9 -0.09
+      angleY -178.24
+     }
+     GenericEntity : "{972FB79B0C359B6E}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_01.et" {
+      coords 0.41 0.9 -0.11
+      angleY -179.086
+     }
+     GenericEntity : "{AA1B92A37959125A}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_06.et" {
+      coords 0.189 0.9 -0.107
+      angleY 179.328
+     }
+     GenericEntity : "{E025DF13F897741D}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_11.et" {
+      coords 0.357 0.9 0.24
+      angleY -178.182
+     }
+     GenericEntity : "{FB7B837BB0F11443}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_02.et" {
+      coords 0.527 0.9 -0.111
+      angleY -179.463
+     }
+    }
+   }
+   GenericEntity CamoNet_Large_Top_US3 : "{89230C660A90788F}Prefabs/Structures/Military/CamoNets/US/CamoNet_Large_Top_US.et" {
+    coords -3.251 -0.084 2.88
+    angleY -76.972
+   }
+   $grp SCR_DestructibleEntity : "{C8A5C92E74ABB5EA}Prefabs/Props/Civilian/PicnicTable/PicnicTable_01.et" {
+    {
+     coords -7.922 -0.258 5.873
+     angleY -150.593
+    }
+    {
+     coords -4.835 -0.176 8.442
+     angleY 60.484
+    }
+    {
+     coords -9.589 -0.281 1.982
+     angleY 15.19
+    }
+   }
+  }
+ }
+ Land_FOB_Helipad {
+  coords 7350.763 2.826 988.363
+  angleY 133.317
+  {
+   Vehicle UH1H_gunship6 : "{137DCF41459A89BE}Prefabs/Vehicles/Helicopters/UH1H/UH1H_gunship.et" {
+    coords -58.373 -0.463 24.431
+    angleY -170.587
+   }
+   $grp GenericEntity : "{13A99500A14FA14C}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_20ft.et" {
+    SupplyShippingContainers_01_20ft2 {
+     components {
+      SCR_ResourceComponent "{5D247A59598D71AE}" {
+       m_aContainers {
+        SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+         m_fResourceValueCurrent 2500
+         m_fResourceValueMax 2500
+         m_bEnableResourceGain 1
+         m_fResourceGain 50
+         m_fResourceGainTickrate 60
+        }
+       }
+      }
+     }
+     coords -54.168 -1.397 12.921
+     angleX 0.888
+     angleY -83.465
+     angleZ 0.102
+    }
+    SupplyShippingContainers_01_20ft1 {
+     components {
+      SCR_ResourceComponent "{5D247A59598D71AE}" {
+       m_aContainers {
+        SCR_ResourceContainer "{5D3CDAE74F1A6127}" {
+         m_fResourceValueCurrent 2500
+         m_fResourceValueMax 2500
+         m_bEnableResourceGain 1
+         m_fResourceGain 50
+         m_fResourceGainTickrate 60
+        }
+       }
+      }
+     }
+     coords -41.212 -1.03 15.26
+     angleX 0.667
+     angleY -131.783
+     angleZ -0.595
+    }
+   }
+   $grp StaticModelEntity : "{70C5BBB437D7B64E}Prefabs/Structures/Military/Camps/HelipadImprovised_01/HelipadImprovised_US_01_base.et" {
+    {
+     coords 21.478 0.777 -26.803
+     angleY -2.236
+    }
+    {
+     coords -27.083 -1.43 12.605
+     angleY 41.475
+    }
+    {
+     coords -58.688 -0.876 24.032
+     angleY 6.668
+    }
+   }
+   GenericEntity Sandbag_Ammo_1 : "{726A977F0C818F0C}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Ammo_01.et" {
+    coords 0.865 -0.025 -14.479
+    angleY -57.379
+    {
+     GenericEntity : "{5FFD91CF507BFFFB}Prefabs/Props/Military/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Ammunition_US.et" {
+      components {
+       SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+        m_eArsenalSaveType NO_RESTRICTIONS
+       }
+      }
+      coords -0.378 0.661 0.037
+      angleY 4.382
+     }
+    }
+   }
+   GenericEntity Helipad_L_US_1 : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/Helipad_L_US_01.et" {
+    coords -2.869 -1.323 -6.151
+    angleY 124.43
     {
      GenericEntity {
       ID "5D1EB45BA40E2740"
@@ -622,289 +1520,121 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
         }
        }
       }
-      coords -13.786 -2.14 -3.98
+      coords -13.786 -1.503 -3.98
       angleX -0.271
       angleY -176.406
       angleZ -0.852
      }
+     GenericEntity ArsenalBox_USMC3 : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
+      components {
+       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemModes 254
+        m_eArsenalSaveType NO_RESTRICTIONS
+       }
+      }
+      coords 5.192 0.381 -5.338
+      angleX -0.922
+      angleY -91.903
+      angleZ -1.669
+      {
+       GenericEntity {
+        ID "5E9B0BA358A0D551"
+        coords -0.123 -0.005 -0.247
+       }
+       GenericEntity {
+        ID "5D4A8E6DE1C5C844"
+        coords -0.125 0 0.271
+       }
+       GenericEntity {
+        ID "58C4A255C2BC3015"
+        coords -0.344 0.001 0.857
+        angleY -45.82
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30BA"
+        coords 0.808 0.009 -1.148
+        angleX 7.117
+        angleY 97.794
+        angleZ -1.702
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30AA"
+        coords -1.438 -0.043 -0.775
+        angleX 30.705
+        angleY -127.202
+        angleZ -21.186
+       }
+       GenericEntity {
+        ID "58C4A255C2BC31E7"
+        coords -1.115 -0.028 -0.05
+        angleY 89.179
+        {
+         GenericEntity {
+          ID "56B6871A1414CB69"
+          coords 0.009 0 0.001
+         }
+        }
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30DB"
+        coords -0.852 0.073 -0.921
+        angleX 11.144
+        angleY -118.209
+       }
+       GenericEntity {
+        ID "58C4A255C2BC31D4"
+        coords 0.039 -0.01 -1.064
+        angleY 177.707
+        {
+         GenericEntity {
+          ID "56B6871A278AB642"
+          coords -0.002 0 0.005
+         }
+        }
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30C8"
+        coords 0.527 0.023 0.912
+        angleY -19.083
+       }
+       GenericEntity {
+        ID "58C4A255C2BC30E4"
+        coords 1.091 0.03 0.271
+        angleY 39.419
+       }
+       GenericEntity {
+        ID "58C4A6B41F6088BA"
+        coords 0.434 0.014 0.308
+        angleY 54.557
+        {
+         DecalEntity {
+          ID "56DEFDB4A2C87F38"
+          coords 0 -0.002 0
+          angleX -90
+          angleY 0
+          angleZ 0.937
+         }
+        }
+       }
+      }
+     }
     }
    }
-   Vehicle UH1H_armed1 : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
-    coords -7.084 -0.002 -9.36
+   Vehicle UH1H_armed2 : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
+    coords -3.926 -0.956 -4.367
     angleY -155.597
    }
   }
  }
- Island_FOB_arsenal {
-  coords 10095.878 7.844 6466.059
-  {
-   GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
-    components {
-     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-      m_eSupportedArsenalItemModes 254
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-    }
-    coords 1.077 0 -2.104
-    angleX -1.901
-    angleY 46.689
-    angleZ -0.141
-    {
-     GenericEntity {
-      ID "5E9B0BA358A0D551"
-      coords -0.123 -0.005 -0.247
-     }
-     GenericEntity {
-      ID "5D4A8E6DE1C5C844"
-      coords -0.125 0 0.271
-     }
-     GenericEntity {
-      ID "58C4A255C2BC3015"
-      coords -0.344 0.001 0.857
-      angleY -45.82
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30BA"
-      coords 0.808 0.009 -1.148
-      angleX 7.117
-      angleY 97.794
-      angleZ -1.702
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30AA"
-      coords -1.438 -0.043 -0.775
-      angleX 30.705
-      angleY -127.202
-      angleZ -21.186
-     }
-     GenericEntity {
-      ID "58C4A255C2BC31E7"
-      coords -1.115 -0.028 -0.05
-      angleY 89.179
-      {
-       GenericEntity {
-        ID "56B6871A1414CB69"
-        coords 0.009 0 0.001
-       }
-      }
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30DB"
-      coords -0.852 0.073 -0.921
-      angleX 11.144
-      angleY -118.209
-     }
-     GenericEntity {
-      ID "58C4A255C2BC31D4"
-      coords 0.039 -0.01 -1.064
-      angleY 177.707
-      {
-       GenericEntity {
-        ID "56B6871A278AB642"
-        coords -0.002 0 0.005
-       }
-      }
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30C8"
-      coords 0.527 0.023 0.912
-      angleY -19.083
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30E4"
-      coords 1.091 0.03 0.271
-      angleY 39.419
-     }
-     GenericEntity {
-      ID "58C4A6B41F6088BA"
-      coords 0.434 0.014 0.308
-      angleY 54.557
-      {
-       DecalEntity {
-        ID "56DEFDB4A2C87F38"
-        coords 0 -0.002 0
-        angleX -90
-        angleY 0
-        angleZ 0.937
-       }
-      }
-     }
-    }
-   }
-  }
+}
+$grp Vehicle : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
+ UH1H3 {
+  coords 7378.204 1.747 998.405
+  angleY -11.086
  }
- Land_FOB_arsenal {
-  coords 7336.542 2.586 1007.386
-  angleY 115.508
-  {
-   GenericEntity ArsenalBox_USMC1 : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
-    components {
-     SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-      m_eSupportedArsenalItemModes 254
-      m_eArsenalSaveType NO_RESTRICTIONS
-     }
-    }
-    coords -61.69 2.384 -65.21
-    angleX -1.901
-    angleY 46.689
-    angleZ -0.141
-    {
-     GenericEntity {
-      ID "5E9B0BA358A0D551"
-      coords -0.123 -0.005 -0.247
-     }
-     GenericEntity {
-      ID "5D4A8E6DE1C5C844"
-      coords -0.125 0 0.271
-     }
-     GenericEntity {
-      ID "58C4A255C2BC3015"
-      coords -0.344 0.001 0.857
-      angleY -45.82
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30BA"
-      coords 0.808 0.009 -1.148
-      angleX 7.117
-      angleY 97.794
-      angleZ -1.702
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30AA"
-      coords -1.438 -0.043 -0.775
-      angleX 30.705
-      angleY -127.202
-      angleZ -21.186
-     }
-     GenericEntity {
-      ID "58C4A255C2BC31E7"
-      coords -1.115 -0.028 -0.05
-      angleY 89.179
-      {
-       GenericEntity {
-        ID "56B6871A1414CB69"
-        coords 0.009 0 0.001
-       }
-      }
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30DB"
-      coords -0.852 0.073 -0.921
-      angleX 11.144
-      angleY -118.209
-     }
-     GenericEntity {
-      ID "58C4A255C2BC31D4"
-      coords 0.039 -0.01 -1.064
-      angleY 177.707
-      {
-       GenericEntity {
-        ID "56B6871A278AB642"
-        coords -0.002 0 0.005
-       }
-      }
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30C8"
-      coords 0.527 0.023 0.912
-      angleY -19.083
-     }
-     GenericEntity {
-      ID "58C4A255C2BC30E4"
-      coords 1.091 0.03 0.271
-      angleY 39.419
-     }
-     GenericEntity {
-      ID "58C4A6B41F6088BA"
-      coords 0.434 0.014 0.308
-      angleY 54.557
-      {
-       DecalEntity {
-        ID "56DEFDB4A2C87F38"
-        coords 0 -0.002 0
-        angleX -90
-        angleY 0
-        angleZ 0.937
-       }
-      }
-     }
-    }
-   }
-  }
- }
- Land_FOB_BriefingTent {
-  coords 7255.436 1.589 1020.279
-  angleY -96.567
-  {
-   StaticModelEntity : "{55973C5B0950D4AB}Prefabs/Props/Military/Furniture/ChairMilitary_US_01.et" {
-    coords -2.043 -0.021 -1.007
-    angleY 0
-   }
-   StaticModelEntity Table_Ashtray_US_3 : "{7B2D1744E9F2A3B3}Prefabs/Compositions/Misc/SubCompositions/Furniture/Table_Ashtray_US_01.et" {
-    coords -1.181 0.002 -1.208
-    angleY -37.179
-    {
-     GenericEntity {
-      ID "5CB0D996697DE52C"
-      coords -0.076 0.9 -0.037
-     }
-     GenericEntity : "{05B993EAF472E376}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_10.et" {
-      coords 0.479 0.9 0.237
-      angleY -178.63
-     }
-     GenericEntity : "{1EE7CF82BC148328}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_03.et" {
-      coords 0.303 0.9 -0.107
-      angleY -179.336
-     }
-     GenericEntity : "{23D3EABAC9780A1F}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_04.et" {
-      coords 0.238 0.9 0.245
-      angleY -178.607
-     }
-     GenericEntity : "{69EDA70A48B66C58}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_13.et" {
-      coords -0.342 0.9 -0.092
-      angleY -176.582
-     }
-     GenericEntity : "{8C71EBF34453FB33}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_12.et" {
-      coords -0.477 0.9 -0.09
-      angleY -178.24
-     }
-     GenericEntity : "{972FB79B0C359B6E}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_01.et" {
-      coords 0.41 0.9 -0.11
-      angleY -179.086
-     }
-     GenericEntity : "{AA1B92A37959125A}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_06.et" {
-      coords 0.189 0.9 -0.107
-      angleY 179.328
-     }
-     GenericEntity : "{E025DF13F897741D}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_11.et" {
-      coords 0.357 0.9 0.24
-      angleY -178.182
-     }
-     GenericEntity : "{FB7B837BB0F11443}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_02.et" {
-      coords 0.527 0.9 -0.111
-      angleY -179.463
-     }
-    }
-   }
-   GenericEntity CamoNet_Large_Top_US3 : "{89230C660A90788F}Prefabs/Structures/Military/CamoNets/US/CamoNet_Large_Top_US.et" {
-    coords -3.251 -0.084 2.88
-    angleY -76.972
-   }
-   $grp SCR_DestructibleEntity : "{C8A5C92E74ABB5EA}Prefabs/Props/Civilian/PicnicTable/PicnicTable_01.et" {
-    {
-     coords -7.922 -0.258 5.873
-     angleY -150.593
-    }
-    {
-     coords -4.835 -0.176 8.442
-     angleY 60.484
-    }
-    {
-     coords -9.589 -0.281 1.982
-     angleY 15.19
-    }
-   }
-  }
+ UH1H4 {
+  coords 7317.231 4.014 991.495
+  angleY -48.191
  }
 }
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
@@ -966,11 +1696,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         m_bShowDebugShapesDuringRuntime 0
         m_aPlugins {
          SCR_ScenarioFrameworkPluginTrigger "{5A6513EB3A4B9621}" {
-          m_fAreaRadius 2
+          m_fAreaRadius 4
+          m_sActivatedByThisFaction "US"
           m_bOnce 0
          }
         }
-        m_bShowDebugShapesInWorkbench 0
         m_aActionsOnFinished {
          SCR_ScenarioFrameworkActionRemoveItemFromInventory "{61DAAAA36EB85CC3}" {
           m_aPrefabFilter {
@@ -1257,11 +1987,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         m_bShowDebugShapesDuringRuntime 0
         m_aPlugins {
          SCR_ScenarioFrameworkPluginTrigger "{5A6513EB3A4B9621}" {
-          m_fAreaRadius 2
+          m_fAreaRadius 4
+          m_sActivatedByThisFaction "US"
           m_bOnce 0
          }
         }
-        m_bShowDebugShapesInWorkbench 0
         m_aActionsOnFinished {
          SCR_ScenarioFrameworkActionRemoveItemFromInventory "{61DAAAA36EB85CC3}" {
           m_aPrefabFilter {
@@ -1284,7 +2014,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
         m_bShowDebugShapesInWorkbench 0
         m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{617C9765908D0E67}" {
-         m_sMapMarkerText "MSOC FOB"
+         m_sMapMarkerText "MSOC FOB 2"
          m_eMapMarkerType1Modifier LIGHT
         }
        }
@@ -1300,7 +2030,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       m_bShowDebugShapesInWorkbench 0
      }
     }
-    coords -52.966 4.123 55.732
+    coords -35.15 4.395 81.342
     angleX -1.711
     angleY 28.553
     angleZ 3.141
@@ -1518,17 +2248,52 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   coords 7444.971 5.129 1100.28
   angleY -166.093
   {
-   Vehicle M1025_armed_M2HB_USAF1 : "{3277F8B1FA06A2BC}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB_USAF.et" {
-    coords 96.116 -0.129 12.425
-    angleY 132.949
-   }
-   Vehicle M998_covered_USAF1 : "{923F0A979CE79ACD}Prefabs/Vehicles/Wheeled/M998/M998_covered_USAF.et" {
-    coords 121.186 -1.076 19.151
-    angleY -94.585
-   }
    GenericEntity : "{F09296B9255F6704}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_CommandPost_US_01.et" {
     coords 25.853 -1.374 22.612
     angleY 150.527
+   }
+  }
+ }
+ Land_FOB_Vics {
+  coords 7385.791 5.566 1097.252
+  {
+   $grp Vehicle : "{1DF4C30C130D8FAD}Prefabs/Vehicles/Wheeled/K4386/K4386_Armed_Camo.et" {
+    K4386_Armed_Camo1 {
+     coords 13.56 -0.139 -0.491
+    }
+    K4386_Armed_Camo2 {
+     coords 19.05 -0.309 -1.135
+    }
+   }
+   Vehicle M923A1_arsenal1 : "{1FF144F8A209239D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal.et" {
+    coords 33.085 -0.703 -1.383
+    angleY -21.974
+   }
+   Vehicle M923A1_tanker_MERDC1 : "{26013123314183EA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker_MERDC.et" {
+    coords 40.993 -1.245 -7.47
+    angleY -18.374
+   }
+   Vehicle M1025_armed_M2HB_USAF1 : "{3277F8B1FA06A2BC}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB_USAF.et" {
+    coords -37.104 -0.566 14.068
+    angleY -33.144
+   }
+   Vehicle M923A1_command_MERDC1 : "{38186F12F27A61C6}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command_MERDC.et" {
+    coords 43.009 1.299 26.678
+    angleY 175.347
+   }
+   Vehicle M997_maxi_ambulance_MERDC1 : "{3B1EB924602C7A07}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance_MERDC.et" {
+    coords 8.943 -0.077 0.839
+   }
+   Vehicle M923A1_transport_covered1 : "{81FDAD5EB644CC3D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered.et" {
+    coords 47.095 -0.453 0.888
+   }
+   Vehicle M998_covered_USAF1 : "{923F0A979CE79ACD}Prefabs/Vehicles/Wheeled/M998/M998_covered_USAF.et" {
+    coords -63.057 -1.513 13.565
+    angleY 99.322
+   }
+   Vehicle K4386_Armed1 : "{AB5DE68E3E654FCA}Prefabs/Vehicles/Wheeled/K4386/K4386_Armed.et" {
+    coords -69.708 -1.625 10.597
+    angleY 93.407
    }
   }
  }

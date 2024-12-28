@@ -2204,7 +2204,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
            "4. Deliver supplies at location. "
           }
          }
-         coords 54.896 -43.235 -500.439
+         coords -65.693 -95.473 -488.522
          angleX 4.466
          angleY 0.07
          angleZ 0.898
@@ -2223,10 +2223,10 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sObjectToSpawn "{719E02FDF6524F53}Prefabs/Compositions/Misc/FreeRoamBuilding/CamoNetLarge_M_US_01.et"
                 }
                }
-               coords 0.754 -0.008 -0.581
-               angleX -0.111
-               angleY -2.165
-               angleZ 1.783
+               coords 2.041 1.925 4.006
+               angleX 1.773
+               angleY -88.614
+               angleZ 0.221
               }
               Slot105 {
                components {
@@ -2234,10 +2234,10 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sObjectToSpawn "{92264FF932676C13}Prefabs/Vehicles/Wheeled/M923A1/M923A1_ammo.et"
                 }
                }
-               coords 3.46 -0.054 1.515
-               angleX -0.957
-               angleY 169.961
-               angleZ -0.822
+               coords 0.607 1.335 8.062
+               angleX 1.068
+               angleY -82.885
+               angleZ -0.672
               }
               Slot106 {
                components {
@@ -2245,8 +2245,8 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sObjectToSpawn "{A664C3ADCBDAB542}Prefabs/Compositions/Misc/SubCompositions/Storage/Slotted/Shelter_Supplies_US_02.et"
                 }
                }
-               coords -2.182 -0.001 2.878
-               angleY 4.578
+               coords 0.421 0.424 -0.485
+               angleY -88.93
               }
              }
             }
@@ -2269,7 +2269,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                 m_sWPToSpawn "{A33AF7FC5004F294}Prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
                }
               }
-              coords 0 0 0
+              coords 55.162 0.602 -66.452
              }
             }
            }
@@ -2306,7 +2306,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              }
             }
            }
-           coords 0 0 0
+           coords 2.83 0.58 -5.022
           }
           GenericEntity SlotMarker25 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
            components {
@@ -2318,7 +2318,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
              }
             }
            }
-           coords 0 1.662 -50
+           coords 2.923 1.484 -9.465
           }
          }
         }
@@ -2375,6 +2375,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                 m_aPlugins {
                  SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
                   m_fAreaRadius 50
+                  m_sActivatedByThisFaction "US"
                  }
                 }
                 m_aActionsOnFinished {
@@ -2481,7 +2482,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords 2.362 -0.004 -0.001
+                  coords 368.809 -96.475 -71.464
                   angleX -0.553
                   angleY -0.007
                   angleZ 0.704
@@ -2491,14 +2492,14 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
                     }
                    }
                   }
-                  coords 0 0 0
+                  coords 363.342 -96.568 -72.016
+                  angleY -114.216
                  }
                  GenericEntity SlotMarker27 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
                   components {
@@ -2511,7 +2512,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords -63.896 6.891 -58.065
+                  coords 364.507 -96.622 -76.093
                   angleX 1.188
                   angleY 2.26
                   angleZ 6.856
@@ -2541,7 +2542,6 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
@@ -2592,7 +2592,6 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
@@ -2645,14 +2644,14 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
                     }
                    }
                   }
-                  coords 178.672 33.264 156.359
+                  coords 175.761 32.869 156.312
+                  angleX -10.61
                   angleY -83.104
                  }
                  GenericEntity SlotMarker33 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
@@ -2696,14 +2695,13 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
                     }
                    }
                   }
-                  coords 119.673 19.886 37.798
+                  coords 119.672 19.886 37.798
                   angleX -19.232
                   angleY -36.458
                  }
@@ -2746,7 +2744,6 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
@@ -2848,9 +2845,9 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords 209.22 -23.405 436.705
+                  coords -41.8 -35.278 297.34
                   angleX -1.274
-                  angleY 0.715
+                  angleY 37.429
                   angleZ -1.246
                  }
                  GenericEntity Slot253 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
@@ -2858,15 +2855,14 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
                     }
                    }
                   }
-                  coords 208.263 -23.804 439.715
-                  angleY -91.289
+                  coords -40.782 -35.313 300.378
+                  angleY -54.575
                  }
                  $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
                   SlotWaypoint345 {
@@ -2877,7 +2873,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords -167.407 -61.111 405.349
+                   coords -540.509 -100.728 280.232
                    angleX -7.248
                    angleY 3.745
                    angleZ -16.478
@@ -2889,8 +2885,8 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords 208.305 -23.797 439.682
-                   angleY -88.773
+                   coords -40.769 -35.311 300.327
+                   angleY -52.059
                   }
                  }
                 }
@@ -2930,9 +2926,9 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords 3.557 -0.026 -0.054
+                  coords -329.025 47.933 105.131
                   angleX 1.205
-                  angleY -87.463
+                  angleY -96.869
                   angleZ -0.376
                  }
                  GenericEntity Slot254 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
@@ -2940,15 +2936,14 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
                     }
                    }
                   }
-                  coords -83.29 -17.895 106.542
-                  angleY -36.5
+                  coords -428.342 43.178 198.806
+                  angleY -45.906
                  }
                  $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
                   SlotWaypoint343 {
@@ -2958,8 +2953,8 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords -83.288 -17.895 106.542
-                   angleY -36.5
+                   coords -428.342 43.177 198.807
+                   angleY -45.906
                   }
                   SlotWaypoint346 {
                    components {
@@ -2969,7 +2964,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords -348.065 -80.377 670.339
+                   coords -348.064 -80.377 670.339
                    angleX -4.092
                    angleY -0.498
                    angleZ -3.81
@@ -3012,23 +3007,22 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                    }
                   }
-                  coords 262.125 11.29 534.073
-                  angleY -23.018
+                  coords 0.05 12.781 539.381
+                  angleY -108.958
                  }
                  GenericEntity Slot255 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                   components {
                    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                     m_sFactionKey "USSR"
                     m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                    m_bRandomizePerFaction 1
                     m_eEntityCatalogType VEHICLE
                     m_aIncludedEditableEntityLabels {
                      53
                     }
                    }
                   }
-                  coords 260.924 11.553 535.985
-                  angleY -115.017
+                  coords -1.923 12.79 538.331
+                  angleY 159.043
                  }
                  $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
                   SlotWaypoint344 {
@@ -3038,8 +3032,8 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords 260.924 11.553 535.986
-                   angleY -115.017
+                   coords -1.924 12.79 538.331
+                   angleY 159.043
                   }
                   SlotWaypoint347 {
                    components {
@@ -3049,7 +3043,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords -51.229 17.248 314.783
+                   coords -566.223 -7.757 530.354
                    angleX 2.629
                    angleY 0.596
                    angleZ -1.036

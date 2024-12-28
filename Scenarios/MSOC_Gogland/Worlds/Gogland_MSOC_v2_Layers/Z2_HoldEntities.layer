@@ -12367,6 +12367,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaMontignac {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0ACF18FECC}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer13"
@@ -13241,6 +13242,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaMorton {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0AC8E8A97E}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer14"
@@ -13636,6 +13638,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaRegina {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0AC43AC465}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer16"
@@ -14081,6 +14084,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaStPhillipe {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0AC1FC98C7}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer17"
@@ -14976,6 +14980,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaStPierre {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0AC392DDCD}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer18"
@@ -15973,6 +15978,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaTyrone {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0ADD40BF77}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer19"
@@ -16350,6 +16356,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaVernon {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0ADF46FE76}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer20"
@@ -16772,6 +16779,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  AreaFigari {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{621CDC0AEA7B7D9D}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer6"

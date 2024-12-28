@@ -6,7 +6,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_iDynamicDespawnRange 5
    }
   }
-  coords 10086.616 12.486 6423.512
+  coords 10064.525 3.679 6388.85
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     xF22_01 {
@@ -46,7 +46,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
          m_aPlugins {
           SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
-           m_fAreaRadius 2
+           m_fAreaRadius 200
            m_eActivationPresence PLAYER
            m_sActivatedByThisFaction "US"
            m_bEnableAudio 1
@@ -57,6 +57,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            m_iDelayInSeconds 1
            m_aActions {
             SCR_ScenarioFrameworkActionSpawnObjects "{632ED8545BC7B318}" {
+             m_iMaxNumberOfActivations 1
              m_aNameOfObjectsToSpawnOnActivation {
               "xF22_01"
              }
@@ -70,7 +71,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -2.263 0.047 0.372
+       coords -186.052 -0.09 -74.777
       }
      }
     }
@@ -78,7 +79,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  MissionMusic01 {
-  coords 10084.864 12.544 6424.585
+  coords 10062.774 2.34 6389.923
   {
    GenericEntity MissionStart01 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
@@ -94,9 +95,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
          m_aPlugins {
           SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
-           m_fAreaRadius 2
+           m_fAreaRadius 200
            m_eActivationPresence PLAYER
            m_sActivatedByThisFaction "US"
+           m_bSearchVehicleInventory 0
            m_bOnce 1
           }
          }
@@ -108,14 +110,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -0.137 0.335 -0.765
+       coords -170.282 0.163 -78.559
       }
       SlotTrigger12 {
        components {
         SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
          m_aPlugins {
           SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
-           m_fAreaRadius 2
+           m_fAreaRadius 200
            m_eActivationPresence PLAYER
            m_sActivatedByThisFaction "US"
           }
@@ -128,7 +130,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 0 0.517 -0.686
+       coords -146.661 0.313 -123.622
       }
      }
     }
@@ -270,7 +272,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_aTriggerActions {
           SCR_ScenarioFrameworkActionWaitAndExecute "{632ED8544A42795E}" {
            m_iMaxNumberOfActivations 1
-           m_iDelayInSeconds 1
+           m_iDelayInSeconds 0
            m_aActions {
             SCR_ScenarioFrameworkActionSpawnObjects "{632ED8545BC7B318}" {
              m_iMaxNumberOfActivations 1

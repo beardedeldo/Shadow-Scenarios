@@ -15,6 +15,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol9040B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -573.069 -63.662 -202.961
      angleX 8.861
      angleY 0.419
@@ -67,6 +72,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol9040C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 339.744 5.429 -599.193
      angleX 18.609
      angleY -2.714
@@ -119,6 +129,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol9040D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 358.372 -142.626 581.083
      angleX -9.606
      angleY 1.867
@@ -173,6 +188,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS9040 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }
@@ -256,6 +272,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol9020B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -113.832 -44.497 899.686
      angleX 8.861
      angleY -0.419
@@ -308,6 +329,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol9020C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 542.169 -117.266 -326.237
      angleZ 9.752
      {
@@ -358,6 +384,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol9020D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -289.068 163.419 -245.605
      {
       GenericEntity SlotAI364 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -409,6 +440,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS9020 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }
@@ -492,6 +524,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol7080B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 303.101 -50.389 543.812
      angleX 2.578
      angleY 0.524
@@ -544,6 +581,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7080C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -691.153 58.402 -138.801
      angleX -5.309
      angleY -0.499
@@ -596,6 +638,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7080D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 333.897 -61.842 -334.835
      angleX 0.891
      angleY 0.027
@@ -650,6 +697,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS7080 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }
@@ -741,6 +789,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol7060B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -238.702 -21.865 -529.451
      angleX 2.601
      angleY 131.614
@@ -793,6 +846,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7060C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -608.213 31.343 293.998
      angleX 3.193
      angleY 104.415
@@ -845,6 +903,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7060D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 420.606 -84.988 212.479
      angleX -24.368
      angleY -6.502
@@ -899,6 +962,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS7060 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }
@@ -992,6 +1056,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol7040B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 56.464 1.717 473.707
      angleX -6.184
      angleY 2.426
@@ -1044,6 +1113,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7040C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 596.7 210.449 -640.99
      angleX -0.698
      angleY 0.371
@@ -1096,6 +1170,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7040D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -173.664 -65.486 -120.446
      angleX -1.569
      angleY 0.589
@@ -1150,6 +1229,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS7040 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }
@@ -1246,6 +1326,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol7020B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 406.955 -0.41 -24.306
      angleX -2.487
      angleY -0.7
@@ -1298,6 +1383,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7020C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 713.145 89.969 562.216
      angleX 16.736
      angleY -2.232
@@ -1351,6 +1441,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol7020D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 67.42 23.959 641.273
      angleX -2.681
      angleY -0.084
@@ -1406,6 +1501,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS7020 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }
@@ -1493,6 +1589,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol5080B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -563.308 -35.259 332.67
      angleX -3.569
      angleY 0.168
@@ -1544,6 +1645,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol5080C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 577.946 -15.414 -153.314
      angleX -5.293
      angleY 0.581
@@ -1595,6 +1701,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol5080D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -363.483 5.416 -312.982
      angleX -3.622
      angleY -0.327
@@ -1648,6 +1759,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS5080 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }
@@ -1727,6 +1839,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Patrol5060B {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 67.665 43.516 485.614
      angleX 10.617
      angleY -0.168
@@ -1778,6 +1895,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol5060C {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords -398.145 0.878 -465.29
      angleX 2.684
      {
@@ -1827,6 +1949,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Patrol5060D {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 499.838 30.767 -339.401
      angleX -0.894
      angleY 0.028
@@ -1880,6 +2007,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     PatrolWPS5060 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_bExcludeFromDynamicDespawn 1
       }
      }

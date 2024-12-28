@@ -55,18 +55,23 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
      m_iRadioFrequency 51000
     }
     SCR_GroupPreset "{63301722BB71BE10}" {
-     m_sGroupDescription "Reaper One "
-     m_iGroupSize 12
+     m_sGroupName "Reaper One SL"
+     m_iGroupSize 2
      m_iRadioFrequency 46000
     }
     SCR_GroupPreset "{633017232DE1D7AA}" {
-     m_sGroupName "Reaper Two "
-     m_iGroupSize 12
-     m_iRadioFrequency 47000
+     m_sGroupName "Alpha - Reaper One "
+     m_iGroupSize 8
+     m_iRadioFrequency 45000
     }
     SCR_GroupPreset "{63301723CA87E686}" {
+     m_sGroupName "Bravo - Reaper One  "
+     m_iGroupSize 8
+     m_iRadioFrequency 44000
+    }
+    SCR_GroupPreset "{6336D70F22DB48A8}" {
      m_sGroupName "Eagles "
-     m_iGroupSize 6
+     m_iGroupSize 4
      m_iRadioFrequency 49000
     }
     SCR_GroupPreset "{63301723DDF7D292}" {
@@ -76,6 +81,57 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
     }
    }
    m_bCreateOnlyPredefinedGroups 1
+  }
+  SCR_Faction "{5CC8DE37E1FF0F7A}" {
+   m_aEntityCatalogs {
+    SCR_EntityCatalogMultiList "{5D4A8E6F04DCBF0B}" {
+     m_aMultiLists {
+      SCR_EntityCatalogMultiListEntry "{61835C01E90BB7D5}" {
+       m_aEntities {
+        SCR_EntityCatalogEntry "{61835C023A20447B}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0232DDB659}" {
+        }
+        SCR_EntityCatalogEntry "{61835C025850E36B}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0248479D3A}" {
+         m_bEnabled 0
+        }
+        SCR_EntityCatalogEntry "{61835C0245AF3B13}" {
+        }
+        SCR_EntityCatalogEntry "{6216FB8C0F292C64}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0247A731AA}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0241C12001}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0243AEDD6C}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0268919BDE}" {
+        }
+        SCR_EntityCatalogEntry "{61835C026B7EABDD}" {
+        }
+        SCR_EntityCatalogEntry "{61835C02653AD200}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0266A83C23}" {
+        }
+        SCR_EntityCatalogEntry "{61835C02617DA12A}" {
+        }
+        SCR_EntityCatalogEntry "{61835C0263272D2B}" {
+        }
+       }
+      }
+      SCR_EntityCatalogMultiListEntry "{61835C01E373CF53}" {
+       m_aEntities {
+        SCR_EntityCatalogEntry "{61835C021732E80B}" {
+        }
+        SCR_EntityCatalogEntry "{62D2F3D1EB0EA86A}" {
+        }
+       }
+      }
+     }
+    }
+   }
   }
  }
 }
@@ -87,42 +143,6 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   SCR_CommunicationSoundComponent "{5A96D5C2D1670EEF}" {
    Filenames {
     "{91D53896F5AD5DB4}Sounds/RadioProtocol/RadioProtocol_CombatPatrol_US.acp" "{551CB46EC61A37DA}Sounds/Music/Tutorial/Music_Tutorial.acp" "{71AA761577272A1B}Sounds/Music/Ingame/Music_Ingame.acp"
-   }
-  }
-  RHS_AdditionalGameModeSettingsComponent "{61AE627E9607513B}" {
-   m_CallInSupportsConfig SCR_CallInSupportContainerConfig "{621B2B44550E77F5}" {
-    m_aCallIns {
-     SCR_CallInSupportContainer "{613B10C78ECB03E7}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{613B10C78D6ED9B3}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{613B10C7889A9423}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{613B10C789A6B276}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{624ED09013D608AA}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{624ED090108265B6}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{624ED0900E163700}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{624ED0900F1BAFE1}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{625128CEE7B354FA}" {
-      m_eRequiredRank PRIVATE
-     }
-     SCR_CallInSupportContainer "{625128CEE70F67FD}" {
-      m_eRequiredRank PRIVATE
-     }
-    }
    }
   }
   SCR_CampaignBuildingManagerComponent "{63333B199DA1D5EC}" : "{71F691EE7B1A9CFE}Worlds/SCR_CampaignBuildingManagerComponent.ct" {
@@ -167,16 +187,41 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
    m_bRandomStartingDaytimeRange 1
    m_fDayTimeAcceleration 2
    m_fNightTimeAcceleration 1.5
-   m_bRandomStartingWeather 1
+   m_bRandomWeatherChanges 1
+  }
+  SCR_VehicleFactionAffiliationComponent "{6336DA6BBBEF9B6D}" {
+   "faction affiliation" "US"
   }
  }
  coords 5224.089 4.482 5595.738
  m_aDisabledResourceTypes {
   0
  }
+ {
+  SCR_LoadoutManager : "{58FBD035E53D95C1}Prefabs/MP/Campaign/CampaignLoadoutManager.et" {
+   coords 0 0 0
+   m_aPlayerLoadouts {
+    SCR_PlayerArsenalLoadout "{5B108B49559B24A2}" {
+     m_sLoadoutResource "{39DE841FBF372194}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_AR.et"
+    }
+    SCR_PlayerLoadout "{63370BC21CCC298B}" {
+    }
+   }
+  }
+ }
 }
 ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 5224.089 5.167 5602.738
+}
+$grp GenericEntity {
+ {
+  coords 10115.271 7.224 6456.45
+  angleY -43.856
+ }
+ {
+  coords 10093.938 6.944 6465.112
+  angleY 45.948
+ }
 }
 SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/Tasks/TaskManager.et" {
  coords 5224.089 4.667 5597.738
@@ -191,76 +236,5 @@ SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/T
    m_BackgroundColor 1 0.6 0
    m_BackgroundTransparency 0
   }
- }
-}
-GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
- components {
-  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-   m_eSupportedArsenalItemTypes 984062
-   m_eArsenalSaveType NO_RESTRICTIONS
-  }
- }
- coords 10094.073 7.986 6431.307
- angleX -0.566
- angleY -160.146
- angleZ -1.177
-}
-SCR_LoadoutManager LoadoutManager_MSOC : "{97EF4C1A41F63DDB}Prefabs/MP/Managers/Loadouts/LoadoutManager_USxUSSR.et" {
- coords 5224.089 4.855 5599.738
- m_aPlayerLoadouts {
-  SCR_FactionPlayerLoadout "{56B2B461C34A570F}" {
-   m_sLoadoutResource "{695CA068E1DF65A2}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_Rifleman2.et"
-   m_sLoadoutImage "{8E14F24CB874DDB1}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_TL.edds"
-  }
-  SCR_FactionPlayerLoadout "{5A2494BE3D648F60}" {
-   m_sLoadoutResource "{39DE841FBF372194}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_AR.et"
-   m_sLoadoutImage "{F9177AC7F545CDD9}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_AR.edds"
-  }
-  SCR_FactionPlayerLoadout "{56B2B461C275B309}" {
-   m_sLoadoutName "#AR-Role_Medic"
-   m_sLoadoutResource "{1CE48B40E06B1DEE}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_Medic.et"
-   m_sLoadoutImage "{2950C77F1CDD0118}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_Medic.edds"
-  }
-  SCR_FactionPlayerLoadout "{56B2B461C7495F41}" {
-   m_sLoadoutResource "{340BFA3E488048BE}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_GL.et"
-   m_sLoadoutImage "{232D011149C72B97}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_GL.edds"
-  }
-  SCR_FactionPlayerLoadout "{56B2B461C047DCDA}" {
-   m_sLoadoutResource "{7269658016EE9DCA}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_LAT.et"
-   m_sLoadoutImage "{919FB820D4BCCC43}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_LAT.edds"
-  }
-  SCR_FactionPlayerLoadout "{56B2B4613C48D08E}" {
-   m_sLoadoutResource "{8DE8E6B2CB15EFA5}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_Sniper.et"
-   m_sLoadoutImage "{0E43E00BD99B6C94}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_Sniper.edds"
-  }
-  SCR_PlayerArsenalLoadout "{632D663C963376C9}" {
-   m_sLoadoutName "Saved Loadout"
-   m_sLoadoutResource "{BE7CA93E188A5B58}Prefabs/Characters/Campaign/Final/Campaign_US_Base.et"
-   m_sAffiliatedFaction "US"
-  }
-  SCR_PlayerLoadout "{63355D1373BDF90E}" {
-  }
- }
- {
-  CommentEntity {
-   coords 0 1 0
-   m_Comment "LoadoutManager_USxUSSR: "\
-   "Configure desired loadouts"
-   m_Color 0 0 0
-   m_FaceCamera 1
-   m_TextBackground 1
-   m_BackgroundColor 1 0.6 0
-   m_BackgroundTransparency 0
-  }
- }
-}
-$grp GenericEntity : "{D26300F4D5316677}Prefabs/Structures/Signs/Recruitment.et" {
- {
-  coords 10115.271 7.224 6456.45
-  angleY -43.856
- }
- {
-  coords 10093.938 6.944 6465.112
-  angleY 45.948
  }
 }

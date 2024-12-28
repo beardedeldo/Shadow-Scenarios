@@ -13611,7 +13611,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_fPerceptionFactor 25
                   }
                  }
-                 coords 111.933 6.074 156.304
+                 coords 141.215 -0.755 177.828
                  angleY -141.546
                 }
                 SlotAI843 {
@@ -13636,7 +13636,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_fPerceptionFactor 25
                   }
                  }
-                 coords 76.305 9.797 -8.137
+                 coords 100.489 11.534 -11.496
                  angleY -106.74
                 }
                 SlotAI844 {
@@ -13686,7 +13686,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    m_fPerceptionFactor 25
                   }
                  }
-                 coords -155.517 42.86 122.908
+                 coords -178.934 50.161 180.584
                  angleY 155.023
                 }
                }
@@ -13951,7 +13951,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
                      m_sID "BIS_ObjectToDestroy"
                      m_bCanBeGarbageCollected 0
-                     m_bRandomizePerFaction 1
                      m_eEntityCatalogType VEHICLE
                      m_aIncludedEditableEntityLabels {
                       53 54
@@ -13966,7 +13965,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords -209.375 -35.025 -341.717
+                   coords -202.327 -57.919 -702.433
                    angleY -0.833
                   }
                   GenericEntity SlotAI491 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -13991,7 +13990,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_fPerceptionFactor 25
                     }
                    }
-                   coords -211.562 -35.024 -341.814
+                   coords -204.925 -57.6 -705.501
                    angleX -0.176
                    angleY 88.637
                    angleZ -0.875
@@ -14006,7 +14005,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                       }
                      }
                     }
-                    coords -209.375 -35.026 -341.717
+                    coords -202.739 -57.587 -705.385
                    }
                    SlotWaypoint122 {
                     components {
@@ -14018,7 +14017,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                       }
                      }
                     }
-                    coords -209.374 -35.026 -341.717
+                    coords -202.738 -57.587 -705.385
                    }
                   }
                  }
@@ -14054,9 +14053,9 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_fPerceptionFactor 25
                     }
                    }
-                   coords -218.186 -38.638 -409.487
+                   coords -218.545 -51.456 -587.943
                    angleX 0.87
-                   angleY 97.96
+                   angleY 86.113
                    angleZ -0.2
                   }
                   GenericEntity Slot53 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
@@ -14064,29 +14063,27 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                      m_sFactionKey "USSR"
                      m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                     m_bRandomizePerFaction 1
                      m_eEntityCatalogType VEHICLE
                      m_aIncludedEditableEntityLabels {
                       53
                      }
                     }
                    }
-                   coords -216.619 -38.658 -409.745
-                   angleY 10.62
+                   coords -216.944 -51.461 -587.887
+                   angleY -1.227
                   }
                   $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
                    SlotWaypoint162 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61C2AAA540DAD2E7}" {
                        m_fCompletionRadius 10
                        m_fPriorityLevel 1000
                       }
                      }
                     }
-                    coords -216.62 -38.658 -409.745
-                    angleY 10.62
+                    coords -216.945 -51.461 -587.864
+                    angleY -1.227
                    }
                    SlotWaypoint185 {
                     components {
@@ -14100,8 +14097,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                       }
                      }
                     }
-                    coords -216.619 -38.658 -409.745
-                    angleY 10.62
+                    coords -216.944 -51.461 -587.863
+                    angleY -1.227
                    }
                   }
                  }
@@ -14142,17 +14139,16 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_fPerceptionFactor 25
                     }
                    }
-                   coords 460.587 111.836 1350.014
-                   angleX -0.52
-                   angleY 96.537
-                   angleZ -3.539
+                   coords 485.174 107.012 1530.082
+                   angleX -0.959
+                   angleY 100.228
+                   angleZ -3.348
                   }
                   GenericEntity Slot110 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
                    components {
                     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                      m_sFactionKey "USSR"
                      m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                     m_bRandomizePerFaction 1
                      m_eEntityCatalogType VEHICLE
                      m_aIncludedEditableEntityLabels {
                       53
@@ -14161,10 +14157,10 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords 462.713 111.836 1349.369
-                   angleX 3.514
-                   angleY -175.923
-                   angleZ -0.671
+                   coords 487.349 106.974 1529.779
+                   angleX 3.304
+                   angleY -172.255
+                   angleZ -1.102
                   }
                   $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
                    SlotWaypoint261 {
@@ -14177,15 +14173,14 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                       }
                      }
                     }
-                    coords 463.983 111.737 1349.797
-                    angleX 3.514
-                    angleY -175.923
-                    angleZ -0.671
+                    coords 488.436 106.927 1529.266
+                    angleX 3.483
+                    angleY -153.302
+                    angleZ 0.031
                    }
                    SlotWaypoint289 {
                     components {
                      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-                      m_bShowDebugShapesInWorkbench 0
                       m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61CCA58E95715A96}" {
                        m_aLayersWithWaypointsToCycle {
                         "AmbushWP1"
@@ -14193,10 +14188,10 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                       }
                      }
                     }
-                    coords 463.564 112.12 1352.422
-                    angleX 1.769
-                    angleY -175.912
-                    angleZ -0.272
+                    coords 489.097 107.162 1531.854
+                    angleX 1.738
+                    angleY -153.312
+                    angleZ 0.429
                    }
                   }
                  }
@@ -14243,8 +14238,10 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      }
                     }
                    }
-                   coords 14.244 2.667 1314.784
-                   angleY 175.763
+                   coords -27.125 -42.185 1562.236
+                   angleX 9.078
+                   angleY 160.759
+                   angleZ -8.073
                   }
                   GenericEntity SlotAI1033 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
                    components {
@@ -14268,9 +14265,9 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_fPerceptionFactor 25
                     }
                    }
-                   coords 12.177 2.634 1314.69
+                   coords -29.986 -42.311 1563.289
                    angleX -0.458
-                   angleY 81.512
+                   angleY 108.466
                    angleZ 4.537
                   }
                   $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
@@ -14283,8 +14280,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                       }
                      }
                     }
-                    coords 14.244 2.667 1314.784
-                    angleY 176.596
+                    coords -27.142 -42.183 1562.197
+                    angleY -156.45
                    }
                    SlotWaypoint291 {
                     components {
@@ -14296,8 +14293,8 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                       }
                      }
                     }
-                    coords 14.244 2.667 1314.784
-                    angleY 176.596
+                    coords -27.142 -42.183 1562.197
+                    angleY -156.45
                    }
                   }
                  }
@@ -15616,7 +15613,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
                      m_sID "BIS_ObjectToDestroy"
                      m_bCanBeGarbageCollected 0
-                     m_bRandomizePerFaction 1
                      m_eEntityCatalogType VEHICLE
                      m_aIncludedEditableEntityLabels {
                       54 53
@@ -15721,7 +15717,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                      m_sFactionKey "USSR"
                      m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                     m_bRandomizePerFaction 1
                      m_eEntityCatalogType VEHICLE
                      m_aIncludedEditableEntityLabels {
                       53
@@ -15812,7 +15807,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                      m_sFactionKey "USSR"
                      m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
-                     m_bRandomizePerFaction 1
                      m_eEntityCatalogType VEHICLE
                      m_aIncludedEditableEntityLabels {
                       53
@@ -15870,7 +15864,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                      m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
                      m_sID "BIS_ObjectToDestroy"
                      m_bCanBeGarbageCollected 0
-                     m_bRandomizePerFaction 1
                      m_eEntityCatalogType VEHICLE
                      m_aIncludedEditableEntityLabels {
                       54 53

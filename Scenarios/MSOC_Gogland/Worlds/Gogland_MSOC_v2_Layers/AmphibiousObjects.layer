@@ -1,0 +1,16 @@
+SCR_DestructibleBuildingEntity : "{03CD92D04CA09CAD}Prefabs/Compositions/Misc/CustomEntities/DestructionEntities/GeraldFord_AircraftCarrier.et" {
+ coords 8121.712 103.738 51.214
+ angleY 95.935
+ {
+  $grp GenericEntity : "{D2DF42F08A45C746}Prefabs/Props/PropsHeine/F-18.et" {
+   {
+    coords -23.216 14.023 -10.836
+    angleY 0.037
+   }
+   {
+    coords -23.914 14.023 57.089
+    angleY -3.631
+   }
+  }
+ }
+}

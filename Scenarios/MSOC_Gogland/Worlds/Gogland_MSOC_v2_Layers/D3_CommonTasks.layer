@@ -10406,7 +10406,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords 70.563 -0.824 147.543
+               coords 66.57 -0.825 143.064
                angleY -70.01
               }
               SlotAI1283 {
@@ -10429,7 +10429,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                 }
                }
-               coords 67.374 -0.825 141.818
+               coords 63.382 -0.825 137.339
                angleY 20.763
               }
              }
@@ -10469,7 +10469,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
          {
           $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
            Layer60 {
-            coords 27.409 -0.062 35.735
+            coords 27.409 0 35.735
             angleX -0.713
             angleY 79.287
             angleZ 1.046
@@ -10550,7 +10550,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
               }
              }
             }
-            coords -2.033 -0.375 29.892
+            coords -2.033 0 29.892
             angleY -129.553
             {
              GenericEntity Layer32 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -10564,7 +10564,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                   m_fPerceptionFactor 25
                  }
                 }
-                coords 6.323 0.375 -7.377
+                coords 6.323 0 -7.377
                 angleY -122.095
                }
               }
@@ -15290,6 +15290,7 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                  m_sPlayerActivationNotificationTitle "Prepare Ambush"
                 }
                }
+               m_bShowDebugShapesInWorkbench 0
                m_aActionsOnFinished {
                 SCR_ScenarioFrameworkActionWaitAndExecute "{617D1BDE59ADBC2A}" {
                  m_iDelayInSeconds 0
@@ -15340,7 +15341,6 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                   m_sObjectToSpawn "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
                   m_sID "BIS_ObjectToDestroy"
                   m_bCanBeGarbageCollected 0
-                  m_bRandomizePerFaction 1
                   m_eEntityCatalogType VEHICLE
                   m_aIncludedEditableEntityLabels {
                    53 54

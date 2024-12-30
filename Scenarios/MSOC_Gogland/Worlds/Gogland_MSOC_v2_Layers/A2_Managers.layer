@@ -183,8 +183,7 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
    m_iAutosavePeriod 120
   }
   SCR_TimeAndWeatherHandlerComponent "{6336156C575C866A}" {
-   m_bRandomStartingDaytime 1
-   m_bRandomStartingDaytimeRange 1
+   m_iStartingHours 5
    m_fDayTimeAcceleration 2
    m_fNightTimeAcceleration 1.5
    m_bRandomWeatherChanges 1
@@ -197,31 +196,9 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
  m_aDisabledResourceTypes {
   0
  }
- {
-  SCR_LoadoutManager : "{58FBD035E53D95C1}Prefabs/MP/Campaign/CampaignLoadoutManager.et" {
-   coords 0 0 0
-   m_aPlayerLoadouts {
-    SCR_PlayerArsenalLoadout "{5B108B49559B24A2}" {
-     m_sLoadoutResource "{39DE841FBF372194}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_AR.et"
-    }
-    SCR_PlayerLoadout "{63370BC21CCC298B}" {
-    }
-   }
-  }
- }
 }
 ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 5224.089 5.167 5602.738
-}
-$grp GenericEntity {
- {
-  coords 10115.271 7.224 6456.45
-  angleY -43.856
- }
- {
-  coords 10093.938 6.944 6465.112
-  angleY 45.948
- }
 }
 SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/Tasks/TaskManager.et" {
  coords 5224.089 4.667 5597.738
@@ -237,4 +214,7 @@ SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/T
    m_BackgroundTransparency 0
   }
  }
+}
+SCR_LoadoutManager : "{58FBD035E53D95C1}Prefabs/MP/Campaign/CampaignLoadoutManager.et" {
+ coords 5224.133 4.84 5599.56
 }

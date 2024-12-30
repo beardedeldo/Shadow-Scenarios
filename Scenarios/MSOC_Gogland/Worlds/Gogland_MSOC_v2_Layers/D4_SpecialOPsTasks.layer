@@ -459,6 +459,13 @@ GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Com
         GenericEntity SlotMoveTo37 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
          components {
           SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+             m_sActivatedByThisFaction "US"
+             m_bNotificationEnabled 1
+             m_sPlayerActivationNotificationTitle "Unload supplies & build up base"
+            }
+           }
            m_sTaskTitle "FRAGO 140000ZJUN24"
            m_sTaskDescription "Objective:"\
            "Return to Base"\
@@ -469,7 +476,7 @@ GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Com
            "5. Mission Complete upon return. "
           }
          }
-         coords 146.1 -2.744 -19.376
+         coords 127.586 -3.886 -2.663
         }
        }
       }
@@ -796,17 +803,17 @@ GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Com
             }
            }
           }
-          coords 30.639 5.619 -29.616
+          coords -14.235 3.385 -32.849
          }
          SlotAI1364 {
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-            m_sObjectToSpawn "{129039549B0B82FF}Prefabs/Groups/OPFOR/KLMK/Group_USSR_Team_AT_KLMK.et"
+            m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6332C6C244AF4BF8}" {
             }
            }
           }
-          coords -95.154 3.781 0.661
+          coords -41.093 7.672 -24.134
          }
         }
        }
@@ -840,7 +847,7 @@ GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Com
            }
           }
          }
-         coords 11.012 -130.912 -508.107
+         coords 230.44 -163.491 -1346.35
         }
        }
       }
@@ -924,7 +931,7 @@ GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Com
             }
            }
           }
-          coords -31.957 -74.401 -656.864
+          coords 51.203 -86.151 -1047.073
          }
          SlotWaypoint366 {
           components {
@@ -934,7 +941,7 @@ GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Com
             }
            }
           }
-          coords -69.476 -81.059 -599.431
+          coords 44.892 -86.151 -1052.078
          }
          SlotWaypoint371 {
           components {
@@ -944,7 +951,7 @@ GenericEntity SpecialOpsTasks : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Com
             }
            }
           }
-          coords 91.531 -62.967 -452.512
+          coords 31.641 -85.569 -1194.318
          }
         }
        }

@@ -2434,12 +2434,12 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
           components {
            SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
             m_bShowDebugShapesDuringRuntime 1
-            m_sTaskTitle "OPORD 041100ZOCT HORNBEAM"
+            m_sTaskTitle "OPORD 091500ZJAN MAPLELEAF"
             m_sTaskDescription "Objective: Move to Assembly Area. "\
             "Mission: Conduct tactical road march to assembly area."\
             "Execution: "\
-            "1) Secure Levie Armor Base."\
-            "2) Acquire vehicles at east motor pool area."\
+            "1) Secure BLUFOR armor vehicles at Haukkavori Base. "\
+            "2) Acquire vehicles marked on map (inside garages)."\
             "3) Secure ammunition and fuel for each vehicle."\
             "4) Conduct planning."\
             "5) Depart start point. "
@@ -2469,10 +2469,14 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                    "LayerTaskClearArea1"
                   }
                  }
+                 SCR_ScenarioFrameworkActionShowHint "{633D19E049B2D2DD}" {
+                  m_sTitle "ISR has marked last known OPFOR POS. "
+                  m_sText "Check map for last known OPFOR Armored Division vehicles. "
+                 }
                 }
                }
               }
-              coords 0 0 0
+              coords -70.003 1.009 50.678
              }
             }
            }
@@ -2518,7 +2522,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords -86.995 60.407 -482.1
+                  coords 100.975 -25.446 -242.994
                   angleX -4.461
                   angleY -0.317
                   angleZ 5.304
@@ -2534,7 +2538,7 @@ GenericEntity AreaTasksB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
                     }
                    }
                   }
-                  coords -63.623 17.26 -168.428
+                  coords 145.024 -34.281 -167.184
                   angleX -8.084
                   angleY -0.447
                   angleZ 12.319

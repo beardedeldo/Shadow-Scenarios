@@ -665,7 +665,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
       m_aPlugins {
        SCR_ScenarioFrameworkPluginTrigger "{61AA9C9B9043F3A0}" {
-        m_fAreaRadius 50
+        m_fAreaRadius 100
        }
       }
      }
@@ -709,7 +709,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
         m_bShowDebugShapesInWorkbench 0
         m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{617C9765908D0E67}" {
-         m_sMapMarkerText "BLUFOR FOB"
+         m_sMapMarkerText "MSOC FOB"
          m_eMapMarkerType1Modifier LIGHT
         }
        }
@@ -846,6 +846,43 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     Island_spawn {
      coords 0 0 0
      {
+      GenericEntity LayerTaskMove7 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+       components {
+        SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+         m_sFactionKey "US"
+         m_eActivationType ON_TRIGGER_ACTIVATION
+        }
+       }
+       coords -58.338 -0.875 139.058
+       {
+        GenericEntity SlotMoveTo44 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+           m_sFactionKey "US"
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 20
+             m_eActivationPresence SPECIFIC_PREFAB_NAME
+             m_aPrefabFilter {
+              SCR_ScenarioFrameworkPrefabFilter "{633D19E88DF6A552}" {
+               m_sSpecificPrefabName "{98225ED6D5F724D7}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_gunship.et"
+               m_bIncludeChildren 1
+              }
+             }
+             m_sActivatedByThisFaction "US"
+             m_fActivationCountdownTimer 60
+             m_bNotificationEnabled 1
+             m_sPlayerActivationNotificationTitle "Mission completed. "
+            }
+           }
+           m_sTaskTitle "Return the stolen Mi-8 to the MSOC island FOB. "
+           m_sTaskDescription "Land the stolen helicopter at the marked helipad. "
+          }
+         }
+         coords -1.404 -12.462 -4.652
+        }
+       }
+      }
       $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
        Slot214 {
         components {
@@ -919,8 +956,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            m_bShowDebugShapesInWorkbench 0
            m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{617C9765908D0E67}" {
             m_sMapMarkerText "HMS Clyde "
+            m_eMapMarkerDimension INSTALLATION
             m_eMapMarkerType1Modifier AMPHIBIOUS
-            m_eMapMarkerType2Modifier ARTILLERY
+            m_eMapMarkerType2Modifier AMPHIBIOUS_TRANSPORT
            }
           }
          }
@@ -986,6 +1024,119 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
         coords -1.855 0.001 -8.344
         angleY -178.558
+       }
+      }
+     }
+    }
+    Sub1_insertion {
+     coords -9969.127 -8.253 -1203.555
+     {
+      GenericEntity LayerTaskMove6 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+       components {
+        SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+         m_sFactionKey "US"
+        }
+       }
+       coords -8.986 1.162 -10.669
+       {
+        GenericEntity SlotMoveTo43 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+           m_sFactionKey "US"
+           m_aPlugins {
+            SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 20
+             m_sActivatedByThisFaction "US"
+             m_fActivationCountdownTimer 60
+             m_bNotificationEnabled 1
+             m_sPlayerActivationNotificationTitle "Return the stolen Mi-8 to any MSOC FOB. "
+            }
+           }
+           m_sTaskTitle "OPORD 091500ZJAN NIGHTHAWK"
+           m_sTaskDescription "Objective: Steal OPFOR Mi-8 Helicopter. "\
+           "Mission: Infil via the SSN-688 "\
+           "Execution: "\
+           "1) Respawn and choose the amphibious spawn west of Sayyo airfield. "\
+           "2) Take Zodiacs to land or swim. "\
+           "3) Conduct recon of AO. "\
+           "4) Make a PACE plan. "\
+           "5) Execuate primary mission: steal the Mi-8 and return to MSOC Island FOB on Russkeri island. "
+           m_aActionsOnFinished {
+            SCR_ScenarioFrameworkActionSpawnObjects "{633D19E8763B05AE}" {
+             m_aNameOfObjectsToSpawnOnActivation {
+              "LayerTaskMove7"
+             }
+            }
+           }
+          }
+         }
+         coords 1026.882 1.838 -142.152
+        }
+        GenericEntity SlotMarker39 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
+         components {
+          SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+           m_bShowDebugShapesInWorkbench 0
+           m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{617C9765908D0E67}" {
+            m_sMapMarkerText "SSN-688"
+            m_eMapMarkerDimension INSTALLATION
+            m_eMapMarkerType1Modifier AMPHIBIOUS
+            m_eMapMarkerType2Modifier AMPHIBIOUS_TRANSPORT
+           }
+          }
+         }
+         coords 1.204 -0.079 5.923
+        }
+       }
+      }
+      GenericEntity Layer327 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp Vehicle : "{21E16FD9A2C51BE9}Prefabs/Vehicles/Zodiac/Zodiac_US.et" {
+         Zodiac_US5 {
+          coords 1.549 0 -1.803
+          angleY 80.441
+         }
+         Zodiac_US6 {
+          coords 0.952 0 -7.185
+          angleY 80.441
+         }
+         Zodiac_US7 {
+          coords 1.253 0 -11.8
+          angleY 80.441
+         }
+         Zodiac_US8 {
+          coords 2.136 0 -16.48
+          angleY 80.441
+         }
+        }
+       }
+      }
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot224 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{BAA81EBB96FE665A}Prefabs/MP/Spawning/SpawnPoint_US_Amphibious.et"
+         }
+        }
+        coords -9.156 1.407 -9.423
+       }
+       Slot225 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{FF27B5E7B51F45F0}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/ArsenalBox_US_NoAffiliation.et"
+         }
+        }
+        coords -10.432 1.174 -4.428
+        angleY 170.979
+       }
+       Slot226 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et"
+         }
+        }
+        coords -8.277 1.068 -4.253
+        angleY 173.244
        }
       }
      }

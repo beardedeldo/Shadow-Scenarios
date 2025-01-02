@@ -1943,13 +1943,13 @@ GenericEntity AreaTasksC : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Componen
             SCR_ScenarioFrameworkSlotClearArea "{5A633AF525D5B972}" {
              m_aPlugins {
               SCR_ScenarioFrameworkPluginTrigger "{5A633AF5368D26A3}" {
-               m_fAreaRadius 167.5
+               m_fAreaRadius 120
                m_sActivatedByThisFaction "US"
               }
              }
             }
            }
-           coords 0 0 0
+           coords 68.266 10.277 -2.423
           }
          }
         }

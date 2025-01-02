@@ -1318,7 +1318,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       "4. Determine attack axis. "\
       "5.  Perform reconnoiter of the AO. "\
       "6.  Launch attack. "\
-      "NOTE: This will unlock M1025 assets."
+      "NOTE: This will unlock BLUFOR armor vehicles."
       m_bPlaceMarkerOnSubjectSlot 1
      }
     }
@@ -2743,6 +2743,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aNameOfObjectsToSpawnOnActivation {
            "HQ_BLUFOR" "CommonTasksSelect" "ARMORMove"
           }
+         }
+         SCR_ScenarioFrameworkActionShowHint "{633D19E1605CB3F2}" {
+          m_sTitle "Take the K17 or other vehicles marked on map. "
+          m_sText "You have now access to armored vehicles. "
          }
         }
        }
@@ -7009,20 +7013,20 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             components {
              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
               m_sFactionKey "USSR"
-              m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
+              m_sObjectToSpawn "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et"
               m_aIncludedEditableEntityLabels {
               }
               m_bShowDebugShapesInWorkbench 0
               m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{633D088136D5D640}" {
                m_aLayerName {
-                "SlotWaypoint385"
+                ""
                }
               }
               m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
               m_fPerceptionFactor 20
              }
             }
-            coords 12.409 4.537 -27.56
+            coords 21.498 3.97 -9.089
             angleX 1.512
             angleY 122.737
             angleZ -8.657
@@ -7030,30 +7034,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            GenericEntity Slot201 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
             components {
              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{114DE81321786CD9}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM.et"
+              m_sObjectToSpawn "{917158017F425567}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_US_01.et"
               m_bShowDebugShapesInWorkbench 0
              }
             }
-            coords 10.308 4.168 -27.614
+            coords 19.251 4.035 -9.598
             angleX 2.257
             angleY -93.313
             angleZ 6.624
-           }
-           GenericEntity SlotWaypoint385 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
-            components {
-             SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-              m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{633D08812267B1EC}" {
-               m_fCompletionRadius 10
-               m_fPriorityLevel 2000
-               m_bDriverAllowed 0
-               m_bCargoAllowed 0
-              }
-             }
-            }
-            coords 12.128 4.386 -26.888
-            angleX 5.324
-            angleY 127.886
-            angleZ -6.242
            }
           }
          }
@@ -7253,10 +7241,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_aIncludedEditableEntityLabels {
               }
               m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{633D0881725CE1CD}" {
-               m_aLayerName {
-                "SlotWaypoint381"
-               }
               }
+              m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
               m_eAISkill EXPERT
               m_fPerceptionFactor 25
              }
@@ -7273,19 +7259,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             coords 0.957 -0.068 -0.163
             angleY -79.328
-           }
-           GenericEntity SlotWaypoint386 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
-            components {
-             SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-              m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{633D088161D6AC6F}" {
-               m_fCompletionRadius 10
-               m_fPriorityLevel 2000
-               m_bCargoAllowed 0
-              }
-             }
-            }
-            coords 0.74 -0.027 2.043
-            angleY 125.841
            }
           }
          }
@@ -7739,10 +7712,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sObjectToSpawn "{F1FBD0972FA5FE09}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport.et"
            }
           }
-          coords 106.595 2.921 63.583
-          angleX -0.585
-          angleY -145.713
-          angleZ 0.678
+          coords 66.891 1.55 60.408
+          angleX -0.075
+          angleY 178.327
+          angleZ 0.892
          }
          Slot107 {
           components {
@@ -7750,10 +7723,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sObjectToSpawn "{EA4819E0745DFAEA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_arsenal_MERDC.et"
            }
           }
-          coords 104.354 3.684 69.731
-          angleX -0.585
-          angleY -145.713
-          angleZ 0.678
+          coords 75.973 1.687 59.503
+          angleX -0.185
+          angleY -174.583
+          angleZ 0.876
          }
          Slot198 {
           components {
@@ -7795,7 +7768,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sObjectToSpawn "{38186F12F27A61C6}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command_MERDC.et"
            }
           }
-          coords 107.128 4.067 81.246
+          coords 71.38 1.331 61.408
           angleX -4.085
           angleY -173.867
           angleZ 0.876
@@ -7854,6 +7827,181 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           coords 115.855 4.868 79.205
           angleY -5.325
          }
+        }
+       }
+      }
+      Boats_HMS_Clyde {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         Slot223 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{3CD45201CF9945B2}Prefabs/Vehicles/Gurza/Gurza_NATO.et"
+           }
+          }
+          coords 131.789 -3.379 -813.679
+         }
+         Slot229 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{3CD45201CF9945B2}Prefabs/Vehicles/Gurza/Gurza_NATO.et"
+           }
+          }
+          coords 160.035 -3.379 -812.925
+         }
+         Slot228 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{21E16FD9A2C51BE9}Prefabs/Vehicles/Zodiac/Zodiac_US.et"
+           }
+          }
+          coords 132.103 -3.23 -827.002
+          angleY -91.853
+         }
+         Slot230 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{21E16FD9A2C51BE9}Prefabs/Vehicles/Zodiac/Zodiac_US.et"
+           }
+          }
+          coords 131.633 -3.23 -830.361
+          angleY -91.853
+         }
+         Slot231 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{21E16FD9A2C51BE9}Prefabs/Vehicles/Zodiac/Zodiac_US.et"
+           }
+          }
+          coords 160.905 -3.23 -831.275
+          angleY 88.582
+         }
+         Slot232 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{21E16FD9A2C51BE9}Prefabs/Vehicles/Zodiac/Zodiac_US.et"
+           }
+          }
+          coords 161.162 -3.081 -828.084
+          angleY 85.98
+         }
+        }
+       }
+      }
+      G_NATO_02 {
+       coords -12.825 -3.379 -332.747
+       angleY 10.298
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI670 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{C0F45FA0C11853D1}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_Officer.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{633942278D6F2EF7}" {
+             m_aLayerName {
+              "SlotWaypoint383"
+             }
+            }
+           }
+          }
+          coords -0.221 1.75 11.727
+          angleY -141.621
+         }
+         SlotAI675 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{C0F45FA0C11853D1}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_Officer.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{633942278D6F2EF7}" {
+             m_aLayerName {
+              "SlotWaypoint383"
+             }
+            }
+           }
+          }
+          coords 0.655 1.655 12.717
+          angleY -141.621
+         }
+        }
+        GenericEntity Slot233 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+           m_sObjectToSpawn "{3CD45201CF9945B2}Prefabs/Vehicles/Gurza/Gurza_NATO.et"
+          }
+         }
+         coords -3.379 0 15.407
+         angleY -51.774
+        }
+        GenericEntity SlotWaypoint383 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{63394227CB1D5E23}" {
+            m_fCompletionRadius 5
+            m_bDriverAllowed 0
+            m_bCargoAllowed 0
+           }
+          }
+         }
+         coords -0.787 1.986 15.402
+         angleY -141.621
+        }
+       }
+      }
+      G_NATO_01 {
+       coords 267.58 -3.379 -197.465
+       angleY 10.298
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI1372 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{C0F45FA0C11853D1}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_Officer.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{633942278D6F2EF7}" {
+             m_aLayerName {
+              "SlotWaypoint393"
+             }
+            }
+           }
+          }
+          coords -0.222 1.751 11.727
+          angleY -141.621
+         }
+         SlotAI1375 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{C0F45FA0C11853D1}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_Officer.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{633942278D6F2EF7}" {
+             m_aLayerName {
+              "SlotWaypoint393"
+             }
+            }
+           }
+          }
+          coords 0.655 1.655 12.717
+          angleY -141.621
+         }
+        }
+        GenericEntity Slot234 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+           m_sObjectToSpawn "{3CD45201CF9945B2}Prefabs/Vehicles/Gurza/Gurza_NATO.et"
+          }
+         }
+         coords -3.379 0 15.407
+         angleY -51.774
+        }
+        GenericEntity SlotWaypoint393 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{63394227CB1D5E23}" {
+            m_fCompletionRadius 5
+            m_bDriverAllowed 0
+            m_bCargoAllowed 0
+           }
+          }
+         }
+         coords -0.787 1.986 15.402
+         angleY -141.621
         }
        }
       }

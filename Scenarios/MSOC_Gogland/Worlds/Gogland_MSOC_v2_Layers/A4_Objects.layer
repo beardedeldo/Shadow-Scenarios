@@ -224,6 +224,14 @@ GenericEntity : "{1A6F76E0028DE740}Prefabs/Compositions/Misc/SubCompositions/Sto
   }
  }
 }
+$grp GameEntity : "{1CE762D0A53A395A}Prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et" {
+ {
+  coords 548.695 8.872 4933.098
+ }
+ {
+  coords 543.752 8.272 4931.199
+ }
+}
 GenericEntity : "{1D2887BB9A7D4670}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_CommandPost_USSR_01.et" {
  coords 7399.394 5.478 1092.016
  {
@@ -245,10 +253,6 @@ $grp GenericEntity : "{1FE6CA907FA552E7}Prefabs/Compositions/Slotted/SlotFlatSma
   coords 7091.85 71.594 1780.556
   angleY -87.018
  }
-}
-Vehicle Mi8MT_armed_base1 : "{20C37D5090E4E0E6}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_base.et" {
- coords 1195.832 3.409 5060.199
- angleY 128.483
 }
 $grp GenericEntity : "{22D2EFA80AC9DBD0}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyCache_S_FIA_03.et" {
  {
@@ -345,6 +349,10 @@ $grp GenericEntity : "{22D2EFA80AC9DBD0}Prefabs/Compositions/Slotted/SlotFlatSma
   angleY 145.551
   angleZ -0.738
  }
+}
+GenericEntity : "{3049B9BE0F9094B4}Prefabs/Structures/Models/tem_sub.et" {
+ coords 180.709 -1.879 5212.937
+ angleY 88.474
 }
 $grp GenericEntity : "{38464762C5D374D2}Prefabs/MP/Campaign/SupplyDepots/SupplyCache_S_FIA_01_Campaign.et" {
  {
@@ -4103,10 +4111,6 @@ GenericEntity : "{97A03B43D914B4DD}Prefabs/Props/Military/SupplyBox/SupplyShippi
  coords 4691.27 29.61 9230.446
  angleY 31.629
 }
-Vehicle Mi8MT_armed_gunship1 : "{98225ED6D5F724D7}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_gunship.et" {
- coords 5570.176 123.794 6731.157
- angleY 20.161
-}
 $grp GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
  {
   coords 4569.495 12.642 7941.807
@@ -4125,16 +4129,6 @@ $grp GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_
  }
  {
   coords 4575.068 12.375 7931.012
- }
-}
-$grp Vehicle : "{AFF6067A5CE8A852}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8_base.et" {
- Mi8_base1 {
-  coords 5505.654 123.763 6759.178
-  angleY 21.713
- }
- Mi8_base2 {
-  coords 1212.344 3.408 5031.791
-  angleY 35.951
  }
 }
 GenericEntity : "{C06AF25AD6AD95D1}Prefabs/Structures/Military/CamoNets/US/CamoNet_Wall_medium_US.et" {
@@ -4157,6 +4151,10 @@ $grp GenericEntity : "{CD67070EFAFC28C7}Prefabs/Props/Military/Sandbags/Sandbag_
   coords 4568.428 12.54 7938.102
   angleY 85.833
  }
+}
+StaticModelEntity : "{CF1FFB7BAA1A0769}Prefabs/Structures/Military/Camps/HelipadImprovised_01/HelipadImprovised_US_01.et" {
+ coords 10101.277 0.592 6539.66
+ angleY 6.247
 }
 $grp StaticModelEntity : "{DA822ADE75D09EB0}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Camo_Cluttered_USSR_02.et" {
  {

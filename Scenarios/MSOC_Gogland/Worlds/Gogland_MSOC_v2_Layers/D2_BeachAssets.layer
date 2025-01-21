@@ -8,8 +8,20 @@ GenericEntity A_Amphibious : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Compon
      coords -966.517 4.167 123.12
      {
       GenericEntity : "{46BC14558C604C4E}Prefabs/Props/PropsHeine/HMS_Clyde.et" {
-       coords -2.702 -5.964 35.499
+       coords -2.702 -5.065 35.499
        angleY 0
+       {
+        $grp GameEntity : "{FCC9A062B697948E}Prefabs/Structures/BuildingParts/Ladders/Ladder_Pier_520_B.et" {
+         {
+          coords -9.716 3.005 -25.9
+          angleY -90.681
+         }
+         {
+          coords 10.026 2.575 -26.603
+          angleY 85.19
+         }
+        }
+       }
       }
      }
     }

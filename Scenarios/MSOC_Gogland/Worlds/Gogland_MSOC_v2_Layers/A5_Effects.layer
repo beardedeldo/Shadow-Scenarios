@@ -209,7 +209,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -4.125 0.261 10.28
+       coords -4.078 -0.429 9.382
       }
      }
     }
@@ -385,15 +385,26 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  Beach_F18_Strike {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
+   }
+  }
   coords 7203.775 28.434 1275.502
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     a_Layer99 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
+      }
+     }
      coords 0 0 0
      {
       GenericEntity SlotTrigger22 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
        components {
         SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+         Enabled 0
          m_aPlugins {
           SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
            m_fAreaRadius 200
@@ -414,13 +425,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords 17.553 0 -48.635
+       coords 17.553 -183.369 -1.631
       }
      }
     }
     F18_CAS {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_eActivationType ON_TRIGGER_ACTIVATION
       }
      }
@@ -451,6 +463,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     GBU_2 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_eActivationType ON_TRIGGER_ACTIVATION
        m_aActivationActions {
         SCR_ScenarioFrameworkActionWaitAndExecute "{633C12E6E047F3C1}" {
@@ -496,6 +509,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     GBU_1 {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       Enabled 0
        m_eActivationType ON_TRIGGER_ACTIVATION
        m_aActivationActions {
         SCR_ScenarioFrameworkActionWaitAndExecute "{633C12E6D34B54BF}" {

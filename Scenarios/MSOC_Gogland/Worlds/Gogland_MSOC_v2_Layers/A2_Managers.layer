@@ -157,6 +157,12 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   }
   SCR_FuelConsumptionComponent "{6324F19614A3912F}" {
   }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fDOTScale 0.2
+   m_fRegenScale 1.1
+   m_fTourniquettedLegMovementSlowdown 0.5
+   m_fTourniquetStrengthMultiplier 0.9
+  }
   SCR_GameModeSFManager "{5A96783ABCA252AE}" {
    m_aTaskTypesAvailable {
     SCR_ScenarioFrameworkTaskType "{63222DA8438EA775}" {
@@ -166,6 +172,9 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
    m_iMaxNumberOfTasks 1
    m_bDynamicDespawn 1
    m_iUpdateRate 2
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
   }
   SCR_RadialMenuGameModeComponent "{5C7E75494DC4CB62}" {
    Enabled 1

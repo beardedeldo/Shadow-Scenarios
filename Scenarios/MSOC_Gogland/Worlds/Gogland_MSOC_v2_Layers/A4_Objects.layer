@@ -22,17 +22,9 @@ $grp GenericEntity : "{09321D1470C3625E}Prefabs/Props/Military/AmmoBoxes/Equipme
  }
 }
 $grp Vehicle : "{128253A267BE9424}Prefabs/Vehicles/Wheeled/S105/S105_randomized.et" {
- S105_randomized1 {
-  coords 5460.159 10.942 9209.7
-  angleY 78.998
- }
  S105_randomized2 {
   coords 5426.102 12.531 9130.867
   angleY 5.644
- }
- S105_randomized3 {
-  coords 5077.659 10.668 9008.797
-  angleY 78.998
  }
  S105_randomized4 {
   coords 5072.607 10.424 9014.355
@@ -4179,10 +4171,6 @@ $grp GenericEntity : "{E027C0CF067256F9}Prefabs/Compositions/Misc/SubComposition
 $grp GenericEntity : "{E55FC02F8C1518A2}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_US.et" {
  {
   coords 10097.674 7.844 6462.242
-  angleY 175.828
- }
- {
-  coords 7536.852 4.167 201.25
   angleY 175.828
  }
  {

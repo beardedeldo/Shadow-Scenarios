@@ -13,7 +13,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     components {
      SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
       m_iRandomPercent 100
-      m_bShowDebugShapesDuringRuntime 1
       m_eActivationType ON_TRIGGER_ACTIVATION
       m_sTaskTitle "#AR-CombatScenario_ExfilTask_Title"
       m_sTaskDescription "#AR-CombatScenario_ExfilTask_Description_NoLimit"

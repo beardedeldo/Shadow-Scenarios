@@ -1,0 +1,135 @@
+GenericEntity Nuc_Silo_RepVehicles : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 7990.541 5 2090.674
+ {
+  GenericEntity LayerTaskMove8 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+   components {
+    SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+     m_sFactionKey "US"
+    }
+   }
+   coords 4.151 0 -7.162
+   {
+    GenericEntity SlotMoveTo48 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+     components {
+      SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+       m_sFactionKey "US"
+       m_aPlugins {
+        SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+         m_sActivatedByThisFaction "US"
+         m_fActivationCountdownTimer 20
+         m_bNotificationEnabled 1
+         m_sPlayerActivationNotificationTitle "Locate the damaged OPFOR VICS"
+        }
+       }
+       m_sTaskTitle "Repair and Steal OPFOR Vehicles"
+       m_sTaskDescription "Find a repair wrench in the storage of the vehicles. "
+       m_aActionsOnFinished {
+        SCR_ScenarioFrameworkActionShowHint "{633CE8902AEADB49}" {
+         m_iMaxNumberOfActivations 1
+         m_sTitle "Repair Wheels"
+         m_sText "Repair the wheels using the wrench. "
+        }
+       }
+      }
+     }
+     coords 0.496 -1.747 10.812
+    }
+    GenericEntity SlotMarker40 : "{E537867C6E760514}Prefabs/ScenarioFramework/Components/SlotMarker.et" {
+     components {
+      SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+       m_MapMarkerType SCR_ScenarioFrameworkMarkerMilitary "{61B28498BBAF0724}" {
+        m_sMapMarkerText "REDFOR REP VEHICLES"
+        m_eMapMarkerFactionIcon OPFOR
+        m_eMapMarkerDimension INSTALLATION
+        m_eMapMarkerType1Modifier ARMOR
+        m_eMapMarkerType2Modifier ARMOR
+       }
+      }
+     }
+     coords -0.527 -0 0.283
+    }
+   }
+  }
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   Layer332 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+      Slot208 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionDamageWheel "{6464CCA512093491}" {
+           m_aSlotNamesOnSlotManager {
+            "Wheel_L01" "Wheel_R02"
+           }
+           m_iHealthPercentage 25
+          }
+         }
+         m_sObjectToSpawn "{3918E80DF5393F8C}Prefabs/Vehicles/Wheeled/K17/APC_K17_Epoch_camo1.et"
+        }
+       }
+       coords 3.49 1.089 1.213
+       angleX -2.088
+       angleY 172.574
+       angleZ 0.661
+      }
+      Slot223 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionDamageWheel "{6464CCA512093491}" {
+           m_aSlotNamesOnSlotManager {
+            "Wheel_L01" "Wheel_R02"
+           }
+           m_iHealthPercentage 25
+          }
+         }
+         m_sObjectToSpawn "{DC6A0BC75B198106}Prefabs/Vehicles/Wheeled/K17/APC_K17_unarmed_camo1.et"
+        }
+       }
+       coords 8.321 -0.007 3.039
+       angleX -2.088
+       angleY 172.574
+       angleZ 0.661
+      }
+     }
+    }
+   }
+   Layer334 {
+    coords 0 0 0
+    {
+     GenericEntity SlotTrigger27 : "{032C15BBEBE9E1E9}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+      components {
+       SCR_ScenarioFrameworkSlotTrigger "{6118D659EDB7084E}" {
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{6118D659EDB7085B}" {
+          m_fAreaRadius 200
+          m_eActivationPresence PLAYER
+          m_sActivatedByThisFaction "US"
+          m_bNotificationEnabled 1
+          m_sPlayerActivationNotificationTitle "Search area for damaged OPFOR VICS. "
+          m_bEnableAudio 1
+         }
+        }
+        m_aTriggerActions {
+         SCR_ScenarioFrameworkActionSpawnObjects "{633C12E6688A0063}" {
+          m_aNameOfObjectsToSpawnOnActivation {
+           "Layer332"
+          }
+         }
+        }
+       }
+      }
+      coords 7.122 0 -1.91
+     }
+    }
+   }
+  }
+ }
+}

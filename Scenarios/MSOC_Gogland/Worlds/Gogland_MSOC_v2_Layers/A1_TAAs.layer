@@ -617,10 +617,6 @@ $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Lay
      }
     }
    }
-   Vehicle UH1H_armed1 : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
-    coords -7.084 -0.002 -9.36
-    angleY -155.597
-   }
   }
  }
 }
@@ -1003,6 +999,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        Slot51 {
         components {
          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          Enabled 0
           m_sObjectToSpawn "{BAA81EBB96FE665A}Prefabs/MP/Spawning/SpawnPoint_US_Amphibious.et"
          }
         }
@@ -1014,7 +1011,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_sObjectToSpawn "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et"
          }
         }
-        coords 4.5 0 -7.737
+        coords -1.19 0.901 16.004
+        angleY 91.231
        }
        Slot216 {
         components {
@@ -1022,7 +1020,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_sObjectToSpawn "{FF27B5E7B51F45F0}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/ArsenalBox_US_NoAffiliation.et"
          }
         }
-        coords -1.855 0.001 -8.344
+        coords 0.798 0.916 16.6
         angleY -178.558
        }
       }
@@ -1092,20 +1090,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        coords 0 0 0
        {
         $grp Vehicle : "{21E16FD9A2C51BE9}Prefabs/Vehicles/Zodiac/Zodiac_US.et" {
-         Zodiac_US5 {
-          coords 1.549 0 -1.803
-          angleY 80.441
-         }
          Zodiac_US6 {
           coords 0.952 0 -7.185
           angleY 80.441
          }
          Zodiac_US7 {
           coords 1.253 0 -11.8
-          angleY 80.441
-         }
-         Zodiac_US8 {
-          coords 2.136 0 -16.48
           angleY 80.441
          }
         }
@@ -1115,6 +1105,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        Slot224 {
         components {
          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          Enabled 0
           m_sObjectToSpawn "{BAA81EBB96FE665A}Prefabs/MP/Spawning/SpawnPoint_US_Amphibious.et"
          }
         }

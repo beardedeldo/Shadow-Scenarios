@@ -432,7 +432,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     F18_CAS {
      components {
       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-       Enabled 0
        m_eActivationType ON_TRIGGER_ACTIVATION
       }
      }

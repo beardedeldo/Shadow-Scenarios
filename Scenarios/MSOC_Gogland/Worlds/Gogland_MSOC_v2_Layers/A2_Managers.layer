@@ -50,33 +50,39 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
    m_bIsPlayable 1
    m_aPredefinedGroups {
     SCR_GroupPreset "{633017233CA24ACD}" {
-     m_sGroupName "Command"
+     m_sGroupName "Command - \"SHADOW ACTUAL' "
+     m_sGroupFlag "{F6A09FA074F07CDF}images/command.edds"
      m_iGroupSize 4
      m_iRadioFrequency 51000
     }
     SCR_GroupPreset "{63301722BB71BE10}" {
-     m_sGroupName "Reaper One SL"
+     m_sGroupName "SL - \"REAPER ONE' "
+     m_sGroupFlag "{D280BBD9FBB03470}Assets/Characters/Patches/data/rhs_patch_KB_BCR.edds"
      m_iGroupSize 2
      m_iRadioFrequency 46000
     }
     SCR_GroupPreset "{633017232DE1D7AA}" {
-     m_sGroupName "Alpha - Reaper One "
-     m_iGroupSize 8
+     m_sGroupName "Alpha - \"BLUE\""
+     m_sGroupFlag "{A969C34C3ED205F8}images/$R420VVY.edds"
+     m_iGroupSize 9
      m_iRadioFrequency 45000
     }
     SCR_GroupPreset "{63301723CA87E686}" {
-     m_sGroupName "Bravo - Reaper One  "
-     m_iGroupSize 8
+     m_sGroupName "Bravo - \"Gold\" "
+     m_sGroupFlag "{493E39AB6D9D3C46}images/$RNQWPXP.edds"
+     m_iGroupSize 9
      m_iRadioFrequency 44000
     }
     SCR_GroupPreset "{6336D70F22DB48A8}" {
      m_sGroupName "Eagles "
+     m_sGroupFlag "{D8BC5F2AFFE176E4}images/EAGLES.edds"
      m_iGroupSize 4
      m_iRadioFrequency 49000
     }
     SCR_GroupPreset "{63301723DDF7D292}" {
      m_sGroupName "Tier One "
-     m_iGroupSize 8
+     m_sGroupFlag "{A263E5167E59EA1E}images/MSOC.edds"
+     m_iGroupSize 9
      m_iRadioFrequency 47500
     }
    }
@@ -199,6 +205,80 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   }
   SCR_VehicleFactionAffiliationComponent "{6336DA6BBBEF9B6D}" {
    "faction affiliation" "US"
+  }
+  SCR_WelcomeScreenComponent "{646D020FB9F43796}" {
+   m_sHeaderTitle "Gogland Military Operations "
+   m_sHeaderSubtitle "Made for MSOC Shadows "
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{646D0200F5B8BA77}" {
+    m_LeftColumn SCR_WelcomeScreenMissionObjectivesContent "{646D0201F9A6F777}" {
+     m_sTitleText "Getting Started"
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{646D02019A9E2104}" {
+       m_sObjectiveImageSet "{CDA744E3FB78F7ED}UI/Textures/DeployMenu/Objectives-Briefing/Objectives-briefing-150_atlas.edds"
+       m_sDescription "Open your map to view starting tasks."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202698C1F05}" {
+       m_sObjectiveImageSet "{CDA744E3FB78F7ED}UI/Textures/DeployMenu/Objectives-Briefing/Objectives-briefing-150_atlas.edds"
+       m_sDescription "Complete tasks to unlock follow-on objectives."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202664982C7}" {
+       m_sObjectiveImageSet "{CDA744E3FB78F7ED}UI/Textures/DeployMenu/Objectives-Briefing/Objectives-briefing-150_atlas.edds"
+       m_sDescription "Continue until the EXFIL task appears."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202233992A4}" {
+       m_sObjectiveImageSet "{CDA744E3FB78F7ED}UI/Textures/DeployMenu/Objectives-Briefing/Objectives-briefing-150_atlas.edds"
+       m_sDescription "Completing EXFIL resets and randomizes tasks for replayability."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202BBFF3010}" {
+       m_sObjectiveImageSet "{CDA744E3FB78F7ED}UI/Textures/DeployMenu/Objectives-Briefing/Objectives-briefing-150_atlas.edds"
+       m_sDescription "Complete Beach Assault for BLUEFOR reinforcements and southern base-building."
+      }
+     }
+    }
+    m_MiddleColumn SCR_WelcomeScreenMissionObjectivesContent "{646D02009903EABA}" {
+     m_sTitleText "Task Perks and Objectives"
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{646D020231553F64}" {
+       m_sDescription "Armor Task: Unlocks armored vehicles."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202CEF05863}" {
+       m_sDescription "Medical Task: Provides advanced medical supplies."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202CE025544}" {
+       m_sDescription "Air Task: Grants air assets or allows building air vehicles."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202CC5C70CB}" {
+       m_sDescription "Logistics Task: Delivers logistics trucks."
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenMissionObjectivesContent "{646D0201999C36AC}" {
+     m_sTitleText "Additional Tasks & Features "
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{646D0203132B0990}" {
+       m_sDescription "Bring an ORP or tent to set a respawn point where deployed."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D02028EA3A340}" {
+       m_sDescription "Kill HVT: Eliminate a high-value target."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D02028653AD5E}" {
+       m_sDescription "Intel Delivery: Transport critical intelligence."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D020283BA0FCF}" {
+       m_sDescription "Ambush: Execute an ambush on enemies."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202833962D7}" {
+       m_sDescription "Repair: Restore damaged assets."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202A4A14DD3}" {
+       m_sDescription "Recruit AI at quarter barracks."
+      }
+      SCR_WelcomeScreenMissionObjectives "{646D0202A4EDD0FD}" {
+       m_sDescription "Use resources strategically to complete objectives."
+      }
+     }
+    }
+   }
   }
  }
  coords 5224.089 4.482 5595.738
